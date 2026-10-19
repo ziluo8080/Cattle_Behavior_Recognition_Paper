@@ -1,0 +1,19 @@
+{
+  "status": "LOCAL_VERIFICATION_PASS",
+  "dataset_files": 40,
+  "dataset_archive_bytes": 114340262,
+  "dataset_archive_sha256": "610be96c6ae0e09ee5dfaca8d5b2ba762e980de1cfc21c6087ae6020bf7dc779",
+  "source_member_SHA256_verified": 40,
+  "extraction_test": "PASS",
+  "upstream_baseline_files_SHA256_verified": 4,
+  "source_CSV_modifications": false,
+  "dataset_license": "CC-BY-NC-SA-4.0",
+  "baseline_license": "MIT",
+  "new_model_training": false,
+  "Word_native_pages": {
+    "main": 19,
+    "supplement": 7
+  },
+  "reference_cross_references_preserved": true,
+  "scientific_tables_and_scores_modified": false
+}

@@ -2,6 +2,8 @@
 
 | 论文内容 | 可核查资料 |
 |---|---|
+| 本文采用的40个原始CSV | `data/DATASET_ASSET.json`、`data/download_dataset.py`及GitHub Release数据附件 |
+| MmCows随机森林基准源码 | `benchmarks/README.md`及`source/reports/sensor_baselines_20261007/upstream/` |
 | 数据、类别与逐牛分布 | `evidence/CLASS_SUPPORT.csv`、`COW_CLASS_SUPPORT.csv`、`FINAL_46821_TARGET_KEYS.jsonl.gz` |
 | TS/OS五折定义 | `source/configs/official_ts.json`、`official_os.json`、`evidence/OFFICIAL_ROLE_RANGES.csv`、`ALL_FOLD_TARGET_ROLE_INDEX.jsonl.gz` |
 | 26维输入与过去对齐 | `source/q3_sensor/protocol.py` |

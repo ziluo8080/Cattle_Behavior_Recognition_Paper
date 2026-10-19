@@ -1,0 +1,9 @@
+{
+  "source_url": "https://huggingface.co/datasets/neis-lab/mmcows/raw/main/README.md",
+  "retrieved_utc": "2026-10-19T11:07:21.141494+00:00",
+  "sha256": "ebd77c3dd7c3e8cd262e3dc0ca430f0fb6f3844293a7112dd2f1bdcab7df8807",
+  "declared_license": "cc-by-nc-sa-4.0",
+  "archive_revision_used": "532a193d5fd90ed6cfb2d640923c4358ceca00b4",
+  "CSV_content_modifications": false,
+  "packaging_change": "Only the 40 files used in this study are repackaged into a gzip tar archive."
+}

@@ -1,0 +1,15 @@
+{
+  "name": "mmcows_0725_c01_c10_sensor_subset.tar.gz",
+  "bytes": 114340262,
+  "sha256": "610be96c6ae0e09ee5dfaca8d5b2ba762e980de1cfc21c6087ae6020bf7dc779",
+  "url": "https://github.com/ziluo8080/Cattle_Behavior_Recognition_Paper/releases/download/paper-v10-20261019-r2/mmcows_0725_c01_c10_sensor_subset.tar.gz",
+  "release_tag": "paper-v10-20261019-r2",
+  "CSV_files": 40,
+  "uncompressed_bytes": 395421225,
+  "source_dataset": "MmCows",
+  "source_revision": "532a193d5fd90ed6cfb2d640923c4358ceca00b4",
+  "scope": "2023-07-25; C01--C10; UWB, head direction, derived ankle state and behavior labels",
+  "original_CSV_bytes_unchanged": true,
+  "license": "CC-BY-NC-SA-4.0",
+  "source_index": "evidence/RAW_SOURCE_MEMBER_INDEX.json"
+}

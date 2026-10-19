@@ -6,3 +6,7 @@ _verification_output/
 *.pem
 *.key
 .venv/
+data/downloads/
+data/extracted/
+path.yaml
+source/reports/sensor_baselines_20261007/upstream/weights/
