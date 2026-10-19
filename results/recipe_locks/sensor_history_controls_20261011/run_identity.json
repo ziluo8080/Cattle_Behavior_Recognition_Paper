@@ -1,0 +1,93 @@
+{
+  "config": {
+    "name": "sensor_history_controls_20261011",
+    "execution": "bitahub-root_cloud_only",
+    "output": "reports/sensor_history_controls_20261011",
+    "systems": [
+      "CurrentRepeat-GRU",
+      "W-RF"
+    ],
+    "protocols": [
+      "TS",
+      "OS"
+    ],
+    "folds": [
+      "fold_1",
+      "fold_2",
+      "fold_3",
+      "fold_4",
+      "fold_5"
+    ],
+    "seeds": [
+      17,
+      23,
+      29
+    ],
+    "epochs": 20,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "threads": 4,
+    "loss": "sqrt_balanced_CE",
+    "selection": "fixed_final_epoch",
+    "expected_parameters": 86695,
+    "RF": {
+      "n_estimators": 100,
+      "class_weight": "balanced"
+    },
+    "rf_feature_order": "modality_then_x_flat_valid_flat_fresh_flat_log_age_flat",
+    "rf_expected_features": 1560,
+    "current_repeat": "repeat_last_x_valid_fresh_age_60_times_no_real_history_metadata",
+    "current_repeat_fallback": "Fit_prior_if_all_endpoint_fields_unavailable",
+    "development_source": "data/sensor_windows_fold1_20261007",
+    "formal_source": "data/sensor_formal_0725_20261007",
+    "parent_roots": {
+      "TS": "reports/sensor_formal_ts_20261007",
+      "OS": "reports/sensor_formal_os_20261007"
+    },
+    "mainline_configuration": "configs/sensor_gru_sqrt_mainline_20261011.json",
+    "environment_spec": "configs/sensor_cloud_env_spec_20261007.json",
+    "environment_canonical_sha256": "8b34947cb29c24a2c6bf54019329887620a1048af4213c0b2a3703bf4d0d667b",
+    "historical_TEST_exposure": true,
+    "new_blind_evaluation": false,
+    "development_gate": "all_six_jobs_complete_finite_and_identity_verified_no_score_selection",
+    "formal_primary_comparisons": [
+      "Base_minus_CurrentRepeat-GRU",
+      "Base_minus_W-RF"
+    ],
+    "bootstrap": {
+      "replicates": 2000,
+      "seed": 20261011,
+      "block_seconds": 300
+    },
+    "interval_scope": "conditional_on_fixed_trained_models_and_existing_folds_not_training_or_new_farm_uncertainty",
+    "automatic_non_OOM_retry": false,
+    "automatic_hyperparameter_changes": false,
+    "mainline_replacement": false
+  },
+  "sources": {
+    "configs/sensor_history_controls_20261011.json": "35ec2c6df1d738cbb00a58f693bf34e335a1e24f44b0d9065b10fb540ae30b05",
+    "/q3/mmcows-sensor-behavior-20261007/scripts/run_sensor_history_controls_20261011.py": "5f48847a68c86ee89ce28ef013c1a39ca78e1492ee9b7c2f7b195272cfa96ffa",
+    "scripts/sensor_history_control_models_20261011.py": "f6c633000c09c13bcb870c8c16410cc58a5acffe1249c1b779635a3a2a3bb6b8",
+    "scripts/run_sensor_formal_ts.py": "4a1d169fe9118aa5ce8edb9b366a2a181c9ee49ac20ba1f53404fbeffbbe3058",
+    "scripts/sensor_os_protocol.py": "0ae35de3bfce491785f128784e89593f32bf5727171d7a43ca2a2c4097bcb17d",
+    "scripts/train_sensor_baselines.py": "a7314e6004df0d023515b7f2a0db8053499ac91150a1dede20f1f28e3713fbba",
+    "q3_sensor/__init__.py": "6176aab524b96b833e78c85e1c4b8bd11e30c1e121d9219ce6eaadc3c45378c6",
+    "q3_sensor/archive.py": "5f2fb576c36b2841fd92754b0af3ae70941270653ad78a603974271857507bac",
+    "q3_sensor/endpoint_models.py": "0db9b15b681866799b440637d48ed23d6cdccc31cbe9521465cb6a2486aed5c5",
+    "q3_sensor/evaluation.py": "0ceb887174997541c8c490cf4daf2b498251cce563fdbf1b70c28bba41fcd0cd",
+    "q3_sensor/model.py": "773a78c41762c83c88a1111b87b0d869be68e3dd39a550b1a4648be83f77c335",
+    "q3_sensor/official.py": "aa2c2f8608f4c4b6e853ec2675100b9ad316b86f8df36ad2208b8030f6f501eb",
+    "q3_sensor/protocol.py": "120c8ab68a64898a2a7980ead48977385f7bda92fcdcb0be4cc25b5022e99350",
+    "q3_sensor/stress.py": "61a00af67e1912c2e03ca811d28ce5b8871c3ceecf994e4022838923898b6077"
+  },
+  "hostname": "bitahub-a21088420666273792299932",
+  "versions": {
+    "torch": "2.4.1+cu121",
+    "numpy": "1.24.4",
+    "sklearn": "1.3.2",
+    "joblib": "1.3.2"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "environment_spec_sha256": "d78981cdfd4464ef26cd490a5d369edb9e2d94f83e43785c601694aa10c45c11"
+}

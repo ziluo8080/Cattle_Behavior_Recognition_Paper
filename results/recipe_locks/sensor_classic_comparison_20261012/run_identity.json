@@ -1,0 +1,161 @@
+{
+  "config": {
+    "name": "sensor_classic_comparison_20261012",
+    "output": "reports/sensor_classic_comparison_20261012",
+    "execution": "bitahub-root_cloud_only",
+    "source": "data/sensor_formal_0725_20261007",
+    "parent_roots": {
+      "TS": "reports/sensor_formal_ts_20261007",
+      "OS": "reports/sensor_formal_os_20261007"
+    },
+    "reuse_architecture_root": "reports/sensor_architecture_comparison_20261011",
+    "reuse_architecture_identity_sha256": "8168c7dc23f2728dc4307d946b1212fc4c8ddf9fd9ed1a54a26df7bae893c70e",
+    "reuse_architecture_lock_sha256": "47e7c97f06b0d116bcd5d171efa174c543d7f30ca06f29f6640717f1fd1ab04c",
+    "models": [
+      "CurrentRepeat-GRU-VAL",
+      "Stats-RF-Window",
+      "Stats-RF-CurrentOnly",
+      "MiniRocket-Window"
+    ],
+    "reference_model": "E-GRU-SQRT-VAL",
+    "protocols": [
+      "TS",
+      "OS"
+    ],
+    "folds": [
+      "fold_1",
+      "fold_2",
+      "fold_3",
+      "fold_4",
+      "fold_5"
+    ],
+    "learning_rates": [
+      0.001,
+      0.0003
+    ],
+    "selection_seed": 17,
+    "formal_seeds": [
+      17,
+      23,
+      29
+    ],
+    "max_epochs": 100,
+    "minimum_training_epochs": 20,
+    "patience": 10,
+    "weight_decay": 0.01,
+    "batch_size": 256,
+    "threads": 4,
+    "expected_parameters": {
+      "CurrentRepeat-GRU-VAL": 86695
+    },
+    "rf": {
+      "n_estimators": 500,
+      "class_weight": "balanced",
+      "max_features": 0.5,
+      "candidates": [
+        {
+          "max_depth": null,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 16,
+          "min_samples_leaf": 5
+        }
+      ]
+    },
+    "minirocket": {
+      "features_requested": 10000,
+      "features_actual": 9996,
+      "ridge_alphas": [
+        1.0,
+        10.0
+      ],
+      "ridge_solver": "lsqr",
+      "ridge_tol": 1e-06,
+      "ridge_max_iter": 10000,
+      "ridge_class_weight": null,
+      "transform_batch_size": 512,
+      "fit_scope": "TRAIN_only_selection_Fit_only_formal",
+      "numba_seed": "explicit_njit_seed_before_official_fit",
+      "scaler": "TRAIN_or_Fit_StandardScaler"
+    },
+    "feature_scope": "same_cached_26_channel_60step_tokens_plus_UWB_unique_source_groups_reconstructed_from_age_for_fully_valid_positions_only",
+    "current_control": "complete_endpoint_x_valid_fresh_age_repeated_native_motion_zero_single_observation_support_no_real_history_meta",
+    "candidate_rule": "higher_VAL_then_earlier_best_epoch_for_GRU_then_candidate_list_order",
+    "formal_rule": "all_80_candidates_locked_before_any_new_formal_Test_evaluation",
+    "selection_jobs": 80,
+    "formal_jobs": 120,
+    "reused_jobs": 50,
+    "historical_Test_exposure": true,
+    "new_blind_evaluation": false,
+    "mainline_automatically_replaced": false,
+    "primary_comparisons": [
+      [
+        "E-GRU-SQRT-VAL",
+        "CurrentRepeat-GRU-VAL"
+      ],
+      [
+        "E-GRU-SQRT-VAL",
+        "Stats-RF-Window"
+      ],
+      [
+        "E-GRU-SQRT-VAL",
+        "MiniRocket-Window"
+      ],
+      [
+        "Stats-RF-Window",
+        "Stats-RF-CurrentOnly"
+      ]
+    ],
+    "bootstrap": {
+      "replicates": 2000,
+      "seed": 20261012,
+      "block_seconds": 300
+    },
+    "environment_spec": "configs/sensor_classic_env_20261012.json",
+    "retry_max_attempts": 1,
+    "automatic_hyperparameter_changes": false
+  },
+  "sources": {
+    "configs/sensor_classic_comparison_20261012.json": "5b3e12a484afe5edf971e32dff9f069237862b56ea90888810de483b9f7392c0",
+    "/q3/mmcows-sensor-behavior-20261007/scripts/run_sensor_classic_comparison_20261012.py": "6147eb6a6a90bfaeb4c80c711dbff1333bf8bc3a3e7f36d3e04f33da6f367574",
+    "configs/sensor_classic_env_20261012.json": "727b8acdb75297756490e8375a95a3343d8037a641dd0582d1354fe3e263c044",
+    "scripts/sensor_classic_features_20261012.py": "49d941ad28115a4aae7b848f3bf4ee7b436a22f4a2d72c039f5b3865d908699e",
+    "scripts/launch_sensor_classic_comparison_20261012.py": "35c80a38b02eed8a728bd502ddfc2a414b476ecf44b0bc16d785afdd049fea32",
+    "scripts/summarize_sensor_classic_comparison_20261012.py": "55ffe15dc5506e0901d0c3698a4d55e96595b9e535871fe87d349c895d6a7e0b",
+    "scripts/sensor_history_control_models_20261011.py": "f6c633000c09c13bcb870c8c16410cc58a5acffe1249c1b779635a3a2a3bb6b8",
+    "third_party/minirocket_20261012/minirocket_multivariate.py": "e48c16b9b9b122d3794638d4e01303396c2db76f44b561b6cd6b21331035d940",
+    "third_party/minirocket_20261012/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "configs/sensor_architecture_comparison_20261011.json": "39018d25e37aca858d1103a085aae39c49c8d84809089d75375b6f0f2a184232",
+    "/q3/mmcows-sensor-behavior-20261007/scripts/run_sensor_architecture_comparison_20261011.py": "9c195c90d61dd7428642dfa715000081ffe5b19961aa70557668da14b0c92c48",
+    "scripts/sensor_architecture_models_20261011.py": "b1949348916926d3ad265185797e7547e40a0fe871ed444d74481cda02044d4a",
+    "scripts/sensor_architecture_data_20261011.py": "565fbf25d4e92acce38f0d2b37da9104aeff4c3731211ac4d4973afb1b3e0552",
+    "scripts/summarize_sensor_architecture_comparison_20261011.py": "c7ce6a2f700caf617bfabf8a6263e161adaee17684f484cacab39fb237bc83ba",
+    "scripts/launch_sensor_architecture_comparison_20261011.py": "17aa8b4460607b175fa5f075d3cc1e4cc95fae062dffc38f74658d3aea3a9041",
+    "scripts/run_sensor_history_controls_20261011.py": "5f48847a68c86ee89ce28ef013c1a39ca78e1492ee9b7c2f7b195272cfa96ffa",
+    "scripts/train_sensor_baselines.py": "a7314e6004df0d023515b7f2a0db8053499ac91150a1dede20f1f28e3713fbba",
+    "scripts/run_sensor_formal_ts.py": "4a1d169fe9118aa5ce8edb9b366a2a181c9ee49ac20ba1f53404fbeffbbe3058",
+    "scripts/sensor_os_protocol.py": "0ae35de3bfce491785f128784e89593f32bf5727171d7a43ca2a2c4097bcb17d",
+    "q3_sensor/__init__.py": "6176aab524b96b833e78c85e1c4b8bd11e30c1e121d9219ce6eaadc3c45378c6",
+    "q3_sensor/archive.py": "5f2fb576c36b2841fd92754b0af3ae70941270653ad78a603974271857507bac",
+    "q3_sensor/endpoint_models.py": "0db9b15b681866799b440637d48ed23d6cdccc31cbe9521465cb6a2486aed5c5",
+    "q3_sensor/evaluation.py": "0ceb887174997541c8c490cf4daf2b498251cce563fdbf1b70c28bba41fcd0cd",
+    "q3_sensor/model.py": "773a78c41762c83c88a1111b87b0d869be68e3dd39a550b1a4648be83f77c335",
+    "q3_sensor/official.py": "aa2c2f8608f4c4b6e853ec2675100b9ad316b86f8df36ad2208b8030f6f501eb",
+    "q3_sensor/protocol.py": "120c8ab68a64898a2a7980ead48977385f7bda92fcdcb0be4cc25b5022e99350",
+    "q3_sensor/stress.py": "61a00af67e1912c2e03ca811d28ce5b8871c3ceecf994e4022838923898b6077",
+    "data/sensor_formal_0725_20261007/main_data/uwb/T01/T01_0725.csv": "1aaeba3253ebaadb8537847b9ad0d83ef4f64d00523b8604e41fa4ebec132be3",
+    "data/sensor_formal_0725_20261007/main_data/uwb/T02/T02_0725.csv": "36bfb255de70fbd9c996eef37a2cc3088a47de0f06c36a2b388a6ce14f18cbca",
+    "data/sensor_formal_0725_20261007/main_data/uwb/T03/T03_0725.csv": "3a19235fb78472df5ff3b42642160a76d5cce80af4be9fca2861d0597b26d957",
+    "data/sensor_formal_0725_20261007/main_data/uwb/T04/T04_0725.csv": "68b7041bd5c076a9b720d3476894f8dc48a44fc28c1fcc0e8a127af69e4365b4",
+    "data/sensor_formal_0725_20261007/main_data/uwb/T05/T05_0725.csv": "1429d996ba90898210ae0c0b627aa593fcf1ec8df80ac4334dabe61b7568370b",
+    "data/sensor_formal_0725_20261007/main_data/uwb/T06/T06_0725.csv": "fce420fc289b6a031cb1aa14f6be62e802bda2b4baf1ffbbee6351d498db0e50",
+    "data/sensor_formal_0725_20261007/main_data/uwb/T07/T07_0725.csv": "a12534a707fc1f164189c58f72c3ed45175d1a11c455935d3f8633a487bdc530",
+    "data/sensor_formal_0725_20261007/main_data/uwb/T08/T08_0725.csv": "7b289e000644a9b507a51ff772d61a76b65fd06feda168e1f3046f82b00cb4f2",
+    "data/sensor_formal_0725_20261007/main_data/uwb/T09/T09_0725.csv": "5304b6c26b6d7b425674feaacac33e886a25fdd1322830c05cfd8cd66acd4156",
+    "data/sensor_formal_0725_20261007/main_data/uwb/T10/T10_0725.csv": "352779020b441a1da60b7990742214671d8afe4e832f121174d547d7420152f3"
+  },
+  "parent_identity_sha256": "8168c7dc23f2728dc4307d946b1212fc4c8ddf9fd9ed1a54a26df7bae893c70e",
+  "parent_lock_sha256": "47e7c97f06b0d116bcd5d171efa174c543d7f30ca06f29f6640717f1fd1ab04c",
+  "environment_witness_sha256": "bd079a60b241a901c709b3afde269f623c40154b5fcfad784d2fdefd5fc0c533"
+}

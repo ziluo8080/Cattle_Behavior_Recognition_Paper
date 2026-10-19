@@ -1,0 +1,12 @@
+{
+  "figure": "2",
+  "source_role": "development_TRAIN",
+  "cow_id": 1,
+  "end": 1690308720,
+  "label": 4,
+  "segment": "group_1_1+group_1_2+group_2_1+group_2_2+group_2_3",
+  "split": "train",
+  "start": 1690271838,
+  "timestamp": 1690271910,
+  "in_formal_46821": false
+}

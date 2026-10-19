@@ -1,0 +1,612 @@
+{
+  "identity_sha256": "8168c7dc23f2728dc4307d946b1212fc4c8ddf9fd9ed1a54a26df7bae893c70e",
+  "selected": {
+    "TS/fold_1/GRU": {
+      "learning_rate": 0.0003,
+      "epochs": 26,
+      "selection_job": "selection/TS/fold_1/GRU/lr1",
+      "validation_macro_f1": 0.8181634357990711,
+      "budget_limited": false
+    },
+    "TS/fold_1/LSTM": {
+      "learning_rate": 0.0003,
+      "epochs": 49,
+      "selection_job": "selection/TS/fold_1/LSTM/lr1",
+      "validation_macro_f1": 0.8074605836223333,
+      "budget_limited": false
+    },
+    "TS/fold_1/Transformer": {
+      "learning_rate": 0.0003,
+      "epochs": 32,
+      "selection_job": "selection/TS/fold_1/Transformer/lr1",
+      "validation_macro_f1": 0.8168419712583335,
+      "budget_limited": false
+    },
+    "TS/fold_1/Transformer-LSTM": {
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "selection_job": "selection/TS/fold_1/Transformer-LSTM/lr0",
+      "validation_macro_f1": 0.8123043203870337,
+      "budget_limited": false
+    },
+    "TS/fold_2/GRU": {
+      "learning_rate": 0.001,
+      "epochs": 25,
+      "selection_job": "selection/TS/fold_2/GRU/lr0",
+      "validation_macro_f1": 0.8272380323763903,
+      "budget_limited": false
+    },
+    "TS/fold_2/LSTM": {
+      "learning_rate": 0.001,
+      "epochs": 30,
+      "selection_job": "selection/TS/fold_2/LSTM/lr0",
+      "validation_macro_f1": 0.819537263051842,
+      "budget_limited": false
+    },
+    "TS/fold_2/Transformer": {
+      "learning_rate": 0.001,
+      "epochs": 30,
+      "selection_job": "selection/TS/fold_2/Transformer/lr0",
+      "validation_macro_f1": 0.8311921350503585,
+      "budget_limited": false
+    },
+    "TS/fold_2/Transformer-LSTM": {
+      "learning_rate": 0.0003,
+      "epochs": 39,
+      "selection_job": "selection/TS/fold_2/Transformer-LSTM/lr1",
+      "validation_macro_f1": 0.8170437078836555,
+      "budget_limited": false
+    },
+    "TS/fold_3/GRU": {
+      "learning_rate": 0.001,
+      "epochs": 26,
+      "selection_job": "selection/TS/fold_3/GRU/lr0",
+      "validation_macro_f1": 0.8250829970583586,
+      "budget_limited": false
+    },
+    "TS/fold_3/LSTM": {
+      "learning_rate": 0.001,
+      "epochs": 18,
+      "selection_job": "selection/TS/fold_3/LSTM/lr0",
+      "validation_macro_f1": 0.807522276265966,
+      "budget_limited": false
+    },
+    "TS/fold_3/Transformer": {
+      "learning_rate": 0.0003,
+      "epochs": 26,
+      "selection_job": "selection/TS/fold_3/Transformer/lr1",
+      "validation_macro_f1": 0.7987823828915559,
+      "budget_limited": false
+    },
+    "TS/fold_3/Transformer-LSTM": {
+      "learning_rate": 0.001,
+      "epochs": 21,
+      "selection_job": "selection/TS/fold_3/Transformer-LSTM/lr0",
+      "validation_macro_f1": 0.8108388532306667,
+      "budget_limited": false
+    },
+    "TS/fold_4/GRU": {
+      "learning_rate": 0.001,
+      "epochs": 25,
+      "selection_job": "selection/TS/fold_4/GRU/lr0",
+      "validation_macro_f1": 0.8103064461055656,
+      "budget_limited": false
+    },
+    "TS/fold_4/LSTM": {
+      "learning_rate": 0.001,
+      "epochs": 38,
+      "selection_job": "selection/TS/fold_4/LSTM/lr0",
+      "validation_macro_f1": 0.8158619845979836,
+      "budget_limited": false
+    },
+    "TS/fold_4/Transformer": {
+      "learning_rate": 0.0003,
+      "epochs": 52,
+      "selection_job": "selection/TS/fold_4/Transformer/lr1",
+      "validation_macro_f1": 0.8222739324768761,
+      "budget_limited": false
+    },
+    "TS/fold_4/Transformer-LSTM": {
+      "learning_rate": 0.001,
+      "epochs": 19,
+      "selection_job": "selection/TS/fold_4/Transformer-LSTM/lr0",
+      "validation_macro_f1": 0.8042400848628491,
+      "budget_limited": false
+    },
+    "TS/fold_5/GRU": {
+      "learning_rate": 0.0003,
+      "epochs": 41,
+      "selection_job": "selection/TS/fold_5/GRU/lr1",
+      "validation_macro_f1": 0.8460488724118973,
+      "budget_limited": false
+    },
+    "TS/fold_5/LSTM": {
+      "learning_rate": 0.0003,
+      "epochs": 31,
+      "selection_job": "selection/TS/fold_5/LSTM/lr1",
+      "validation_macro_f1": 0.8418938076540708,
+      "budget_limited": false
+    },
+    "TS/fold_5/Transformer": {
+      "learning_rate": 0.001,
+      "epochs": 24,
+      "selection_job": "selection/TS/fold_5/Transformer/lr0",
+      "validation_macro_f1": 0.8499875558909794,
+      "budget_limited": false
+    },
+    "TS/fold_5/Transformer-LSTM": {
+      "learning_rate": 0.001,
+      "epochs": 11,
+      "selection_job": "selection/TS/fold_5/Transformer-LSTM/lr0",
+      "validation_macro_f1": 0.8302319351077789,
+      "budget_limited": false
+    },
+    "OS/fold_1/GRU": {
+      "learning_rate": 0.001,
+      "epochs": 10,
+      "selection_job": "selection/OS/fold_1/GRU/lr0",
+      "validation_macro_f1": 0.7940572209936116,
+      "budget_limited": false
+    },
+    "OS/fold_1/LSTM": {
+      "learning_rate": 0.001,
+      "epochs": 24,
+      "selection_job": "selection/OS/fold_1/LSTM/lr0",
+      "validation_macro_f1": 0.8015659759586501,
+      "budget_limited": false
+    },
+    "OS/fold_1/Transformer": {
+      "learning_rate": 0.0003,
+      "epochs": 47,
+      "selection_job": "selection/OS/fold_1/Transformer/lr1",
+      "validation_macro_f1": 0.8113561411382616,
+      "budget_limited": false
+    },
+    "OS/fold_1/Transformer-LSTM": {
+      "learning_rate": 0.0003,
+      "epochs": 27,
+      "selection_job": "selection/OS/fold_1/Transformer-LSTM/lr1",
+      "validation_macro_f1": 0.7934154989264741,
+      "budget_limited": false
+    },
+    "OS/fold_2/GRU": {
+      "learning_rate": 0.001,
+      "epochs": 16,
+      "selection_job": "selection/OS/fold_2/GRU/lr0",
+      "validation_macro_f1": 0.7899321125569534,
+      "budget_limited": false
+    },
+    "OS/fold_2/LSTM": {
+      "learning_rate": 0.0003,
+      "epochs": 37,
+      "selection_job": "selection/OS/fold_2/LSTM/lr1",
+      "validation_macro_f1": 0.7791468313905467,
+      "budget_limited": false
+    },
+    "OS/fold_2/Transformer": {
+      "learning_rate": 0.001,
+      "epochs": 24,
+      "selection_job": "selection/OS/fold_2/Transformer/lr0",
+      "validation_macro_f1": 0.7875909366282985,
+      "budget_limited": false
+    },
+    "OS/fold_2/Transformer-LSTM": {
+      "learning_rate": 0.001,
+      "epochs": 32,
+      "selection_job": "selection/OS/fold_2/Transformer-LSTM/lr0",
+      "validation_macro_f1": 0.7839471574827745,
+      "budget_limited": false
+    },
+    "OS/fold_3/GRU": {
+      "learning_rate": 0.001,
+      "epochs": 33,
+      "selection_job": "selection/OS/fold_3/GRU/lr0",
+      "validation_macro_f1": 0.8326157691360007,
+      "budget_limited": false
+    },
+    "OS/fold_3/LSTM": {
+      "learning_rate": 0.0003,
+      "epochs": 46,
+      "selection_job": "selection/OS/fold_3/LSTM/lr1",
+      "validation_macro_f1": 0.8373595278669347,
+      "budget_limited": false
+    },
+    "OS/fold_3/Transformer": {
+      "learning_rate": 0.0003,
+      "epochs": 24,
+      "selection_job": "selection/OS/fold_3/Transformer/lr1",
+      "validation_macro_f1": 0.8333676800681866,
+      "budget_limited": false
+    },
+    "OS/fold_3/Transformer-LSTM": {
+      "learning_rate": 0.0003,
+      "epochs": 35,
+      "selection_job": "selection/OS/fold_3/Transformer-LSTM/lr1",
+      "validation_macro_f1": 0.8223822728245648,
+      "budget_limited": false
+    },
+    "OS/fold_4/GRU": {
+      "learning_rate": 0.001,
+      "epochs": 11,
+      "selection_job": "selection/OS/fold_4/GRU/lr0",
+      "validation_macro_f1": 0.8139651820451794,
+      "budget_limited": false
+    },
+    "OS/fold_4/LSTM": {
+      "learning_rate": 0.0003,
+      "epochs": 12,
+      "selection_job": "selection/OS/fold_4/LSTM/lr1",
+      "validation_macro_f1": 0.7882990870790909,
+      "budget_limited": false
+    },
+    "OS/fold_4/Transformer": {
+      "learning_rate": 0.001,
+      "epochs": 18,
+      "selection_job": "selection/OS/fold_4/Transformer/lr0",
+      "validation_macro_f1": 0.8249607104625362,
+      "budget_limited": false
+    },
+    "OS/fold_4/Transformer-LSTM": {
+      "learning_rate": 0.001,
+      "epochs": 17,
+      "selection_job": "selection/OS/fold_4/Transformer-LSTM/lr0",
+      "validation_macro_f1": 0.8068828311242646,
+      "budget_limited": false
+    },
+    "OS/fold_5/GRU": {
+      "learning_rate": 0.001,
+      "epochs": 13,
+      "selection_job": "selection/OS/fold_5/GRU/lr0",
+      "validation_macro_f1": 0.813772895154903,
+      "budget_limited": false
+    },
+    "OS/fold_5/LSTM": {
+      "learning_rate": 0.0003,
+      "epochs": 30,
+      "selection_job": "selection/OS/fold_5/LSTM/lr1",
+      "validation_macro_f1": 0.7931588955986396,
+      "budget_limited": false
+    },
+    "OS/fold_5/Transformer": {
+      "learning_rate": 0.001,
+      "epochs": 13,
+      "selection_job": "selection/OS/fold_5/Transformer/lr0",
+      "validation_macro_f1": 0.8116448710939942,
+      "budget_limited": false
+    },
+    "OS/fold_5/Transformer-LSTM": {
+      "learning_rate": 0.001,
+      "epochs": 17,
+      "selection_job": "selection/OS/fold_5/Transformer-LSTM/lr0",
+      "validation_macro_f1": 0.7922521370502773,
+      "budget_limited": false
+    }
+  },
+  "candidates": [
+    {
+      "job_id": "selection/TS/fold_1/GRU/lr0",
+      "complete_sha256": "10cf184ec5f5e09d0ef21a990806743d0cb2df16a84404fb5fa22faa8529f847"
+    },
+    {
+      "job_id": "selection/TS/fold_1/GRU/lr1",
+      "complete_sha256": "fb906c48bc32007bc815f2b68d541f5d963f2a66659332eafcea8499fcd1946c"
+    },
+    {
+      "job_id": "selection/TS/fold_1/LSTM/lr0",
+      "complete_sha256": "c3a2ba60cf333c75a63e21d9158c02902ba3a2661ff5031d6ed922a8a30da09c"
+    },
+    {
+      "job_id": "selection/TS/fold_1/LSTM/lr1",
+      "complete_sha256": "1e9934e492e07603ca57cf1f4b281d18350c369cc6ea61d4860eae1f07286437"
+    },
+    {
+      "job_id": "selection/TS/fold_1/Transformer/lr0",
+      "complete_sha256": "9c1f85d52aaadca3801ad52ddc87e3c052ae7883fbe09778ac163bbe9bfe3ce0"
+    },
+    {
+      "job_id": "selection/TS/fold_1/Transformer/lr1",
+      "complete_sha256": "08f67abee3b841eb921dd14f923938a01ed37780be1caeab585a984918eded9e"
+    },
+    {
+      "job_id": "selection/TS/fold_1/Transformer-LSTM/lr0",
+      "complete_sha256": "0e1261e8a4be910b59a31de6e865b03e50c9cdddfa42db138a3ac5a099a2717f"
+    },
+    {
+      "job_id": "selection/TS/fold_1/Transformer-LSTM/lr1",
+      "complete_sha256": "a08bf24be8f5da7c9a6ec3f7f924a1b99c89d20a669ca019f2275ad9821c1c14"
+    },
+    {
+      "job_id": "selection/TS/fold_2/GRU/lr0",
+      "complete_sha256": "8b14fc4802d14cf2140df6af6daaed0266ec07d1d5921b413d2c274f3ffff18c"
+    },
+    {
+      "job_id": "selection/TS/fold_2/GRU/lr1",
+      "complete_sha256": "3d81ef5b3701f0f28b48da8bcc1f5bb135f4b0cb2ccd3be91b91baad47d60421"
+    },
+    {
+      "job_id": "selection/TS/fold_2/LSTM/lr0",
+      "complete_sha256": "1479c10d3c2fd3fde5f1b25bdee48ce43162b14a260b141df8aaf81a9d2ff37f"
+    },
+    {
+      "job_id": "selection/TS/fold_2/LSTM/lr1",
+      "complete_sha256": "83f0a03b6eca64d3745a540efd869432a7a47943738209d2d115bd6c65944686"
+    },
+    {
+      "job_id": "selection/TS/fold_2/Transformer/lr0",
+      "complete_sha256": "d3a23c6a2555e24769538b4faf9710c3e9d46b6552c06cdf001f4e9acc2037fe"
+    },
+    {
+      "job_id": "selection/TS/fold_2/Transformer/lr1",
+      "complete_sha256": "5d5ab935b4b117bae7a9d45e5db732d3b39a9c30bafb33c1ed013df7c30d745e"
+    },
+    {
+      "job_id": "selection/TS/fold_2/Transformer-LSTM/lr0",
+      "complete_sha256": "c1ac200d31b5930eeeb793f412da1ddb863cb416c6cef139c9cd2d237eda0b4e"
+    },
+    {
+      "job_id": "selection/TS/fold_2/Transformer-LSTM/lr1",
+      "complete_sha256": "40d9ff46613b072cdbe3b8d35044e7fa25b1eea7b88c41723514856b258e8ce7"
+    },
+    {
+      "job_id": "selection/TS/fold_3/GRU/lr0",
+      "complete_sha256": "d2055daf594ed3e88eef03a6c3447fdfac6ddd8ccf6953a7673e19d90a39e662"
+    },
+    {
+      "job_id": "selection/TS/fold_3/GRU/lr1",
+      "complete_sha256": "f9b4b27e406302480db9acb5ead7883f4531a2ad1f4f9879424e9aa631875382"
+    },
+    {
+      "job_id": "selection/TS/fold_3/LSTM/lr0",
+      "complete_sha256": "1d3e3f77fdb071d7821099f1837404546a88fea64dd96ab62e6e6d3c5e6f6632"
+    },
+    {
+      "job_id": "selection/TS/fold_3/LSTM/lr1",
+      "complete_sha256": "0ac30c0a6be954b37b90e5e1d42f4ae8291cfb5ea6b8d6d60cad736d56254973"
+    },
+    {
+      "job_id": "selection/TS/fold_3/Transformer/lr0",
+      "complete_sha256": "57b4f723dd8bf6042ae5e7c8f10b13f51d1323f4e756d91b24c1bbdd761c2341"
+    },
+    {
+      "job_id": "selection/TS/fold_3/Transformer/lr1",
+      "complete_sha256": "b7f2f526e64536c98d727d863c861e77eaef5af479c34e9a877006b4e3660339"
+    },
+    {
+      "job_id": "selection/TS/fold_3/Transformer-LSTM/lr0",
+      "complete_sha256": "28bb9a5f2f08301184cf39dad3783f213f4db5dfcfb143a47bff357a2ddb4693"
+    },
+    {
+      "job_id": "selection/TS/fold_3/Transformer-LSTM/lr1",
+      "complete_sha256": "13cfb9ac9e6bd788498acbde515678f3e98a898c9ee32f40f4f0ec55661f8013"
+    },
+    {
+      "job_id": "selection/TS/fold_4/GRU/lr0",
+      "complete_sha256": "f8c9a1f82d2622369773fbef099462b4a9df95611d9b20409bef53f21697b0df"
+    },
+    {
+      "job_id": "selection/TS/fold_4/GRU/lr1",
+      "complete_sha256": "6cfa9e6f04a307fc83e0b1d66db7ef1d498aa13afac54793d75d312d510d47f1"
+    },
+    {
+      "job_id": "selection/TS/fold_4/LSTM/lr0",
+      "complete_sha256": "79480bcc23db5072c32e80c1c62e0a8ec5b68f8a8542e23f0e549e99bc2b0c84"
+    },
+    {
+      "job_id": "selection/TS/fold_4/LSTM/lr1",
+      "complete_sha256": "7e18679dccb14c3cdda2524d69879d783e4c82302df205c3ae12ce7e7ba0ba63"
+    },
+    {
+      "job_id": "selection/TS/fold_4/Transformer/lr0",
+      "complete_sha256": "a1727c754186020b3b33dfe0880afa2cb69e0c1122ef1ab2bfb0da9a1e0a87e5"
+    },
+    {
+      "job_id": "selection/TS/fold_4/Transformer/lr1",
+      "complete_sha256": "9809328958b948b67d521f0b72ddaa3d1fa9a997e172d858eedfec571f6af427"
+    },
+    {
+      "job_id": "selection/TS/fold_4/Transformer-LSTM/lr0",
+      "complete_sha256": "be8c23af708d82a53095d436616735a473a5764037ff02ef413d102eca76bdb5"
+    },
+    {
+      "job_id": "selection/TS/fold_4/Transformer-LSTM/lr1",
+      "complete_sha256": "96fcb9d163246daca2611c272fad0e10278427ca8c6c90b95988cfd6848cc031"
+    },
+    {
+      "job_id": "selection/TS/fold_5/GRU/lr0",
+      "complete_sha256": "23a1a357a1ab47884372602cf6e8992d3ecf11ee0298f1c92c2bd3e0b5bdd6a5"
+    },
+    {
+      "job_id": "selection/TS/fold_5/GRU/lr1",
+      "complete_sha256": "ac8dc9df36789d40b93cc4faa35665a8972564665e2188f2c2c682ecb8b184c7"
+    },
+    {
+      "job_id": "selection/TS/fold_5/LSTM/lr0",
+      "complete_sha256": "a9a7f56b9051b60b234b35f88aca3e02a82a1366af8109fc8e5b7f177c04b3cf"
+    },
+    {
+      "job_id": "selection/TS/fold_5/LSTM/lr1",
+      "complete_sha256": "69ba5173e5d50762a0e899e245566fee8a54eb9cc1ca174dbcabeb818afa06a1"
+    },
+    {
+      "job_id": "selection/TS/fold_5/Transformer/lr0",
+      "complete_sha256": "7857fa6735842174b867f6326d77c872f17430d27a487ae49a75ce8740a8075e"
+    },
+    {
+      "job_id": "selection/TS/fold_5/Transformer/lr1",
+      "complete_sha256": "e1bc0f664d6d2f5062814974d09944a2ff910109a2e58c4ef03debc59042079b"
+    },
+    {
+      "job_id": "selection/TS/fold_5/Transformer-LSTM/lr0",
+      "complete_sha256": "9605f9953d940955d4c70312cb82d63d96a1407040a54c2c4749a70e6ec0367e"
+    },
+    {
+      "job_id": "selection/TS/fold_5/Transformer-LSTM/lr1",
+      "complete_sha256": "04f343a07943f7a39084988225b12a83991880889317b39b91b36b2e6191a585"
+    },
+    {
+      "job_id": "selection/OS/fold_1/GRU/lr0",
+      "complete_sha256": "ea6c6fc45125935a463387ee9cf74437964d5bd56b5e94d7652a77cff71e808b"
+    },
+    {
+      "job_id": "selection/OS/fold_1/GRU/lr1",
+      "complete_sha256": "5c2070bc0071c7dcccb9533346b988f5661a19ccbe655dea0861021e429c5adc"
+    },
+    {
+      "job_id": "selection/OS/fold_1/LSTM/lr0",
+      "complete_sha256": "3316973a112cbfa731a5b6afb8aaedc794c1fd93ef3231ad358cc27788c05036"
+    },
+    {
+      "job_id": "selection/OS/fold_1/LSTM/lr1",
+      "complete_sha256": "c7bc683d05a2cc550089307a98b7214756e643d0178b137ef6ebe77c3e2e585d"
+    },
+    {
+      "job_id": "selection/OS/fold_1/Transformer/lr0",
+      "complete_sha256": "e42d980b1142d95dbd45516b609f41b571fc27edb4b46b1c1df6dbd04e7b9d54"
+    },
+    {
+      "job_id": "selection/OS/fold_1/Transformer/lr1",
+      "complete_sha256": "b30f6f7050fb896aec33360071b5ce5165c640b4d2b01211f53950b5434786e3"
+    },
+    {
+      "job_id": "selection/OS/fold_1/Transformer-LSTM/lr0",
+      "complete_sha256": "82cba801d09bb8d0ebb960f467130daef779626e2070d0a184a5a2b2cd442c09"
+    },
+    {
+      "job_id": "selection/OS/fold_1/Transformer-LSTM/lr1",
+      "complete_sha256": "6ff83bdd36ddced88180a57fce1e26a2058426626c2527d093edcfe9ceecdb25"
+    },
+    {
+      "job_id": "selection/OS/fold_2/GRU/lr0",
+      "complete_sha256": "695547d88f18baad935fa80a83c573af370a8b9e710e3951d85279bb04906915"
+    },
+    {
+      "job_id": "selection/OS/fold_2/GRU/lr1",
+      "complete_sha256": "9c329c51fc33631cce0b22ab4bb4e235bfef22f650942e739a8b7924fb77059b"
+    },
+    {
+      "job_id": "selection/OS/fold_2/LSTM/lr0",
+      "complete_sha256": "cf6b3df7186bd5696e9344d75e3e019a7acc47e4a14f6669693f431f90108cac"
+    },
+    {
+      "job_id": "selection/OS/fold_2/LSTM/lr1",
+      "complete_sha256": "ab99f282ed9ae9c0606c8b6ae708d4791affbcecb6f09bb753ae7602b5d3182a"
+    },
+    {
+      "job_id": "selection/OS/fold_2/Transformer/lr0",
+      "complete_sha256": "e21f5992056034ed7b715dafe4ec189b675d2531314b09d01b6241d7e2c7c2b6"
+    },
+    {
+      "job_id": "selection/OS/fold_2/Transformer/lr1",
+      "complete_sha256": "4e9ec70bb2707c6e4345cc2f233ad9a19c4e14476ace5876a124e7d52cf82608"
+    },
+    {
+      "job_id": "selection/OS/fold_2/Transformer-LSTM/lr0",
+      "complete_sha256": "3f4f5ea8555dffb669c43495e746c8c3f838409c7675592c7b5b3c882daa6e9e"
+    },
+    {
+      "job_id": "selection/OS/fold_2/Transformer-LSTM/lr1",
+      "complete_sha256": "e6c041b6360a563412c508a43819348f4b6464a60667242251b63362f5f71cca"
+    },
+    {
+      "job_id": "selection/OS/fold_3/GRU/lr0",
+      "complete_sha256": "4de2cb983daa44facab40b6c87e9f002dece5d9dd4eb8f555b40486a87729470"
+    },
+    {
+      "job_id": "selection/OS/fold_3/GRU/lr1",
+      "complete_sha256": "32aaa671b306d7e09564623473419df5ee70ea106bddc480a96abab09930b839"
+    },
+    {
+      "job_id": "selection/OS/fold_3/LSTM/lr0",
+      "complete_sha256": "1b834a9187c3152ccbc8efa50e2ac33e30a72423629a296da34b0fdbc3e4c1b5"
+    },
+    {
+      "job_id": "selection/OS/fold_3/LSTM/lr1",
+      "complete_sha256": "667094b1cddd85515a9ebdac0b8f2985b7673aeb43001df76409047f72f5a862"
+    },
+    {
+      "job_id": "selection/OS/fold_3/Transformer/lr0",
+      "complete_sha256": "d69f819201c650279d81118266df1a7d07a9710ef08d6985f251c27d78bfe2ad"
+    },
+    {
+      "job_id": "selection/OS/fold_3/Transformer/lr1",
+      "complete_sha256": "ebe256d2f107b9df855093d1a4e7ae94bb34bc3288f5c92896f55b04336add1a"
+    },
+    {
+      "job_id": "selection/OS/fold_3/Transformer-LSTM/lr0",
+      "complete_sha256": "cb36cd21572138ad9931d675f57aab463050c1d8f6f16dbd0b5aed8054015b9b"
+    },
+    {
+      "job_id": "selection/OS/fold_3/Transformer-LSTM/lr1",
+      "complete_sha256": "e9a0489c654cd8f775ee22851e79d7ee4b519da1870c6e5e282be3d815c4bb61"
+    },
+    {
+      "job_id": "selection/OS/fold_4/GRU/lr0",
+      "complete_sha256": "b3cc892c9c96a217c4f9444aa9643eeb1430740c38ecc66fe15b1250f5563105"
+    },
+    {
+      "job_id": "selection/OS/fold_4/GRU/lr1",
+      "complete_sha256": "cae1c4fe8a3da600cf52f5f4ad57ba414dbd1461904d62dc7cbd8236135a0e0d"
+    },
+    {
+      "job_id": "selection/OS/fold_4/LSTM/lr0",
+      "complete_sha256": "626f77a6e6e4e10d660e43f202a48169b03e22599476bdbf6d1e2b0be50c4475"
+    },
+    {
+      "job_id": "selection/OS/fold_4/LSTM/lr1",
+      "complete_sha256": "8fa023385268248c1b54870bdf7bf3a47c6cd514809ecca2377183a4d5019829"
+    },
+    {
+      "job_id": "selection/OS/fold_4/Transformer/lr0",
+      "complete_sha256": "424cde122392edb04ae122b9850b7628b8881fac43ee514227d4b5e1deb2340b"
+    },
+    {
+      "job_id": "selection/OS/fold_4/Transformer/lr1",
+      "complete_sha256": "82e8c5b174dab70c4f36d56ab67c231e81a39c7a97e94cc0a4575bfd18660a89"
+    },
+    {
+      "job_id": "selection/OS/fold_4/Transformer-LSTM/lr0",
+      "complete_sha256": "062c36a6be237f3625f067b13314cc55b140d5ea0c425172979ddb07f8e74748"
+    },
+    {
+      "job_id": "selection/OS/fold_4/Transformer-LSTM/lr1",
+      "complete_sha256": "d3896b05d75e2fef207896589aec63d1afaae4f8e3aa6a2f3cc37fdf2fa3edd9"
+    },
+    {
+      "job_id": "selection/OS/fold_5/GRU/lr0",
+      "complete_sha256": "5f174a1ad186ef58aac1b08266704e4cb18273ed94a440a5778d54f405eea8af"
+    },
+    {
+      "job_id": "selection/OS/fold_5/GRU/lr1",
+      "complete_sha256": "92ffe360cd0d5dd8666fd8bc9ec51cb7e1f4b721c29c21dc49de86b999d3e5fb"
+    },
+    {
+      "job_id": "selection/OS/fold_5/LSTM/lr0",
+      "complete_sha256": "3cf4ad29821ffb0f914f6a1c0ee4db40f6c1651947dd810c720e881848c44ddd"
+    },
+    {
+      "job_id": "selection/OS/fold_5/LSTM/lr1",
+      "complete_sha256": "fe788a9837be7f6ae549f7559909e569ffcd6abb3fa97fc7f9a8e8bac34b5220"
+    },
+    {
+      "job_id": "selection/OS/fold_5/Transformer/lr0",
+      "complete_sha256": "4ef25220957a4499dd162f6bbb7d958e582e102e2ca5fb326e0003f32ffe9087"
+    },
+    {
+      "job_id": "selection/OS/fold_5/Transformer/lr1",
+      "complete_sha256": "780f298ec1c47a8285a84b17a2ed515eaa8cb9f1280a3dc29afe0a3feb8460d8"
+    },
+    {
+      "job_id": "selection/OS/fold_5/Transformer-LSTM/lr0",
+      "complete_sha256": "03fb50c693d3d610d8f1e418724c2bce54bcf2932543123a738d9cda18cc86e5"
+    },
+    {
+      "job_id": "selection/OS/fold_5/Transformer-LSTM/lr1",
+      "complete_sha256": "c933cd8a1dacf47935492564bfeed530e38d1f46caaa8aacfdf23b7929fb4539"
+    }
+  ],
+  "selection_jobs": 80,
+  "formal_jobs": 120,
+  "new_Test_predictions_before_lock": 0,
+  "historical_Test_exposure": true,
+  "created_UTC": "2026-10-11T19:13:20Z"
+}

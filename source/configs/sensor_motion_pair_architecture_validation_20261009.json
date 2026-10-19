@@ -1,0 +1,65 @@
+{
+  "stage": "development_matched_ablations_for_selected_E_GRU_SQRT_plus_MotionPair",
+  "status": "implemented_pending_fresh_code_review_and_cloud_preflight",
+  "mainline_configuration": "configs/sensor_gru_motionpair_mainline_20261009.json",
+  "reviewer_plan": "refine-logs/sensor_motion_pair_architecture_20261009/REVIEWER_ABLATION_PLAN.md",
+  "execution_enabled": true,
+  "runner_implemented": true,
+  "runner": "scripts/sensor_motion_architecture.py",
+  "linear_180_seconds_policy": "optimization_entry_and_post_step_and_final_comparison_eligibility_deadline_not_a_separate_process_hard_kill_all_work_counts_in_main_7200s_hard_timeout",
+  "preflight_raw_source_scope": "isolated_TRAIN_VAL_cache_revalidated_existing_independent_full_raw_source_proof_inherited_full_day_raw_and_formal_Test_targets_not_reopened",
+  "preflight_output": "reports/sensor_motion_pair_architecture_preflight_20261009",
+  "output": "reports/sensor_motion_pair_architecture_20261009",
+  "parent_configuration": "configs/sensor_clean_preservation_v2_20261007.json",
+  "cache": "data/sensor_clean_preservation_v2_20261007",
+  "protocols": ["TS", "OS"],
+  "folds": ["fold_1"],
+  "seeds": [17,23,29],
+  "fit": "TRAIN_only",
+  "evaluation": "VAL_only_exposed_development",
+  "TEST_scoring": false,
+  "automatic_formal_refit": false,
+  "architecture_changed_by_best_VAL": false,
+  "base_training": {"epochs":20,"batch_size":256,"learning_rate":0.001,"weight_decay":0.01,"optimizer":"AdamW","dropout_seed_offset":100000,"selection":"fixed_final_epoch","augmentation":"none","scheduler":"none","same_P0_initial_state_and_order":true},
+  "refiner_training": {"epochs":20,"batch_size":256,"learning_rate":0.001,"weight_decay":0.01,"optimizer":"AdamW","branch_seed_offset":600000,"selection":"fixed_final_epoch","Base_frozen_eval":true,"last_layer_zero":true},
+  "reused_if_identity_passes": {
+    "Base": {"path":"reports/sensor_clean_preservation_v2_20261007/{protocol}/P0_seed{seed}","maximum_cases":6},
+    "refiners": {"path":"reports/sensor_motion_pair_attempt2_20261009/{protocol}/{arm}_seed{seed}","arms":["BiasPair","ContextPair","NoMotionPair","MotionPair"],"maximum_cases":24},
+    "identity_mismatch_policy":"stop_reuse_comparison_do_not_silently_retrain_or_expand_budget"
+  },
+  "new_base_arms": [
+    {"name":"RecurrentOnly","fusion_mask":"current26_zero_in_training_and_inference","weight":"sqrt","nominal_head_input":218,"GRU_still_reads_endpoint":true},
+    {"name":"CurrentOnly","fusion_mask":"recurrent192_zero_in_training_and_inference","weight":"sqrt","nominal_head_input":218,"inactive_parameters_and_gradients_reported":true},
+    {"name":"FullUniform","fusion_mask":"none","weight":"uniform"},
+    {"name":"FullBalanced","fusion_mask":"none","weight":"balanced"}
+  ],
+  "new_neural_refiner_arms": [
+    {"name":"R7Fine","Base":"reused_Base","head":[227,24,7],"anchor":"base_logits7","supervision":"original7_CE_sqrt","decoders":["global7","pair_projected7","pair_projected_coarse3"]},
+    {"name":"R7Coarse","Base":"reused_Base","head":[227,24,7],"anchor":"base_logits7","same_initial_state_as":"R7Fine","supervision":"coarse3_CE_after_group_logsumexp_original7_sqrt_row_weights","decoders":["global7","pair_projected7","pair_projected_coarse3"]},
+    {"name":"GridIntervalPair","Base":"reused_Base","head":[227,24,3],"motion_change":"same_last_two_native_positions_use_first_appearance_grid_delta_as_denominator_keep_native_quality4","conditional_no_op_check":true},
+    {"name":"RecurrentOnlyMotion","Base":"new_RecurrentOnly","head":[227,24,3],"fusion_mask":"current26_zero_in_Base_head_and_refiner_context","motion9":"unchanged_native"}
+  ],
+  "simple_controls": [
+    {"name":"LinearPair","Base":"reused_Base","input":227,"output":3,"anchor":"base_coarse_logits3","new_parameters":684,"supervision":"coarse3_original7_sqrt_row_weights","decoder":"pair_projected_coarse3","optimizer":"full_batch_LBFGS","max_iter":500,"max_eval":1000,"gradient_inf_tolerance":1e-7,"L2_W_coefficient":0.01,"bias_penalized":false,"start":"zero","maximum_seconds_per_fit":180,"nonconvergence":"comparison_inconclusive_no_automatic_extension"},
+    {"name":"SpeedThresholdPair","Base":"reused_Base","input":"raw_horizontal_native_speed_and_valid_pair","threshold_fit":"TRAIN_all_unique_speed_midpoints_plus_constant_endpoints_maximize_original7_macro","ties":"min_changed_rows_then_min_threshold","invalid_pair":"preserve_Base","decoder":"only_Base_walk_stand_may_change","VAL_threshold_search":false}
+  ],
+  "GridInterval_no_op": {"check":"TRAIN_and_VAL_features_without_VAL_labels_after_each_TRAIN_only_scaler","includes":"constant_factor_removed_by_scaler","atol":1e-6,"rtol":1e-6,"outcome":"write_not_applicable_receipt_skip_6_fits_and_120_epochs_do_not_invent_weaker_replacement"},
+  "parameter_disclosure": {"Base_nominal":86695,"MotionPair_new":5547,"R7_new":5647,"R7_vs_Motion_difference":100,"masked_arms":"report_active_and_inactive_capacity_no_equal_efficiency_claim"},
+  "matrix_limits": {"new_Base_neural_fits":24,"new_refiner_neural_fits":24,"new_linear_optimization_fits":6,"new_threshold_fits":6,"maximum_total_new_fits":60,"maximum_neural_epochs":960,"maximum_reused_cases":30,"Grid_no_op_total_new_fits":54,"Grid_no_op_neural_epochs":840,"technical_sanity_optimizer_steps":"separate_ledger"},
+  "optional_arms_not_in_current_matrix": ["OLS1HzMotion","DirectCoarseHeadWithoutBaseAnchor","CurrentOnlyMotion","FixedShallowTree"],
+  "resources": {"environment":"bitahub-root_existing_RTX4090_Torch2.4.1_cu121","local_scientific_execution":false,"planned_preflight_budget_seconds":300,"planned_main_budget_seconds":7200,"planned_independent_audit_budget_seconds":600,"main_budget_starts_once_including_imports_and_sanity":true,"each_compute_family_first_fit_prefix_pilot":true,"pilot_selection_by_VAL":false,"budget_failure":"preserve_partial_and_remaining_ledger_do_not_reduce_epochs_or_reset_budget","estimated_hours_are_not_measurements":true},
+  "aggregation": "protocol_three_seed_equal_mean_fixed_seven_class_macro_not_pooled_CM",
+  "interval": {"block_seconds":300,"replicates":2000,"seed":20261007,"paired_blocks_shared_across_methods_and_seeds":true,"claim_scope":"conditional_fixed_models_and_VAL_rows","multiple_comparisons":"predeclared_descriptive_intervals_not_familywise_significance"},
+  "claim_validation": {
+    "branch_complementarity":"FullBase_exceeds_both_RecurrentOnly_and_CurrentOnly_in_each_protocol_positive_mean_CI_lower_and_at_least_2_of_3_seeds",
+    "sqrt_contribution":"judge_vs_uniform_and_balanced_separately_do_not_assume_success",
+    "nonlinearity_necessity":"Motion_vs_converged_Linear_and_SpeedThreshold_not_automatically_supported_by_non_significance",
+    "protection_causal":"same_R7Fine_checkpoint_global7_vs_pair7_report_macro_and_each_class_tradeoff",
+    "coarse_supervision_causal":"R7Coarse_vs_R7Fine_same_pair3_decoder_equal_structure_initialization",
+    "parameterization":"Motion3_vs_R7Coarse7_disclose_100_parameter_difference",
+    "time_definition":"Motion_vs_non_no_op_Grid_as_defined_not_a_general_1Hz_superiority_claim",
+    "interaction":"(Motion_minus_FullBase)_minus_(RecurrentOnlyMotion_minus_RecurrentOnly)_not_assumed_positive"
+  },
+  "original_registered_1pp_gate": "unchanged_NOT_CONFIRMED",
+  "novelty_status": "full_prior_art_mapping_pending_results_do_not_alone_prove_originality"
+}

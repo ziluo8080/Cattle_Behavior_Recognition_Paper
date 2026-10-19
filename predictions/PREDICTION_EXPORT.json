@@ -1,0 +1,2693 @@
+{
+  "source": "saved predictions, no new model execution",
+  "bundles": [
+    {
+      "file": "main_TS.npz",
+      "sha256": "6e126878c9f162c855a79a3d64d2f5e0243d2ffdeb71220b300748a4b6ce9070",
+      "bytes": 140264,
+      "models": 11,
+      "model_seed_rows": 31,
+      "folds": 5,
+      "targets": 46821
+    },
+    {
+      "file": "main_OS.npz",
+      "sha256": "d54fae4ba4f0995fd49b0bf6963e91e9bddcf5a54427533fc9abb91d1bbc720b",
+      "bytes": 200199,
+      "models": 11,
+      "model_seed_rows": 31,
+      "folds": 5,
+      "targets": 46821
+    },
+    {
+      "file": "fixed20_TS.npz",
+      "sha256": "3e7000379a980fe6f662bfe72944ff30bba1ff47bb2aaa2b14cd7fb41e44382b",
+      "bytes": 118346,
+      "model_seed_rows": 24,
+      "targets": 46821,
+      "fixed20_case_CMs_verified": true
+    },
+    {
+      "file": "fixed20_OS.npz",
+      "sha256": "bcbdfb30d2b686ac928482e1c62a1e3641580eea57ce50e6028a9acbedc7c3bb",
+      "bytes": 179087,
+      "model_seed_rows": 24,
+      "targets": 46821,
+      "fixed20_case_CMs_verified": true
+    }
+  ],
+  "original_files": {
+    "reports/sensor_classic_with_original_rf_20261014_attempt2/reused_original_RF/TS/fold_1/seed42/predictions.csv": {
+      "sha256": "cd467e3134ab6de1a6093a8223f2172039d0ac662278e089e3f3ca3ad7b7802f",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_1/GRU/seed17/predictions.csv": {
+      "sha256": "4c1c00eadf6ae8bc7b2d9dadf55cf4e7d77e24833bd1f3dcda7cfcec0b0b6231",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_1/GRU/seed23/predictions.csv": {
+      "sha256": "2151422a8c8fd17119e67eb2ddb6884f1b883567cbdf8d9f6b13c72d3ea94f9a",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_1/GRU/seed29/predictions.csv": {
+      "sha256": "2ffd0e3764d1b6778a1c335cd489df853b3a8e47b97566f63f358cd2946d10dc",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_1/CurrentRepeat-GRU-VAL/seed17/predictions.csv": {
+      "sha256": "299d01812899af7cae6bc48f87ce12ae2115077005dc1c8699ce3b1f42c13fa3",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_1/CurrentRepeat-GRU-VAL/seed23/predictions.csv": {
+      "sha256": "9e9a7cf72d94cfe73f3abb64a23a11a832895fef970f32b95178d8f82fed525d",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_1/CurrentRepeat-GRU-VAL/seed29/predictions.csv": {
+      "sha256": "e0d5b1eb3645223c45034f6cc6477e1270c176dc5f03107785fe468eb58a360a",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_1/Stats-RF-Window/seed17/predictions.csv": {
+      "sha256": "9ce2e286646606b439b7dc781e08304bf12621b42818f821c973d04a9e4e7005",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_1/Stats-RF-Window/seed23/predictions.csv": {
+      "sha256": "a6afaac7d8dd9801b3f0579f42667f8e59f5d0a43325666bd32289c0b6da3c06",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_1/Stats-RF-Window/seed29/predictions.csv": {
+      "sha256": "1f687190757cc808421b2dd19a4feeb6403a01138b0a2a7a909efcc8b79ac198",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_1/Stats-RF-CurrentOnly/seed17/predictions.csv": {
+      "sha256": "6a78fada92a412e9b7f1a6308b33029ca9c0d5b8bfa2da3fe319991c99c96588",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_1/Stats-RF-CurrentOnly/seed23/predictions.csv": {
+      "sha256": "001d9d7790cdd4545469d466b1a655a5316b4dc9374c0579ed3d3ff7ae1d1419",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_1/Stats-RF-CurrentOnly/seed29/predictions.csv": {
+      "sha256": "c94bf3e69cff99a162cd591deed877b3c95fce60509c9e0ac9758006013a12ac",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_1/MiniRocket-Window/seed17/predictions.csv": {
+      "sha256": "35fa4bdba7b5157a8aacb0832147f756117530a5d00466ad739362334f45e624",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_1/MiniRocket-Window/seed23/predictions.csv": {
+      "sha256": "194d06ddf39b96001a86ceddc4c89e0f2aa8511f512bf0eaec44c8c69ce3cf6f",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_1/MiniRocket-Window/seed29/predictions.csv": {
+      "sha256": "803a42620c6281e5a18581773237b93222c9523e2b71284686d8a80b2e4781e9",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_1/LSTM/seed17/predictions.csv": {
+      "sha256": "62a4a6dd4e898d12cdb2e9841784bb8dc4c9078f4f4d208c81a0cb59abeb0872",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_1/LSTM/seed23/predictions.csv": {
+      "sha256": "40f47aefd1405a7933a3104b4e57e09c3f8666bcd2f60adf9ea86ad71e29d5ec",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_1/LSTM/seed29/predictions.csv": {
+      "sha256": "607311eb8347f52f00757eccdf003de906bfd627d94552482483a9fd7e442b73",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_1/Transformer/seed17/predictions.csv": {
+      "sha256": "f1df013d72c6cdcdca7041a1edebb594af376a60af4c19da1fd74f8c2f83467e",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_1/Transformer/seed23/predictions.csv": {
+      "sha256": "ad14cec975d49dad71b9610333c950c1ddc7742466612999e381a81219773434",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_1/Transformer/seed29/predictions.csv": {
+      "sha256": "08e15158d184ad7b8875e7864268ddf95bce5df4781cfb7a2d8c0de32abdc192",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_1/Transformer-LSTM/seed17/predictions.csv": {
+      "sha256": "4e4af8d36e251addbe36db1d6af4a31ba01d8e18441530c9c04a490c386fecfa",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_1/Transformer-LSTM/seed23/predictions.csv": {
+      "sha256": "1e5d8432a147934195aaca3851ece8b31b07e1819b05ab659d9b8817283fe5f5",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_1/Transformer-LSTM/seed29/predictions.csv": {
+      "sha256": "f3d9bc9892d88a697ee90fa5e2bcbe2cef546ec000738504fbdfbfef46fdf34d",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_1/XGBoost-Window/seed17/predictions.csv": {
+      "sha256": "888ed151348d9ef0ce88c49e9b156095cbfa7519d61cc118a749e4e5165d6ef5",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_1/XGBoost-Window/seed23/predictions.csv": {
+      "sha256": "888ed151348d9ef0ce88c49e9b156095cbfa7519d61cc118a749e4e5165d6ef5",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_1/XGBoost-Window/seed29/predictions.csv": {
+      "sha256": "888ed151348d9ef0ce88c49e9b156095cbfa7519d61cc118a749e4e5165d6ef5",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_1/TCN-Window-VAL/seed17/predictions.csv": {
+      "sha256": "82a9f8850c08d57a56191a1253c123812aa582f1e504bfa099b066130cdf2b9d",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_1/TCN-Window-VAL/seed23/predictions.csv": {
+      "sha256": "7e35ac0bfaf5ed9b280b6b61c980b3bebbd7debf8e8d329bb6bd818224c98456",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_1/TCN-Window-VAL/seed29/predictions.csv": {
+      "sha256": "791ef79b2775c25555a732a47e10b74ec5ef3849e0450377bafe952f63899087",
+      "bytes": 154387,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_with_original_rf_20261014_attempt2/reused_original_RF/TS/fold_2/seed42/predictions.csv": {
+      "sha256": "8e3390ac5c6a9f3962a89b577fec6c7a77507d6a3529601e59accc27393d4f98",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_2/GRU/seed17/predictions.csv": {
+      "sha256": "c51d2085821c2970a39169639764dce7c54b428cdf6f55b399608c3741fec37e",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_2/GRU/seed23/predictions.csv": {
+      "sha256": "9d991dac6e905343f9b73882299e3c58e83e6214a8ca627212efafe58c3a88c2",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_2/GRU/seed29/predictions.csv": {
+      "sha256": "cb03528cd50509443acc70e7dd922696e44faa19a35a7fd533b1568d1bd7c9ce",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_2/CurrentRepeat-GRU-VAL/seed17/predictions.csv": {
+      "sha256": "17d10b10cba9b6d47e62ab618543ff110294d37fd6f7756e6a0050852d275c5f",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_2/CurrentRepeat-GRU-VAL/seed23/predictions.csv": {
+      "sha256": "1acaffd4bbf9d6fc9420b67a09376f067d11634f54a420e62d9a689de3e8760e",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_2/CurrentRepeat-GRU-VAL/seed29/predictions.csv": {
+      "sha256": "f40b16eccc13d506b13ee62f16f6e62bff6555dbce77a0c94c6a0b8b5c53ac7e",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_2/Stats-RF-Window/seed17/predictions.csv": {
+      "sha256": "335b46dcbf3240362336e1df2a7a75333709e6d6a00a7f92e2d740118de356e7",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_2/Stats-RF-Window/seed23/predictions.csv": {
+      "sha256": "187544fc8c73e8786d9c63ef3bcfd6bee3a89a2153cea9b6493c0e69f6494b0f",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_2/Stats-RF-Window/seed29/predictions.csv": {
+      "sha256": "caab562646566f353d8e5889b3edde6104617d2ed1d40578e510ead25daab674",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_2/Stats-RF-CurrentOnly/seed17/predictions.csv": {
+      "sha256": "582246c6e44600a08d8af348fa20f37689c655c127e79fca4b29d89f4b5388dc",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_2/Stats-RF-CurrentOnly/seed23/predictions.csv": {
+      "sha256": "fee7dfcf20c0e82581107871a601a2a4e4e4fa03fb85cf062347e03f352b6326",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_2/Stats-RF-CurrentOnly/seed29/predictions.csv": {
+      "sha256": "ca3e63d8176ba700af3b916c25e0f6a2c75ca8ad70e9aa36cf2fb751d16b4a90",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_2/MiniRocket-Window/seed17/predictions.csv": {
+      "sha256": "dd34cd53c4bef311a74e15bacb9bf52d842dc880365a4aa42a777144a6e9bb37",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_2/MiniRocket-Window/seed23/predictions.csv": {
+      "sha256": "824d635d15da16c23e8f6bbf8528e1a6551e9424e49cd9a4b77437f2cb28a146",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_2/MiniRocket-Window/seed29/predictions.csv": {
+      "sha256": "cea3f7af76f16dae42369dba7418e99b5d35eeb3268fb277cf65a0122ba1dfa9",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_2/LSTM/seed17/predictions.csv": {
+      "sha256": "0e8985b66d50e16f2ca25538ddaa1be2a8a3306e4bdad2efab255cd13b47e52a",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_2/LSTM/seed23/predictions.csv": {
+      "sha256": "6bb0d47c604d03615a888da956dc2ee1aeb3b50d430b0eb7786884d0f469324f",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_2/LSTM/seed29/predictions.csv": {
+      "sha256": "bdba851f31a3055711af69a141c57524fa8f2c7a1d783af9ae3297ca5419f547",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_2/Transformer/seed17/predictions.csv": {
+      "sha256": "651e8cc3136411e3e726f9bc3d156e39a9fbe09c07f362519ad18f8c18a3cc54",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_2/Transformer/seed23/predictions.csv": {
+      "sha256": "e0dfafe66ed259322e1723c14d59c0cb0f1803831365b26edfd686e57fb9c964",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_2/Transformer/seed29/predictions.csv": {
+      "sha256": "b1e7a5c6b6ad6d64562b63b811cbeb4b4e0e4bf2ffd53af38df22895d7816ab7",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_2/Transformer-LSTM/seed17/predictions.csv": {
+      "sha256": "a1018e949aa24911c709a1144bd97e77dec15399bb874a28d560bad1a7f326b6",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_2/Transformer-LSTM/seed23/predictions.csv": {
+      "sha256": "539baf1678b35cead8caddc87336d5428ad823bb0183889cc7201fbe88ee2fd6",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_2/Transformer-LSTM/seed29/predictions.csv": {
+      "sha256": "4e88a5d8da8e030af34e611eab562a15afaef6bb1e6a795611dc6f1cc8fb3b7e",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_2/XGBoost-Window/seed17/predictions.csv": {
+      "sha256": "a32337b110b3a8a3ff9b032ee34e94ac0b126eda41bc419910340707571577b7",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_2/XGBoost-Window/seed23/predictions.csv": {
+      "sha256": "a32337b110b3a8a3ff9b032ee34e94ac0b126eda41bc419910340707571577b7",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_2/XGBoost-Window/seed29/predictions.csv": {
+      "sha256": "a32337b110b3a8a3ff9b032ee34e94ac0b126eda41bc419910340707571577b7",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_2/TCN-Window-VAL/seed17/predictions.csv": {
+      "sha256": "8b1b1b6f05f93fcf3c3a5aaad2539e1b091a71932fea89761268a719d206ee21",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_2/TCN-Window-VAL/seed23/predictions.csv": {
+      "sha256": "e21ddc7f0f57115040a285e3f4ede1b94be8f1d4daec3e6a663a81d951613a8a",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_2/TCN-Window-VAL/seed29/predictions.csv": {
+      "sha256": "c863a44d4aafb383dc3545a815afd8e2a184b2c62a7289a74cff38100d8c42dd",
+      "bytes": 158679,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_with_original_rf_20261014_attempt2/reused_original_RF/TS/fold_3/seed42/predictions.csv": {
+      "sha256": "133a198f9cf4604b1d6dff31513ada2af134de0e252c45d978de827d29182ea7",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_3/GRU/seed17/predictions.csv": {
+      "sha256": "8058b046103253585db8027485f082272d745fa329e8504db1b7230620c846dd",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_3/GRU/seed23/predictions.csv": {
+      "sha256": "540332ebba925918964e0421140a92576e3aa762c7b34bfff69b6b396e6ce20b",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_3/GRU/seed29/predictions.csv": {
+      "sha256": "b4f8ac73e7adcec61c4a523a5f5f79f9332eabe4aeecfb176bbefb5b61b670d4",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_3/CurrentRepeat-GRU-VAL/seed17/predictions.csv": {
+      "sha256": "74e346b8fdbf4b4c858abc7d692eaa1b40981dcf9b1a2ca0c976f3e57b70d0f9",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_3/CurrentRepeat-GRU-VAL/seed23/predictions.csv": {
+      "sha256": "5df69c2f02fe0c50876842a9ad94a2ec444bd687e38dac269cc6d4bda8d71380",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_3/CurrentRepeat-GRU-VAL/seed29/predictions.csv": {
+      "sha256": "4e46ebbbe1b4a2a6c7d405b96c29d0706acabc4a39faa7edafa52e1c82c2681a",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_3/Stats-RF-Window/seed17/predictions.csv": {
+      "sha256": "2c42368f1e8a10a28705f0c7077560095ec34161107f8289bc8ad2e13eb6eced",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_3/Stats-RF-Window/seed23/predictions.csv": {
+      "sha256": "9cbca431dbda890f653c1c14d1c837c11c924eeabaf5a2fee4d984d938c2f023",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_3/Stats-RF-Window/seed29/predictions.csv": {
+      "sha256": "2bea5e84189e6599cf9c648cbe5961bfec01d47ac4989e468537a601dd052385",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_3/Stats-RF-CurrentOnly/seed17/predictions.csv": {
+      "sha256": "6d65a76a4128b2fe22d413ef1c723eb0b7bbbd4ebfbe519c0bf6573f3cd0f852",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_3/Stats-RF-CurrentOnly/seed23/predictions.csv": {
+      "sha256": "b67b4f3267604547cba12f8dabc80d3da5cf3cf5909ab6d7fa76e886ab887a8f",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_3/Stats-RF-CurrentOnly/seed29/predictions.csv": {
+      "sha256": "1260a9f9fda4f665518e5e9db39f92e78567ca4c2eaf84edf721e86bf62a4cbd",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_3/MiniRocket-Window/seed17/predictions.csv": {
+      "sha256": "d3bb19282cc91b3ff536a7170a48eb095f4f7b760fac4db9bfc10cf575f938ac",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_3/MiniRocket-Window/seed23/predictions.csv": {
+      "sha256": "e932262ba696f8868487ebb0d5d3d1ab59e56b83183da3fe5a0f4809c011fb94",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_3/MiniRocket-Window/seed29/predictions.csv": {
+      "sha256": "2701e7067cbfe1d5e88a687eac84e763daee6313b91f1358cad6227c95e00563",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_3/LSTM/seed17/predictions.csv": {
+      "sha256": "f296a8cc3cbe0cc49590504feaee1fc9c4eb0772d7b1227d769f926c3bc2ab79",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_3/LSTM/seed23/predictions.csv": {
+      "sha256": "7f982599bb4a785959d65aa0a9b545a8caf0f25b84fd962165f3f2dff05d0fd1",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_3/LSTM/seed29/predictions.csv": {
+      "sha256": "3ae0e4afd7c6782f8da622ba77b38921705158b6029216573d0a74dab2c453e3",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_3/Transformer/seed17/predictions.csv": {
+      "sha256": "55d9344dea84f6305010d3aeaeb5d3664cf1fab118a2e2db4a9f515368a79f4e",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_3/Transformer/seed23/predictions.csv": {
+      "sha256": "548a353469da2e305a140295252b4ab912d84ff6b0a4e9eafa088ffcd441a420",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_3/Transformer/seed29/predictions.csv": {
+      "sha256": "b55049fc359a35ab159b0fddc8b78fc6e58f7374a51b0f9f1b870f1b7a87da0f",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_3/Transformer-LSTM/seed17/predictions.csv": {
+      "sha256": "ce366d9bb899adbd2f566f966eca39781cfe13d76d85cce774cdf10c20ce2c1f",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_3/Transformer-LSTM/seed23/predictions.csv": {
+      "sha256": "ab43c6d8445c3f7e09701d2f900d417d7581d182286269275190ce1a3ed3eb47",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_3/Transformer-LSTM/seed29/predictions.csv": {
+      "sha256": "48f4ee4593f14f73f4b7da0eeb7a70b5a53fe6e4a21ccc54da9649e629a729f6",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_3/XGBoost-Window/seed17/predictions.csv": {
+      "sha256": "d43f8fcb3f7679773375ea399bc796ac28498a801697189d507c602b35ae7783",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_3/XGBoost-Window/seed23/predictions.csv": {
+      "sha256": "d43f8fcb3f7679773375ea399bc796ac28498a801697189d507c602b35ae7783",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_3/XGBoost-Window/seed29/predictions.csv": {
+      "sha256": "d43f8fcb3f7679773375ea399bc796ac28498a801697189d507c602b35ae7783",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_3/TCN-Window-VAL/seed17/predictions.csv": {
+      "sha256": "3426f1ae7bd9e96cf008ec264845f95a605bf935cad64a91a34b56ac7a91e24f",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_3/TCN-Window-VAL/seed23/predictions.csv": {
+      "sha256": "b49d00a81185236736b3f93b82702ff562fdd6655597148e43941bda266ca1d3",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_3/TCN-Window-VAL/seed29/predictions.csv": {
+      "sha256": "5b7de0ff84f400e3ad8807b7ae029113ec81ec455ca528e601a7d51cd5ec3c62",
+      "bytes": 134451,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_with_original_rf_20261014_attempt2/reused_original_RF/TS/fold_4/seed42/predictions.csv": {
+      "sha256": "2811ec855fe7931ec79cc3d7c3199fe19a92291f84674773c7fb8a6fae156b77",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_4/GRU/seed17/predictions.csv": {
+      "sha256": "182289f59253eadd3e0a03af4ca86a98b6a128dfb1578d92c48c92d326ead6ca",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_4/GRU/seed23/predictions.csv": {
+      "sha256": "d415f737c8386f97438d62c6a5ce585b9785f02d313b69fe23ba9fb89d25ad7b",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_4/GRU/seed29/predictions.csv": {
+      "sha256": "20f2aaf8727a5c0b1be93819ae1199e0dbf58b8e19a158741a36cb684fc1ad58",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_4/CurrentRepeat-GRU-VAL/seed17/predictions.csv": {
+      "sha256": "da76e17e412a3ff1b4cd4de4461350bfe17734b4cefdd571271232b159c4da1c",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_4/CurrentRepeat-GRU-VAL/seed23/predictions.csv": {
+      "sha256": "539d2f88a164f0783b394ec934a9c9f7ca2eeb27d64a54ce888008e88397dc82",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_4/CurrentRepeat-GRU-VAL/seed29/predictions.csv": {
+      "sha256": "444aafef904ea3f3a570cb56713fe759268393acab2ef11cf2c668ec2fdf10e9",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_4/Stats-RF-Window/seed17/predictions.csv": {
+      "sha256": "98b543b909f4cf2b3f7581525835d1a184226be07eef36a30c80f49346692409",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_4/Stats-RF-Window/seed23/predictions.csv": {
+      "sha256": "d7ff3ac0f3c96a2bd596cacd8ffb3f8c52d1be543870a7550633433ba5d6eacd",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_4/Stats-RF-Window/seed29/predictions.csv": {
+      "sha256": "b3b43965049e3a2c834dc697cf400ebea2cb1098e57d6ce2fec928c9bd3302fe",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_4/Stats-RF-CurrentOnly/seed17/predictions.csv": {
+      "sha256": "dce27b6393bc7d2534bcf71575a84a7935c29ca8039142900aa1455f19a88892",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_4/Stats-RF-CurrentOnly/seed23/predictions.csv": {
+      "sha256": "fa05a094f647e33725747ec3d039499740b74d1374a469dbe0968fd84015eb2c",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_4/Stats-RF-CurrentOnly/seed29/predictions.csv": {
+      "sha256": "2a7ceb8a0a7fb13fd57ab9f0ac81d5e0602dde319fdfedc6d2a9bccf662ab302",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_4/MiniRocket-Window/seed17/predictions.csv": {
+      "sha256": "6309cd77490c06543493a6036eecc7af912fdb21c880bc37e3170341c1a2ebc0",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_4/MiniRocket-Window/seed23/predictions.csv": {
+      "sha256": "f3b2a7895883297668be6951569c42a6442dfb65441103037b41f94fc91f5c9a",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_4/MiniRocket-Window/seed29/predictions.csv": {
+      "sha256": "a7f744a76ce00b98906d9d6b221107007a9e01e5a7cdbf5f03c6cb1585703150",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_4/LSTM/seed17/predictions.csv": {
+      "sha256": "7871017be645c4bc40cde3f86a44960417e7fe7a5d4ea7f58b4c00eeb76ebf45",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_4/LSTM/seed23/predictions.csv": {
+      "sha256": "82320d92bdcbea4200163430c4f45c1e7cc297ad08754567ff0eb97f877e055b",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_4/LSTM/seed29/predictions.csv": {
+      "sha256": "38c95deadaf32839d2832da9e95a416a6e09b4884e2b014429321a5d5767fa02",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_4/Transformer/seed17/predictions.csv": {
+      "sha256": "77ce072f770fa536f02c3e0a81a847d781a4a93f0c42869f4a7321c9cf57a35e",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_4/Transformer/seed23/predictions.csv": {
+      "sha256": "5922eeb5f3686e46dbdc915a8b6aa4d4fb5ab145b066c01b1ff877687bd7fd23",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_4/Transformer/seed29/predictions.csv": {
+      "sha256": "a791ef4f234c20d046743c59b5b69cd4efe30cff77a55e69b875643c9aa193e9",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_4/Transformer-LSTM/seed17/predictions.csv": {
+      "sha256": "a2588d8cd8dafbc08124d1a04d091e381cbb8fb2aef65fa474ba9907554aa8a0",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_4/Transformer-LSTM/seed23/predictions.csv": {
+      "sha256": "9608218aaa8023a0905c10c447b7385e9e939976d880c996f4833d6153265665",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_4/Transformer-LSTM/seed29/predictions.csv": {
+      "sha256": "8fab96437b1227e008006570b97859a9f8fdb0a4033ec31f00679ab32309cf26",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_4/XGBoost-Window/seed17/predictions.csv": {
+      "sha256": "89f128c75566d072f95b8063e8c95c22f256c86e9f40b2bbe5b7d5c3b830217a",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_4/XGBoost-Window/seed23/predictions.csv": {
+      "sha256": "89f128c75566d072f95b8063e8c95c22f256c86e9f40b2bbe5b7d5c3b830217a",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_4/XGBoost-Window/seed29/predictions.csv": {
+      "sha256": "89f128c75566d072f95b8063e8c95c22f256c86e9f40b2bbe5b7d5c3b830217a",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_4/TCN-Window-VAL/seed17/predictions.csv": {
+      "sha256": "bf5b73f37a115539e28f0bab76b4bcfb97050c52796f807b3792a5ba28bc6441",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_4/TCN-Window-VAL/seed23/predictions.csv": {
+      "sha256": "468ec44f18dcb5d76e5231d22dd5575046f9df93b3c8887485740e045832fcbc",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_4/TCN-Window-VAL/seed29/predictions.csv": {
+      "sha256": "7425f3975d5ffbed580c2563b7a78c68eb4863063e585cd664a6352e2d435a33",
+      "bytes": 178279,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_with_original_rf_20261014_attempt2/reused_original_RF/TS/fold_5/seed42/predictions.csv": {
+      "sha256": "9728af3a4ed86df21cf17cee46803e603e3e3f601004d37869dcba64d92bdc0c",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_5/GRU/seed17/predictions.csv": {
+      "sha256": "e929be4fbbf003e0f6e2e37c4f0261e33aece5ffd1df33c0f1726060b10cf0c4",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_5/GRU/seed23/predictions.csv": {
+      "sha256": "b120cd785d8b9a1282f6a822dfeea19998ab253523e92eb5aaa3522120bd301f",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_5/GRU/seed29/predictions.csv": {
+      "sha256": "a3fa8f4bc15f11d57ff28d91938b888d80053e36131e284b4e64eb1688502429",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_5/CurrentRepeat-GRU-VAL/seed17/predictions.csv": {
+      "sha256": "2cc1a72b82f7ad05679866a1ac7512ce1fa52e015efde327cacb79aadcadc70c",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_5/CurrentRepeat-GRU-VAL/seed23/predictions.csv": {
+      "sha256": "8b5c18ba4d6a132d2f179d2ff61f11d3e685e1b7c3da0a66b749d61efc718379",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_5/CurrentRepeat-GRU-VAL/seed29/predictions.csv": {
+      "sha256": "e36f51d9cc5c90a0993488a30d2c7117845168c6acf819a4b3d84d8cbc22bd78",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_5/Stats-RF-Window/seed17/predictions.csv": {
+      "sha256": "3bea6e617bd2529aa898eb8971ea86654bf7600daa03d1d6abbbf7d314c8afe9",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_5/Stats-RF-Window/seed23/predictions.csv": {
+      "sha256": "0fc1dafe99b2d446a6253ca8dd67ba6d49dce0e41f902b1cbce57398f2c503f2",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_5/Stats-RF-Window/seed29/predictions.csv": {
+      "sha256": "d735b13e88e247e9ec61e7c1ceaf8d80ae4d36003774defc86dbd7624acc205a",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_5/Stats-RF-CurrentOnly/seed17/predictions.csv": {
+      "sha256": "df13264f4e3c9f90ee355431b9c340a47ae9c712b7684a3380ffefc311139f06",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_5/Stats-RF-CurrentOnly/seed23/predictions.csv": {
+      "sha256": "d857324dfdabddc18af961886882ef2d054bfdfb39053876fd848909a16f203a",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_5/Stats-RF-CurrentOnly/seed29/predictions.csv": {
+      "sha256": "7bf1ceeb616101fca55500f247d47857cd36a9121c534ee7f48ad09abf2b2ab0",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_5/MiniRocket-Window/seed17/predictions.csv": {
+      "sha256": "0968a433782aa002736b8c76be5802a526785ba68630f46640761ccc0396beb0",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_5/MiniRocket-Window/seed23/predictions.csv": {
+      "sha256": "f09339edf69c5b355cea0218372a5be2f43608e75119034a48a5427470f5475c",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/TS/fold_5/MiniRocket-Window/seed29/predictions.csv": {
+      "sha256": "5bcb8d327bc857b871b8c6e5b707b4f0b2c45169948455b95c9e2eaab76f20d1",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_5/LSTM/seed17/predictions.csv": {
+      "sha256": "5c1601249ae6c718fd15d78369ec01ba9b4f1c1b8cadf0abadf2dc28dbeea647",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_5/LSTM/seed23/predictions.csv": {
+      "sha256": "78d6e3108437378dae9131150fb3e48c6dbca76d239d1db5b78cd55d473d8bae",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_5/LSTM/seed29/predictions.csv": {
+      "sha256": "90d2b9718dd4c6012f38950db99b86708da44829af220df65287147774900489",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_5/Transformer/seed17/predictions.csv": {
+      "sha256": "ef564c428742d4bd282d6c9bc96aae4ebf31896eac731613021eb8495b69c2ca",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_5/Transformer/seed23/predictions.csv": {
+      "sha256": "101eae939b295ea671f354c45e29402087917c894febcd2674577d51b3f84bf2",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_5/Transformer/seed29/predictions.csv": {
+      "sha256": "f2e20bbe67fcc455bd7256b40e16f1f5fe5004b52081d7ecac15ea671f95cd4d",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_5/Transformer-LSTM/seed17/predictions.csv": {
+      "sha256": "dc27b438c62182615f27829eb60b73c48f129eaddde2d46557ee37209fa1ef4c",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_5/Transformer-LSTM/seed23/predictions.csv": {
+      "sha256": "d34c24030e4b7ceeeb27042081949ae24173943e33ac33d5a4dfde27aeba6415",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/TS/fold_5/Transformer-LSTM/seed29/predictions.csv": {
+      "sha256": "5d3244a0540f9433f9ca6743ec40f2bcdaefaeaa44c95c70ce47c42ae6d9f75e",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_5/XGBoost-Window/seed17/predictions.csv": {
+      "sha256": "7e0f04718d3b1333e3c72c15218d9f8680eacf6ad00e15a49babe307db7ffe9f",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_5/XGBoost-Window/seed23/predictions.csv": {
+      "sha256": "7e0f04718d3b1333e3c72c15218d9f8680eacf6ad00e15a49babe307db7ffe9f",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_5/XGBoost-Window/seed29/predictions.csv": {
+      "sha256": "7e0f04718d3b1333e3c72c15218d9f8680eacf6ad00e15a49babe307db7ffe9f",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_5/TCN-Window-VAL/seed17/predictions.csv": {
+      "sha256": "a8993aa59b67ccd2cbe182962452462820a7a2c5e20c006e5e99ab3c98049572",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_5/TCN-Window-VAL/seed23/predictions.csv": {
+      "sha256": "017837f43cd8b21e506db9f9aa6c178e356cd7083862d9c1085af540a153514b",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/TS/fold_5/TCN-Window-VAL/seed29/predictions.csv": {
+      "sha256": "3ea781dbdb0037db191ea7e542b03f21b4679d711b23b283175711e1a30ce11b",
+      "bytes": 174980,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_with_original_rf_20261014_attempt2/reused_original_RF/OS/fold_1/seed42/predictions.csv": {
+      "sha256": "6efe6e3be90e21d43ee19447f834be45d43e59086d3243a6e2181fda2492cd56",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_1/GRU/seed17/predictions.csv": {
+      "sha256": "560c5edaaef2a68bf06823ba4592dda262c9c24e0ef9a0f1ebdbd95f57295311",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_1/GRU/seed23/predictions.csv": {
+      "sha256": "f65571cbb4158835a0efb92a0d4cd71365f42b526eccb7b859a581cf3749eb80",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_1/GRU/seed29/predictions.csv": {
+      "sha256": "43b68ddc25e3478c0ea5fe49088434660757ddf93ab3558e6bc2b7993475adf0",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_1/CurrentRepeat-GRU-VAL/seed17/predictions.csv": {
+      "sha256": "8bee19f5fc65d3240a8b17c975bfc7d51bf1002f1c23930e776f52ed2d5ca626",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_1/CurrentRepeat-GRU-VAL/seed23/predictions.csv": {
+      "sha256": "d8bb8977201c4b3dd7dd606775949977b814b5e30a63dfb507de758917cc08f0",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_1/CurrentRepeat-GRU-VAL/seed29/predictions.csv": {
+      "sha256": "20f6fd9ffbbcbba366408ca25d6813ac895f5dd11494032cc932776cb24c7afa",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_1/Stats-RF-Window/seed17/predictions.csv": {
+      "sha256": "5745becfeebf27e16c2bb6b1d0fcf4a0d785c75b144fdc1fa8fdcc3123de49c4",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_1/Stats-RF-Window/seed23/predictions.csv": {
+      "sha256": "0e6d3f09300b9b1d5adf03579fe0586c4e2a7f58ad1eb67c1637f41e9dc71c0d",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_1/Stats-RF-Window/seed29/predictions.csv": {
+      "sha256": "4aa324b6a3d189190942ae014b27e3ad8b5ab85cc0719798b305b005b25421d4",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_1/Stats-RF-CurrentOnly/seed17/predictions.csv": {
+      "sha256": "2aedb8b608462ecd0eb6df5d060fc4562651fc97618a051b3329ac7999159412",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_1/Stats-RF-CurrentOnly/seed23/predictions.csv": {
+      "sha256": "ba80b993f7b1b8e4267e46725b7dcbc97c6cb6544977be91e798b24e98e3fe2d",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_1/Stats-RF-CurrentOnly/seed29/predictions.csv": {
+      "sha256": "e4c0e8febaeb6d695ddf60031c9bd336940ddd014a153230e61f6a6cbddc4c23",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_1/MiniRocket-Window/seed17/predictions.csv": {
+      "sha256": "1b127c152d8ca81891c7fc8c72a02694c85171a3cb7dfc604606c243cf8d9b7b",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_1/MiniRocket-Window/seed23/predictions.csv": {
+      "sha256": "85fedc57be0d2731c64053431613282566bd63d77cfacea147ada5d2b5007aef",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_1/MiniRocket-Window/seed29/predictions.csv": {
+      "sha256": "83ea4f2589c9b83f42380dee8b3a29c74b4d48496c3a47470efb0ab3ffb1a6e3",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_1/LSTM/seed17/predictions.csv": {
+      "sha256": "ca3ed516431218b05017d31c99d5c68b63f18bb545fb69ab42cabd0ec9d06f30",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_1/LSTM/seed23/predictions.csv": {
+      "sha256": "5320147449689ee6a286efabd9a8d85407398c377379c3f440ab541b4df3b2cf",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_1/LSTM/seed29/predictions.csv": {
+      "sha256": "6f9fa9473f10bf7e99757729db697c18cdcd8035a097f0fb36976f24a95e2dde",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_1/Transformer/seed17/predictions.csv": {
+      "sha256": "238a32ebfb3a91ee6eb89e79ae27c1aa463824ae8c124f0f78f0f4899ad8cb71",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_1/Transformer/seed23/predictions.csv": {
+      "sha256": "9f89e51ab8663670e1a2ce6ddcd1bb980f41354201204579da83138e5eb8e55e",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_1/Transformer/seed29/predictions.csv": {
+      "sha256": "ee81b9e96644c8815f55380efa4abf83f1998fcfc3ea0b3d6e3b186e836ef8cc",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_1/Transformer-LSTM/seed17/predictions.csv": {
+      "sha256": "ff56be3be9186bc1871240c347d3074028dee9d7b075f699e8834a10e4bac3bf",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_1/Transformer-LSTM/seed23/predictions.csv": {
+      "sha256": "2a9dfa9b7f122ad4106c86e09b16e92cbc1c28d6700c037da0ec6dd4a91be82b",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_1/Transformer-LSTM/seed29/predictions.csv": {
+      "sha256": "efa47211b52ca0513cddef6eee0679eb1383eb35beb4b2e9a3942e27e692224d",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_1/XGBoost-Window/seed17/predictions.csv": {
+      "sha256": "eee92268fac19427f75a36906a7b5eb69a865469d425342d8c1b1a35f503382d",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_1/XGBoost-Window/seed23/predictions.csv": {
+      "sha256": "eee92268fac19427f75a36906a7b5eb69a865469d425342d8c1b1a35f503382d",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_1/XGBoost-Window/seed29/predictions.csv": {
+      "sha256": "eee92268fac19427f75a36906a7b5eb69a865469d425342d8c1b1a35f503382d",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_1/TCN-Window-VAL/seed17/predictions.csv": {
+      "sha256": "d904041e99ec70de2c30706682ada30c3047a3d97e55eded0bb6982580aa2b29",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_1/TCN-Window-VAL/seed23/predictions.csv": {
+      "sha256": "595a08ababf47c9d3a82b6c2a81bfa0747efc36e179715b3515e08b00f998e1c",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_1/TCN-Window-VAL/seed29/predictions.csv": {
+      "sha256": "d095c002b257143256d855f7f2c5c54c6d96152f1f6c5be363b0459f16d47def",
+      "bytes": 163157,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_with_original_rf_20261014_attempt2/reused_original_RF/OS/fold_2/seed42/predictions.csv": {
+      "sha256": "989614d935f970bdca3a7f260776048553e8f48138da05f8b60320c21cf3ef98",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_2/GRU/seed17/predictions.csv": {
+      "sha256": "087760bdc959af6e7a64631c60f69b180f327a034b85837029697c0966101f1a",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_2/GRU/seed23/predictions.csv": {
+      "sha256": "14e4b40296a7681b37caa5163feabcddecb51f9465c16d75e9170ae80a1ccdc9",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_2/GRU/seed29/predictions.csv": {
+      "sha256": "245ec8a5658c6a65762b2dc9713d55924c690bd8b724a270964f5ca184895bd8",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_2/CurrentRepeat-GRU-VAL/seed17/predictions.csv": {
+      "sha256": "5f3fca9deaab2bff314bc2bf7b98613a09e2929513da3da606af94aba60a625b",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_2/CurrentRepeat-GRU-VAL/seed23/predictions.csv": {
+      "sha256": "b5e857d1036324390564c69d41e26986d8bf7df9479deaad558bfe0df23b8fef",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_2/CurrentRepeat-GRU-VAL/seed29/predictions.csv": {
+      "sha256": "76855f1f304a1189aed120be91feedd74034fe8a8be956aab344260fd86cc65d",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_2/Stats-RF-Window/seed17/predictions.csv": {
+      "sha256": "87eb2fd950d504bcdd31883327ae1136d612fd708e8d9d598fd982058c5fe34a",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_2/Stats-RF-Window/seed23/predictions.csv": {
+      "sha256": "81ea03b1a05ffbf189e4f94d644f9d6a658880277ebd41f735a18733db1823f8",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_2/Stats-RF-Window/seed29/predictions.csv": {
+      "sha256": "c369db9d68ae78b97cea570f34a5e745287d2a10caa6be92532ba139ad87474e",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_2/Stats-RF-CurrentOnly/seed17/predictions.csv": {
+      "sha256": "a1d3eb8579a0c6f3c8f5bb11b21d02188efd20d841c93a68ece9f2f92903186d",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_2/Stats-RF-CurrentOnly/seed23/predictions.csv": {
+      "sha256": "26ecbf475910fa4aac0601d034c2b5229f73f8e73462d52a11184465fbf51307",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_2/Stats-RF-CurrentOnly/seed29/predictions.csv": {
+      "sha256": "e4ce034c1d8a14e775a300cab1cf0614daa0eb06c987f56938632df699dde575",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_2/MiniRocket-Window/seed17/predictions.csv": {
+      "sha256": "1078a3240c1645a2f5f8249d2686f357a114974f3515d1401720ccce5c50f6a3",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_2/MiniRocket-Window/seed23/predictions.csv": {
+      "sha256": "72eee3d1c95a16b61e9ede37a255dce80b2ee1c17b0d7e4f999e5dbe00d18f45",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_2/MiniRocket-Window/seed29/predictions.csv": {
+      "sha256": "815d2e258131d63a4491bdd2194e21ea588c51c6c0821500e418995138fe3d16",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_2/LSTM/seed17/predictions.csv": {
+      "sha256": "ceb58678ab0d210d7cf29fcd9fefa5aa6dd38b199487977a51779c23080c0ce0",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_2/LSTM/seed23/predictions.csv": {
+      "sha256": "583abeed066c6de9d74b17a8cc977aba864de8207c126154ae28963cc5a8b2dc",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_2/LSTM/seed29/predictions.csv": {
+      "sha256": "5033e3d6ab6e97277058ec92165c94a1a9295f4f6f62c899d9c67d4628960d5d",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_2/Transformer/seed17/predictions.csv": {
+      "sha256": "1fbd0c9a0ae90d3dd7f1a7bad504605b35b3f475d438d3037811ae6824ac5dab",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_2/Transformer/seed23/predictions.csv": {
+      "sha256": "e634720e760ed0d86e6eee31cdc1e7796fd3ecb3c38d611c4030e6a2a9a103cd",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_2/Transformer/seed29/predictions.csv": {
+      "sha256": "13d18f760e070003354e340eff57836396ac0ff9a23e71b995b21674a1a1758a",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_2/Transformer-LSTM/seed17/predictions.csv": {
+      "sha256": "faf91a9a19926710e3369c528f57010149942b2ee688ee873376147532f5d63b",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_2/Transformer-LSTM/seed23/predictions.csv": {
+      "sha256": "035c4ad39ebe64259d34f6f5055a700d51700f3381562b2431a833834a7f4892",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_2/Transformer-LSTM/seed29/predictions.csv": {
+      "sha256": "ae43e7a72258fae27b1ba09f587cc1022b932df6e3d548c50ad3fb2594aaf2c8",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_2/XGBoost-Window/seed17/predictions.csv": {
+      "sha256": "63c7a8b0f602d227386ef33d5568ecd2fecf1aa2dd550b00367f48cc3efcc44c",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_2/XGBoost-Window/seed23/predictions.csv": {
+      "sha256": "63c7a8b0f602d227386ef33d5568ecd2fecf1aa2dd550b00367f48cc3efcc44c",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_2/XGBoost-Window/seed29/predictions.csv": {
+      "sha256": "63c7a8b0f602d227386ef33d5568ecd2fecf1aa2dd550b00367f48cc3efcc44c",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_2/TCN-Window-VAL/seed17/predictions.csv": {
+      "sha256": "ca7a57d2cb530187bafa21c437ffb51252b64fcc94059c3a9d46c681c4793cab",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_2/TCN-Window-VAL/seed23/predictions.csv": {
+      "sha256": "c570308eda7ed99cb25923f588ba76253c3bc8ed657b86bb37a84bca0cd5f2d5",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_2/TCN-Window-VAL/seed29/predictions.csv": {
+      "sha256": "830ba669e7e209b2f75e97b3f6064025a5d79283188c24d3eff12d3c5639f3ac",
+      "bytes": 159613,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_with_original_rf_20261014_attempt2/reused_original_RF/OS/fold_3/seed42/predictions.csv": {
+      "sha256": "d03e27d999307a1e9e76ea8afb2cc42c72437e3d2de7e71ed6a6ada072fb8390",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_3/GRU/seed17/predictions.csv": {
+      "sha256": "637a60f55b070266f5f4a0a823d358ba8991e5cc0b17a3645f330a14533a7073",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_3/GRU/seed23/predictions.csv": {
+      "sha256": "055a5636d009c00ff1f064ce460f29c564052af71fc681f83b97e73afe264ff7",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_3/GRU/seed29/predictions.csv": {
+      "sha256": "69e5e9b8f4347e69cdd72d7d8ec215139590ad69c2a0955498e1bd7f0fe18672",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_3/CurrentRepeat-GRU-VAL/seed17/predictions.csv": {
+      "sha256": "6cf5d0647e4cd75aa14177ca0c84e15a5cf93fa55b6ebaa276916c5ebcc155aa",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_3/CurrentRepeat-GRU-VAL/seed23/predictions.csv": {
+      "sha256": "2006973da8a51658d04cbe21b5a1e8d8fca6b4cddc559bd87be9ebebcb8b9351",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_3/CurrentRepeat-GRU-VAL/seed29/predictions.csv": {
+      "sha256": "6dcd80d32622d7bda315b079d244e245dde620db34faa575a117dbecfb108f77",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_3/Stats-RF-Window/seed17/predictions.csv": {
+      "sha256": "7fef1d1b21ad5b5be87ab4c2bd189c0beb5fbec65d2061cece0235cdd4adf695",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_3/Stats-RF-Window/seed23/predictions.csv": {
+      "sha256": "08b159c69e1e224488a24c9c9dc21f54a16567939e99a50743cd879dba87a8a9",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_3/Stats-RF-Window/seed29/predictions.csv": {
+      "sha256": "785afd6966dbc4d28ed190791296e20f0b687d1644f924e213353a701696be32",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_3/Stats-RF-CurrentOnly/seed17/predictions.csv": {
+      "sha256": "09f2f3cc05ea9821170ede66946cf9fd1dc19e0c4c20c28efe8f41a21c3589bb",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_3/Stats-RF-CurrentOnly/seed23/predictions.csv": {
+      "sha256": "1f578878102a6e1506d1a122bde1a02ce57db6e73054109398a1d339a3d8b644",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_3/Stats-RF-CurrentOnly/seed29/predictions.csv": {
+      "sha256": "92a672c3bc870a2fbc67ac7daab47e1f3844228e29c606dee5813ee6f6e67e63",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_3/MiniRocket-Window/seed17/predictions.csv": {
+      "sha256": "ab23a4b2f3d8dd539b4e543461d20971b5ea75f11541a664a35abf0105aa486e",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_3/MiniRocket-Window/seed23/predictions.csv": {
+      "sha256": "c6da071b66baf599bef82c542a4b977a0cc352e180c99cedccb6ac8744e626e4",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_3/MiniRocket-Window/seed29/predictions.csv": {
+      "sha256": "0e856341c960975ba35a758660cd01a5e5a9f4e5b5a43519450ddd81fdc05dda",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_3/LSTM/seed17/predictions.csv": {
+      "sha256": "7d8f7d50bb2d0539bc57e2a9422ce5a53f8a7ad4b1303fa62f3ee4d3bb63bb5d",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_3/LSTM/seed23/predictions.csv": {
+      "sha256": "652a90acacfb57b289a56071c9869550e44ec5064638293afc0ee69da0f80a73",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_3/LSTM/seed29/predictions.csv": {
+      "sha256": "c7f0e23d6dba79c5bd3a60def4f4e5d0c38a933e1186fa38394874af56884970",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_3/Transformer/seed17/predictions.csv": {
+      "sha256": "dedf4306a479678f394e5455f59eca4742def35f93ccf5232144c2153dcacb0a",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_3/Transformer/seed23/predictions.csv": {
+      "sha256": "f04161e72cd7331d68350ca2f3b03f2cc5aa456fe05a031bee3c1ae66370f7b7",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_3/Transformer/seed29/predictions.csv": {
+      "sha256": "40ab1f7f58ff09d43772af36404daa418800e56e34268cf0c695388d8ecf2d07",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_3/Transformer-LSTM/seed17/predictions.csv": {
+      "sha256": "930cecc9875df94ffbda99d4157d8bb34cab9c853d74f79313ce399861f5b1ab",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_3/Transformer-LSTM/seed23/predictions.csv": {
+      "sha256": "999f75abc3eed8f490431974a3145662845eb4ce88b1c417cbd847b1986c07df",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_3/Transformer-LSTM/seed29/predictions.csv": {
+      "sha256": "0fc3a696f3f8fc3e0dc98ee02d6bd7170f82ce6914ea97591897bf515bee066b",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_3/XGBoost-Window/seed17/predictions.csv": {
+      "sha256": "3df3d6c1500d373a40a0df4bf60a5d7becfb7bf4fa1ddf5c94eda5412ebd3ee6",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_3/XGBoost-Window/seed23/predictions.csv": {
+      "sha256": "3df3d6c1500d373a40a0df4bf60a5d7becfb7bf4fa1ddf5c94eda5412ebd3ee6",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_3/XGBoost-Window/seed29/predictions.csv": {
+      "sha256": "3df3d6c1500d373a40a0df4bf60a5d7becfb7bf4fa1ddf5c94eda5412ebd3ee6",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_3/TCN-Window-VAL/seed17/predictions.csv": {
+      "sha256": "e8a653e2f12aacb7c6d5904cb650de025ad09985ab6dcdf895c3009eef005019",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_3/TCN-Window-VAL/seed23/predictions.csv": {
+      "sha256": "eaf07c2068ee2eb957a3cf45727992a3368d9445097927c5afe6b1777abaed7f",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_3/TCN-Window-VAL/seed29/predictions.csv": {
+      "sha256": "d85fb0d58e752f75fd80ab15b2a4ec2e7c51e5057c71c4ad0644223daf96ded9",
+      "bytes": 159579,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_with_original_rf_20261014_attempt2/reused_original_RF/OS/fold_4/seed42/predictions.csv": {
+      "sha256": "6ad2de2b5a795be37faf180c1f8a0cdcdd000ee3fabe2b13ca5398fc8c73ecac",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_4/GRU/seed17/predictions.csv": {
+      "sha256": "6695b9a868bc54b50a0396d3d3ccc9fba48b6fd6c241d190444896eb48e12d24",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_4/GRU/seed23/predictions.csv": {
+      "sha256": "580d6998ea990c271ddc1646d6e4d7b0dadb2641676994849fc644121db5e8b5",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_4/GRU/seed29/predictions.csv": {
+      "sha256": "3d0df00bd6b7363362449f9371bfcb9b742cfaef23be00936fb9a8fa7677be70",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_4/CurrentRepeat-GRU-VAL/seed17/predictions.csv": {
+      "sha256": "df92361aded95297f75cea01d650727e3b472f8c8b20a008393d68e2b4a7f611",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_4/CurrentRepeat-GRU-VAL/seed23/predictions.csv": {
+      "sha256": "fabf50150218b51b7c24b95adf23df9ef16f0908ea36c7c0cfdafdc125f60ef5",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_4/CurrentRepeat-GRU-VAL/seed29/predictions.csv": {
+      "sha256": "cc38af2aad40c692f7181c10166b2ac4d40d466712b8c95efeafe791ef1547ad",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_4/Stats-RF-Window/seed17/predictions.csv": {
+      "sha256": "148e01d5f4a7813de8aef699d95b173a4a78afbb91dd031a6d8527adbbfdcbe0",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_4/Stats-RF-Window/seed23/predictions.csv": {
+      "sha256": "6adbb62b84c4e5f1df9bb4b8997bd543cab5e0ae6e9bf2c6f4ae2d30e8f08d19",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_4/Stats-RF-Window/seed29/predictions.csv": {
+      "sha256": "59a27e6ac634724f942610a3653bbd5187ac062871254db3dc8f0aa9dc061c44",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_4/Stats-RF-CurrentOnly/seed17/predictions.csv": {
+      "sha256": "63582f017f7751810124bca374c8a44709ae59d6ac45ddfca1eaacd6544079f4",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_4/Stats-RF-CurrentOnly/seed23/predictions.csv": {
+      "sha256": "67863c0663fea71d2189506f6d792fd0928689e45cc92f2625c3376e6bd35d82",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_4/Stats-RF-CurrentOnly/seed29/predictions.csv": {
+      "sha256": "83d3f1c9f3d5f23570ed4866ec445622c8e9a695c28f40cb734702b543456c21",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_4/MiniRocket-Window/seed17/predictions.csv": {
+      "sha256": "e0a5200211e61004117ad00caac8f3ef60e0c598a396b36977cabe23c0f896ec",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_4/MiniRocket-Window/seed23/predictions.csv": {
+      "sha256": "c2abb3eb455fe51bfacb92095b079160fd6564b2073b440426401fd0dfa752ac",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_4/MiniRocket-Window/seed29/predictions.csv": {
+      "sha256": "99331f96e7009f0af6d25a113d6b9897b3549fabedeb60532ca9339d82765421",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_4/LSTM/seed17/predictions.csv": {
+      "sha256": "82b23da1bf88c1098c8a66c629a29231051d8dae33b66d86b1ab114997370a9d",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_4/LSTM/seed23/predictions.csv": {
+      "sha256": "b8ec5e2fac8ff103e5bed5596f127f1fb89e46bb836d18000b624739a0d8b82a",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_4/LSTM/seed29/predictions.csv": {
+      "sha256": "d1083c51c35cda03a89b4dd814e33ac327cb7974114c714ef9a1d22ca56f7cde",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_4/Transformer/seed17/predictions.csv": {
+      "sha256": "851a1ff7c1ab643dc9d320412eee08e91e3505489cdefe61c3d46e38f3cc880e",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_4/Transformer/seed23/predictions.csv": {
+      "sha256": "4a844a242551b49c02d90137f663b01fa4c6944bbeb1a61abb2c067bcfe3314e",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_4/Transformer/seed29/predictions.csv": {
+      "sha256": "b505b0cd758450201e0c5e59b087e2f002dde76a8b6326bafd8e6adc70edfce4",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_4/Transformer-LSTM/seed17/predictions.csv": {
+      "sha256": "b897b26bca585fffd17fabb8d87252c69e56b59a029d309d59aec34509391876",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_4/Transformer-LSTM/seed23/predictions.csv": {
+      "sha256": "5884b4fa254289c06a61e014ab375637f169beab765a9725526c83f3461da13f",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_4/Transformer-LSTM/seed29/predictions.csv": {
+      "sha256": "2983f65023e3da069a985169ff60ba05c994e883681b13d279412763b73ea101",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_4/XGBoost-Window/seed17/predictions.csv": {
+      "sha256": "7fdc532107207c76413bc1f22d0cc1b490021145da06faacc10c72ff1f468d15",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_4/XGBoost-Window/seed23/predictions.csv": {
+      "sha256": "7fdc532107207c76413bc1f22d0cc1b490021145da06faacc10c72ff1f468d15",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_4/XGBoost-Window/seed29/predictions.csv": {
+      "sha256": "7fdc532107207c76413bc1f22d0cc1b490021145da06faacc10c72ff1f468d15",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_4/TCN-Window-VAL/seed17/predictions.csv": {
+      "sha256": "d642629d1a2723a9ab890f18670ebf5f044e40d91d230b45dea91b60e6bb00d7",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_4/TCN-Window-VAL/seed23/predictions.csv": {
+      "sha256": "720655133e6c6bbac8e8c93c2111c422fbee8440c6d767d5db5619f95aeb0a50",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_4/TCN-Window-VAL/seed29/predictions.csv": {
+      "sha256": "212d82995fa91db537faef86af4ee573ed7e8346f106cb6708eff91be6d5e209",
+      "bytes": 159001,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_with_original_rf_20261014_attempt2/reused_original_RF/OS/fold_5/seed42/predictions.csv": {
+      "sha256": "c57b5f12693c2dc00000ea234e07b3d867f2c547c0c555eeafc966ea8afa160d",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_5/GRU/seed17/predictions.csv": {
+      "sha256": "3887cf0d2ac397c5193fc674144b22a6f2df7e1af12676891403a96c34047a10",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_5/GRU/seed23/predictions.csv": {
+      "sha256": "3f4eb4d7835b977d9a40947c5504fcf748cf23f7f90568fbf82fcd68c0747cec",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_5/GRU/seed29/predictions.csv": {
+      "sha256": "7a73350d1aeb9d95db0b17957ea3fdd051275522397a66621c0cd6e5d34998d6",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_5/CurrentRepeat-GRU-VAL/seed17/predictions.csv": {
+      "sha256": "18630030a70a40ad92fab4e8943188b18a6053add3a0c0cd7fe79e7fc66c210c",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_5/CurrentRepeat-GRU-VAL/seed23/predictions.csv": {
+      "sha256": "f55a7478c4da97754caf2b2e11421da83e5806f83af480acce0c419963e7add6",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_5/CurrentRepeat-GRU-VAL/seed29/predictions.csv": {
+      "sha256": "b26473c845ea81c2f0dbc73599d8a8a3422c37defe949b1817083b27f9428829",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_5/Stats-RF-Window/seed17/predictions.csv": {
+      "sha256": "821934c38d61df7ade381a23f2969de04a9b2b145edb4a5ab260bd37bca0d906",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_5/Stats-RF-Window/seed23/predictions.csv": {
+      "sha256": "6badb677175c9a14755b4a92948d04b58aa86c5792da4d95394577f921d4af11",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_5/Stats-RF-Window/seed29/predictions.csv": {
+      "sha256": "6773d403e6619d318edb6e1c522e5059b148ac68a998bfd32b05f121935d5182",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_5/Stats-RF-CurrentOnly/seed17/predictions.csv": {
+      "sha256": "4c20138060f1f5804f6f3c315457dfa35b52a7fb80da5c2c361361d2409ba64c",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_5/Stats-RF-CurrentOnly/seed23/predictions.csv": {
+      "sha256": "c135c329be93489f7a8e088861526c8720e1c4aab7dd7ff7c9a8f79d16be3808",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_5/Stats-RF-CurrentOnly/seed29/predictions.csv": {
+      "sha256": "e2d9a8ddfa6ed9a0d42effb213d48d6fed4010debfc768955c3c3bc63f94d095",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_5/MiniRocket-Window/seed17/predictions.csv": {
+      "sha256": "84c5e0497968c7978ce40f0c80eeb1c4efe8c804625780fc7e3f4d1b8c7f6e62",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_5/MiniRocket-Window/seed23/predictions.csv": {
+      "sha256": "0308235f69a8c7fd232b3308f27e8d8aa7a7516d7b60f5d9c197fa2cbd1dee28",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_classic_comparison_20261012/formal/OS/fold_5/MiniRocket-Window/seed29/predictions.csv": {
+      "sha256": "505a5ebdec53c27fae20e3d408a3a2717250c5d889c3e93367942055e55431fb",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_5/LSTM/seed17/predictions.csv": {
+      "sha256": "de47380006ae0c00bf7d3309f726fb4870392a805499cf6b1ccf7686c9e290a9",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_5/LSTM/seed23/predictions.csv": {
+      "sha256": "bd2ce84780ba39bff9e3b5642dd0fc01fba0cc527305fa7368ec42816424bee6",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_5/LSTM/seed29/predictions.csv": {
+      "sha256": "b676fe7dbd99fd802325c03517c31207e914e669f01802fdb5cc28021752eb1b",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_5/Transformer/seed17/predictions.csv": {
+      "sha256": "c4765d16caacb1b6ca072325d6ab1b713aa7981b8e9f634b01e11623062da0e0",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_5/Transformer/seed23/predictions.csv": {
+      "sha256": "7a9214ae2c7c1ed6968e4563a4c3d61a0ca6e937ca7944c3f1151648ee4aa4be",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_5/Transformer/seed29/predictions.csv": {
+      "sha256": "233461f30e169a20b547d733138b4c318ffec88cc772ddadf4fd83c963c677a2",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_5/Transformer-LSTM/seed17/predictions.csv": {
+      "sha256": "e561899ec8856d236de199114321bad82007dff074a46d4cf443da337a844e2c",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_5/Transformer-LSTM/seed23/predictions.csv": {
+      "sha256": "4f91b5a9a3db232995aa1a645a5d1511868d34156b9fab6c594aeb50752e7811",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_architecture_comparison_20261011/formal/OS/fold_5/Transformer-LSTM/seed29/predictions.csv": {
+      "sha256": "2a178f381c5133e32f404a3a099c3a997690e3ccfed11be060521ce639b67e3c",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_5/XGBoost-Window/seed17/predictions.csv": {
+      "sha256": "27827a2b8fa898c99d2063103d31fa642632697b74d96892c5c9bffd54d49be3",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_5/XGBoost-Window/seed23/predictions.csv": {
+      "sha256": "27827a2b8fa898c99d2063103d31fa642632697b74d96892c5c9bffd54d49be3",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_5/XGBoost-Window/seed29/predictions.csv": {
+      "sha256": "27827a2b8fa898c99d2063103d31fa642632697b74d96892c5c9bffd54d49be3",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_5/TCN-Window-VAL/seed17/predictions.csv": {
+      "sha256": "b145bbcd103e9a1d37c73f8998ee5ba4a8c241e82fd8b5c6d9163ddd7ed2edad",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_5/TCN-Window-VAL/seed23/predictions.csv": {
+      "sha256": "ea8b6159a68a00fbb377974ba37a5a62e0a6131528d077da0d84a5074db9d368",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_xgboost_tcn_fast_20261014/formal/OS/fold_5/TCN-Window-VAL/seed29/predictions.csv": {
+      "sha256": "45c944438c029c866dd56bc5dce50c7b973146a8db5651ca3037a6c9ae57a16b",
+      "bytes": 159426,
+      "matches_main_summary_source": true
+    },
+    "reports/sensor_formal_ts_20261007/fold_1/predictions.csv": {
+      "sha256": "597dcf505ad113e022d12541d2fee91439989de2e2c9b3f97b26dcaf00a69e35",
+      "bytes": 208571,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/CurrentOnly_seed17/predictions.csv": {
+      "sha256": "481653dc0b4c790486b207b0655667ce230b1198abaad09b3f67a0b2b6734100",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/CurrentOnly_seed23/predictions.csv": {
+      "sha256": "98b1a51843b823e9fdf3636de474bc0d333c7bd060ba9599ff41c53b7e755d92",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/CurrentOnly_seed29/predictions.csv": {
+      "sha256": "1ca4236e72f27b826f8741166065b4a950682f0d7d36ff195223220434916365",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/RecurrentOnly_seed17/predictions.csv": {
+      "sha256": "8f17fb4d7193a4154ad82af45e600d4a8c902511c9fd5484cf69c4ea4ad486b0",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/RecurrentOnly_seed23/predictions.csv": {
+      "sha256": "4ba70f58e8f794352a0be82394c4f2aed0cb8a379e7b2c5cbc85480f9fec6653",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/RecurrentOnly_seed29/predictions.csv": {
+      "sha256": "f6c5dbccde46bde49fc8dd802a5435768dcb971be02a2a16c861c9db3fd7b9bb",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/FullUniform_seed17/predictions.csv": {
+      "sha256": "fdb669b9c6d0090a2c800a75d85e30caf2854cde53040badd5b7d58077e362ef",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/FullUniform_seed23/predictions.csv": {
+      "sha256": "6691e5a7f2b14a8b13c0a7245570970079cd24019a112322e46b263c2df5644f",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/FullUniform_seed29/predictions.csv": {
+      "sha256": "3ca49de886db5cbb68dd8963ec29ad3b07bc2790b9c6a8a99e8382c33847ac25",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/FullBalanced_seed17/predictions.csv": {
+      "sha256": "a0db594173113726037e435e6aa129a5d9edd0ca8f15e6a87413026e749265da",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/FullBalanced_seed23/predictions.csv": {
+      "sha256": "4b1ea9e8a7b430b665f188bc8535b20f1cd5203e5ddb7b25fca0c34f5b76d19f",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/FullBalanced_seed29/predictions.csv": {
+      "sha256": "9901f7d151f76b869b5990e5ad42c2f397484d7275cef68ff19fda26a5d1d935",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/NoUWB_seed17/predictions.csv": {
+      "sha256": "5cda969fa67605384f720480eb1e314cd7e1826395eba7615336ac3eb76374c6",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/NoUWB_seed23/predictions.csv": {
+      "sha256": "b616fa89476ea2433ee411f68132634b14420d932c8a9d7b92c280f82bf7398a",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/NoUWB_seed29/predictions.csv": {
+      "sha256": "1a129b8ddd93230e0a359b73a91a52edaf9261b151cdc2b1c6264e4a822861c8",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/NoHD_seed17/predictions.csv": {
+      "sha256": "52dd74debe1de8b3a3ab5d0af5104ede2074354be85cb802beb0f7c0eff0fcea",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/NoHD_seed23/predictions.csv": {
+      "sha256": "a70b26abd941adf30bae4242e78ab06def553923a18d309c7258271e0bcf6729",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/NoHD_seed29/predictions.csv": {
+      "sha256": "352ca7375ecac07a2b2df197c4cb1897b430e5c68391b9dd1cb62ac7ffcef1b0",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/NoAkl_seed17/predictions.csv": {
+      "sha256": "9015c74dd7978de69c6f9550f8ddd71ab47bfed0b020443c734a08f71bdc5257",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/NoAkl_seed23/predictions.csv": {
+      "sha256": "8fba1af8ace4e51a9cd7e8bb56e32efee43d1d17637e9b00098ab3b7a32f033d",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_1/NoAkl_seed29/predictions.csv": {
+      "sha256": "27d7e160d39ceac4bf6fcf9ef14b8ee845899da931548e3b3250744920fdc729",
+      "bytes": 154387,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_formal_ts_20261007/fold_2/predictions.csv": {
+      "sha256": "1c6bc517bdf153d28eed8a2d455cdfd85e8566b55470e36931a5013d201e6198",
+      "bytes": 214369,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/CurrentOnly_seed17/predictions.csv": {
+      "sha256": "44c6c7db21a9caf74257096787cf46a3620061d45d6c9eb494d04df082f7f5c6",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/CurrentOnly_seed23/predictions.csv": {
+      "sha256": "1fa724b1de43f65418e9bcb0092136eeb2c91a26021cd0f554a96cad38c58626",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/CurrentOnly_seed29/predictions.csv": {
+      "sha256": "12a5299ebdea10ca4941d8be4a334fe612a1652c6057a2f489e07e8896ec94c1",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/RecurrentOnly_seed17/predictions.csv": {
+      "sha256": "efc21edf4ceea20b506627483969c3c7dee6d699e6d7e6c2153ffa303ba2d991",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/RecurrentOnly_seed23/predictions.csv": {
+      "sha256": "7b7915c99d8830f8049fbd557a2d7fefe43a8c91f5d3fa1e2a136125f4cafdd6",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/RecurrentOnly_seed29/predictions.csv": {
+      "sha256": "c0ed5010e5de3d2aa35d35b3f5fab17a4679186b88ea723eb90126e0f3e64db6",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/FullUniform_seed17/predictions.csv": {
+      "sha256": "22858afb55954adc1d71924afb1224303305b943f2e29699c0b66dd323820e39",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/FullUniform_seed23/predictions.csv": {
+      "sha256": "c58ed25d6dfb0d2742595841060f3c737b9722191a36ba07e6ac16911199e97e",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/FullUniform_seed29/predictions.csv": {
+      "sha256": "4fa5fdaf90420966fd74bcc0a8689f27f23f288604fc6e5b0b5fd4345303f3c0",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/FullBalanced_seed17/predictions.csv": {
+      "sha256": "ecd4f81f7065fb9e5255271539bf0047e1c3e5a9e45bf20a60ac8710b7ba0037",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/FullBalanced_seed23/predictions.csv": {
+      "sha256": "d5dd9f2fcceea20db13b6528f3843d6c8d64bc0207afce0d1b149be107c3423d",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/FullBalanced_seed29/predictions.csv": {
+      "sha256": "3d8c22b4230747b8444f827078e439e190993eebb86a9b6d70e35ac8c5199ea9",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/NoUWB_seed17/predictions.csv": {
+      "sha256": "f9b4090b0ad575586ba654bf6ebfb5952a3876b684aa538c0906304910e5ea06",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/NoUWB_seed23/predictions.csv": {
+      "sha256": "0a801f605e43605dae8cb65e2014801aee05a9c3fec0b3c0746235a41ed59bc9",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/NoUWB_seed29/predictions.csv": {
+      "sha256": "c34d5b91feacbe5197f907da730e19162458b1957d72932682484e9ea8329952",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/NoHD_seed17/predictions.csv": {
+      "sha256": "7dda11cf47457a0eebc93dd62ab5c20a98d051bb4c1558a64ed4fd90a967b459",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/NoHD_seed23/predictions.csv": {
+      "sha256": "d356a3c7bc31953f4204d680a7b5c8811753d79daa7f8d521bf6c4a2e676855d",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/NoHD_seed29/predictions.csv": {
+      "sha256": "f3be24055b422c244f8d6fb1862604b62bead5d6729e9db481d1352a4a84e8ce",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/NoAkl_seed17/predictions.csv": {
+      "sha256": "a0e9ee40d993c42c32f8eda4e671c382fa46715c1754420b80fd724d870c987d",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/NoAkl_seed23/predictions.csv": {
+      "sha256": "946dd9df2d1edbf8a0cad21239a6753b67b9b4459fcb8e5936d3662da0e0386b",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_2/NoAkl_seed29/predictions.csv": {
+      "sha256": "6d34f48344c17d4dd8c67ba243fdbf7f315e3556f2995817356629eb2535e6a8",
+      "bytes": 158679,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_formal_ts_20261007/fold_3/predictions.csv": {
+      "sha256": "bbc8796cae9aa5bfd71b1d8a6eac9af894c60106d71f63930575cd3096cfa342",
+      "bytes": 181639,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/CurrentOnly_seed17/predictions.csv": {
+      "sha256": "7a66f5d32eae036c1a506e1b33b0e59b7f0e3fbda609cdb3da67d4800e5b04da",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/CurrentOnly_seed23/predictions.csv": {
+      "sha256": "18b3c5a869149e55808253ab6789981f07dc3770395c04c5aa7688e66cd2958a",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/CurrentOnly_seed29/predictions.csv": {
+      "sha256": "e6f622b88ef5a1f62e408e459ede377aab4c468aae7606e3c71c50d98ef4b906",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/RecurrentOnly_seed17/predictions.csv": {
+      "sha256": "1b8cdbb63464e395b353cb57eeb310b7f992dee2070e78e5188002a15b3605fa",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/RecurrentOnly_seed23/predictions.csv": {
+      "sha256": "c95ce26648486e5fc16f1fa23c51cb9621225b0ef94a589a76b8c4844fa2b2b6",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/RecurrentOnly_seed29/predictions.csv": {
+      "sha256": "b1c3ad4a4f8271500fdf3e5347e40476254656e47ef8bb1bb6bad23ac13f0153",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/FullUniform_seed17/predictions.csv": {
+      "sha256": "ad580a56e25049bf61bd025789455f5af22c4e5a6cd5d12879ad453c5ea3dee4",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/FullUniform_seed23/predictions.csv": {
+      "sha256": "e45352b8b8fafb2b02f59ff1fe42b42e5a785e9c0283191dc99249ed7a49162b",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/FullUniform_seed29/predictions.csv": {
+      "sha256": "4e804fdc12e0443d4016c1429aba4763e137845b3757d096ddf3bd9cc5db1462",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/FullBalanced_seed17/predictions.csv": {
+      "sha256": "036d6e4241a5d1efef9bf52225d7d76b5f6b44383ca1ec595271e1ebe13fcd05",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/FullBalanced_seed23/predictions.csv": {
+      "sha256": "9b801a297f173dc95f95b8a05ed93ae18d29847643b9aba55cd9bd9103da5dac",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/FullBalanced_seed29/predictions.csv": {
+      "sha256": "80a3462ac7f25de1141d09ef54efd9aa057cf3d116208a53fc6cd1d691f013e9",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/NoUWB_seed17/predictions.csv": {
+      "sha256": "ddb9bff57facc3bb695ae51090592fb09ff950e0b3b859686e87d3d8e0004869",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/NoUWB_seed23/predictions.csv": {
+      "sha256": "685279fb396dd6c6c121d6a7ee8e98dba9af559f7853d48f9367142640a8a6bb",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/NoUWB_seed29/predictions.csv": {
+      "sha256": "69b93f3364c436dd8c95c673ffa8d8ab6e8c442e0223933ddd23af9448938671",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/NoHD_seed17/predictions.csv": {
+      "sha256": "97b4e0c6c81dd922e80befa727e858c6f5115be571981c3f77e5e59b73ce9840",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/NoHD_seed23/predictions.csv": {
+      "sha256": "c2c7639effbfecf7ae0d80a228305a075b9db3da62451abd6fc13aa3a3e35010",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/NoHD_seed29/predictions.csv": {
+      "sha256": "ae23eb7b00a394272c7aaa5fafb210f43afaff823538a6f59df10779aee1888b",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/NoAkl_seed17/predictions.csv": {
+      "sha256": "afe80510ff76c32d801426fe7e3b26fb4ca6c40c5b7406abc27c3054e45cb8ab",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/NoAkl_seed23/predictions.csv": {
+      "sha256": "fecc45f8df3568a9cd2ed55872b45c128f27ed351431c14b90058db8f7ef5101",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_3/NoAkl_seed29/predictions.csv": {
+      "sha256": "7dde1fd3f7e119dd93e7c2efe624f3bcffef2aeeda35cad340a706c29907ea99",
+      "bytes": 134451,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_formal_ts_20261007/fold_4/predictions.csv": {
+      "sha256": "8760cae5d8f8fae527babd670cf0a0bf32020b66337265932c2ea0606f390bb2",
+      "bytes": 240845,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/CurrentOnly_seed17/predictions.csv": {
+      "sha256": "28c3865c3c75d6907ce41891d5d01461b2c4a1e07b8c0945dc1b7d0966b5f95f",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/CurrentOnly_seed23/predictions.csv": {
+      "sha256": "1b71fc559430016142fcc53c98d8c701554af6b8fb1a27051f4ff137e6223d3d",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/CurrentOnly_seed29/predictions.csv": {
+      "sha256": "81532305e792f89cb34d6f53130194d34a44ca01298637f1aea6be7c01782544",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/RecurrentOnly_seed17/predictions.csv": {
+      "sha256": "ee1a39976742b358bb90a79c3384bdaec7d300dfe4e1906fb5741fca80678bd7",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/RecurrentOnly_seed23/predictions.csv": {
+      "sha256": "f41a155fb7d062ef99678370587884a41c960207f0d7d3bb576833ad93df6e3d",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/RecurrentOnly_seed29/predictions.csv": {
+      "sha256": "3fed99b8735fb2463c68aaa0c8976d33ad88e02636f70df371664ffe4f9f8d46",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/FullUniform_seed17/predictions.csv": {
+      "sha256": "0e3a18853e4483c856e797fe621cf8dcd9bd2edd04ad64499f0316e13421ef70",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/FullUniform_seed23/predictions.csv": {
+      "sha256": "d2f7357929b019e69a3ff0ce02772d479ceadc0e5eeeefd1321e5e21fd259971",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/FullUniform_seed29/predictions.csv": {
+      "sha256": "ad4ff4feace1a36d33eba53743e0ce0be1947942963ce83e88cb5396fd3cd546",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/FullBalanced_seed17/predictions.csv": {
+      "sha256": "530aff6a5482ff6f5ef07d2dd74cd40419d50050d980af8f4a84bf706ebdf74f",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/FullBalanced_seed23/predictions.csv": {
+      "sha256": "8f0474c2cf58c60151cf1ef5091be259f339762b12cf842be9a9faf9c363c325",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/FullBalanced_seed29/predictions.csv": {
+      "sha256": "7ded775b8510c34f92ec08663c59f36aca6f1ce66ac42bbc4a5947a1f9b1e8c6",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/NoUWB_seed17/predictions.csv": {
+      "sha256": "58db8499622052c12ffe44ceda081e0f9ba1f75bb5f1baf16d534dce5c78a16f",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/NoUWB_seed23/predictions.csv": {
+      "sha256": "93223b2653b291542c7b11304c19053fdbcedf6b18c6b05315d7a101c86c0f81",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/NoUWB_seed29/predictions.csv": {
+      "sha256": "38eb5d475a09f0f8f7fec907cd6127f0dfd850a5e804a53d1c38c1726abc897b",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/NoHD_seed17/predictions.csv": {
+      "sha256": "ac0da377149c8b40b476f6d31bdf41b26a424b60a819fdd590daf9d6e8a4684e",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/NoHD_seed23/predictions.csv": {
+      "sha256": "e9368f297848e59f6d5e0d328c545036d53eda19800452802cd1cd574c356342",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/NoHD_seed29/predictions.csv": {
+      "sha256": "4e49ff8aafee779e7052b5eb1dc938c3dd3fd1982f4118742cfa51978b5c50a5",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/NoAkl_seed17/predictions.csv": {
+      "sha256": "06053f5be48fd1a21e733570d54de203380e65e383c0b77caaebf781162e6446",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/NoAkl_seed23/predictions.csv": {
+      "sha256": "41395a71ec4d9a2d49f9383dbfc0f6edfbea2b2b701c7d6ef0da86be4ac52b7e",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_4/NoAkl_seed29/predictions.csv": {
+      "sha256": "1879867a6cab33e8c931bbaa7dbeae33b89241d8f7ad96484f2af6acde245a8b",
+      "bytes": 178279,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_formal_ts_20261007/fold_5/predictions.csv": {
+      "sha256": "c17605d7e220200b6e1a2cf9cf5cf7dc93b831f72cac5b0d404a46aabc8212ac",
+      "bytes": 236388,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/CurrentOnly_seed17/predictions.csv": {
+      "sha256": "95cb25db53b095a1c38c9e211d8434483f484f8d82daffdb7a4923c121d53a32",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/CurrentOnly_seed23/predictions.csv": {
+      "sha256": "7f3e3eeb75a8fc743ba851babfb127e33ef19ceebc5a5049bd5675a083ad977e",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/CurrentOnly_seed29/predictions.csv": {
+      "sha256": "91d84c7ac776ee28e7f84d3a3692d802f30ce5a7f0068d160a9be654b988c929",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/RecurrentOnly_seed17/predictions.csv": {
+      "sha256": "91fbd859557b6b34b10e19b4a8968547e1489ad25c117c7e7fd90fa14af134e8",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/RecurrentOnly_seed23/predictions.csv": {
+      "sha256": "30be6f246a72a73bab964141a2692e1445c3b11ac653aed1aea90ca2e6195b74",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/RecurrentOnly_seed29/predictions.csv": {
+      "sha256": "e3a4ec6bfb432e555e636d97418fe39e0b61524a0eb87faad7d9782fc98b5209",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/FullUniform_seed17/predictions.csv": {
+      "sha256": "3538d4088820ba29c70e226d30fbb67fd08fbef605c0a558657298650044dc02",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/FullUniform_seed23/predictions.csv": {
+      "sha256": "42481cd55cb0947b83cd175380964c9976eded6eb7bb73e4121cd84397b5fcd6",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/FullUniform_seed29/predictions.csv": {
+      "sha256": "4447d11eb77ff29c4e1a62b3cd48b51b2b560c198ebb5fc08a3312996f698cff",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/FullBalanced_seed17/predictions.csv": {
+      "sha256": "3b60f0caca527bdc45cd9ca46224ae2e237b0c440aaeec88808a39827c4e7383",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/FullBalanced_seed23/predictions.csv": {
+      "sha256": "bfcf91ed1f3cd97127e70e700244658c061a81c862c17eb39ba5466327563b1d",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/FullBalanced_seed29/predictions.csv": {
+      "sha256": "4a13fd979673c47dd49c95670a0007e758bb6e93a33e624f70db5ee2ea37a98c",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/NoUWB_seed17/predictions.csv": {
+      "sha256": "86301f8828485cb44568b041cf060faf8d2a0ba29604c021a298c527cbed3693",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/NoUWB_seed23/predictions.csv": {
+      "sha256": "ca27abf25b4d11366557f132855b8f02850c3495d3c50633d780b8a5b65037ce",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/NoUWB_seed29/predictions.csv": {
+      "sha256": "a6dae17a39720cd3c461dc33f056d1f2ab0bbdd6281d61319fcdc37c5f32060f",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/NoHD_seed17/predictions.csv": {
+      "sha256": "a565e107e26e285aefc08d1cc2070388467e4e19a96f08f192408ecb812373ca",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/NoHD_seed23/predictions.csv": {
+      "sha256": "562cdf782d973c951084eb77d988d4e9470c4dac4ff6d879027c574957052fef",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/NoHD_seed29/predictions.csv": {
+      "sha256": "cdd487b50cc9151740526d272ff89fd79cc2957f848fc038499d618b018faef3",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/NoAkl_seed17/predictions.csv": {
+      "sha256": "c81abcda81eeb810fe7912394859365885982321c10f0c60a3b4db4f6ee74a4e",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/NoAkl_seed23/predictions.csv": {
+      "sha256": "14659a5d9ee730ea032711fa8e2020ddaf0ee808eb646239a96b7a1cddd18b62",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/TS/fold_5/NoAkl_seed29/predictions.csv": {
+      "sha256": "4bb74124c7ddb24a13d3fb3f5ce076d363f162b461f688aa688c2b5af61cc163",
+      "bytes": 174980,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_formal_os_20261007/fold_1/predictions.csv": {
+      "sha256": "2a3eb8c4739f0c144add8fa8d3e21a273eec7752a124f8807a98dba5901fe371",
+      "bytes": 219111,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/CurrentOnly_seed17/predictions.csv": {
+      "sha256": "26e5471be9072c818d1b989c5cb46ba12f8398ef5961d668db755b6f4ce1d017",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/CurrentOnly_seed23/predictions.csv": {
+      "sha256": "1716cffbec9336b032eebf0417c7334e0b3111be6d1a91aa829361cba30b12b4",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/CurrentOnly_seed29/predictions.csv": {
+      "sha256": "af91be76b58e01a01abcebafe085e0814f85ef67e99438b8d23aa0affd57d9ea",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/RecurrentOnly_seed17/predictions.csv": {
+      "sha256": "f4d01b7271cfd3598fbca6d6d08ded6574093493180c47ec702c03bd5eac3384",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/RecurrentOnly_seed23/predictions.csv": {
+      "sha256": "72497155bfe1f25bfdfcd3ef721c808a5ab550c9faca0c9c009e998ca85a088f",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/RecurrentOnly_seed29/predictions.csv": {
+      "sha256": "969ebb21e08d70979482eb7e24a72fa8c551f30b77ca72245f915dee86ce117a",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/FullUniform_seed17/predictions.csv": {
+      "sha256": "08683bbbb8c362fb8e695e58ed95d015c3faf9e4ccd461af4c793e0d635064ff",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/FullUniform_seed23/predictions.csv": {
+      "sha256": "31ec5e126d05cfb9581c627cfea8036c2ef9b7648a16a23b85e0fc45625ee23e",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/FullUniform_seed29/predictions.csv": {
+      "sha256": "75713dcf2d0d82305d901c58872f21ca6660cce9c89a46a9fb9b5e76a6e8c690",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/FullBalanced_seed17/predictions.csv": {
+      "sha256": "eb78fb1847c743c16e1c91d5d6681753b7533b7b19901da536cff85445ad4b43",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/FullBalanced_seed23/predictions.csv": {
+      "sha256": "dcc408f32c20960285552754de5813a2c54780809514e0c68853962e855ececf",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/FullBalanced_seed29/predictions.csv": {
+      "sha256": "55ac96d822894c6d8efad62946089991c5b2cb5aa297220cefbd455b9ebea089",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/NoUWB_seed17/predictions.csv": {
+      "sha256": "017a4864267c4eae3bb2b022437de997d1b559389c3c2ca470e402fe3e107c15",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/NoUWB_seed23/predictions.csv": {
+      "sha256": "191c59990fff70ea913f3dd249cc83943f10130184db14f7172109b931b2b77c",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/NoUWB_seed29/predictions.csv": {
+      "sha256": "29d0769470fbb655d8d145e7094bdc7883c5941126f61bae4a5ec1ad24a49015",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/NoHD_seed17/predictions.csv": {
+      "sha256": "48fe77c8b139c681dc58af7f296020155ed592573684959214be61c21153b644",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/NoHD_seed23/predictions.csv": {
+      "sha256": "cb5d779e87eb303760b5db4d6bcd936a4e4352c3a469f10296ad5104af60902d",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/NoHD_seed29/predictions.csv": {
+      "sha256": "780f651445824a6f586186e5e58262d4fde6f7ac19cbb464f1396654ced65a10",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/NoAkl_seed17/predictions.csv": {
+      "sha256": "2c612338c4ac7276435872f1509bb06210dbd28844d4a36ee84ad3530a35e86f",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/NoAkl_seed23/predictions.csv": {
+      "sha256": "f59cc69314ddaa3bad21b7b6380ac9796756a1171f81dab84268291a1067bfe9",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_1/NoAkl_seed29/predictions.csv": {
+      "sha256": "f437968b91736f5fa9d897b981d89055cdbbc4d7a572f7b5f078455f4c34477d",
+      "bytes": 163157,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_formal_os_20261007/fold_2/predictions.csv": {
+      "sha256": "1b06481076720822299b556870f0a0085a55643b384fad4c56b6bf80e91116b1",
+      "bytes": 215957,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/CurrentOnly_seed17/predictions.csv": {
+      "sha256": "7752ba1c71df4f421f16d38063555e23e4abaf084ef094fca1784b640747b1ce",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/CurrentOnly_seed23/predictions.csv": {
+      "sha256": "b3366c2078a8dfecc265dacf5a64a30505393ee26821a8665d0f706de9a9d1b0",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/CurrentOnly_seed29/predictions.csv": {
+      "sha256": "e911973695287daf22f714c35b128f5f2774d4226c16b6f740373b08d5589858",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/RecurrentOnly_seed17/predictions.csv": {
+      "sha256": "2d2460c0fba463b16229c9f77005eb34df3f08186766fd3118523d671a172c1a",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/RecurrentOnly_seed23/predictions.csv": {
+      "sha256": "38c5f5e9c288a57e46161cabb620aceb00bd1958c905a69a72fa20fd5967d051",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/RecurrentOnly_seed29/predictions.csv": {
+      "sha256": "4d6ca5d14351caf6c0382993ca6cd0152a7ba6d5a5e345dc84b6ad7e8e3b15ff",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/FullUniform_seed17/predictions.csv": {
+      "sha256": "42943178bd12e5cd216049e05adac09ff449b9a065e76314a168c2a6e6f20430",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/FullUniform_seed23/predictions.csv": {
+      "sha256": "f99712993fbf12eaf55cb28f4a9278bb0fced00a8fc6c5d2aa1d880ba7a69b67",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/FullUniform_seed29/predictions.csv": {
+      "sha256": "19642892e2c3066359dcd7432dadca31799f4e2e47aa1476986b6db1f2f94514",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/FullBalanced_seed17/predictions.csv": {
+      "sha256": "9d9f272923b2156ad24a3697eeefa594e621eb28f3b64868688ad44816e40097",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/FullBalanced_seed23/predictions.csv": {
+      "sha256": "76f89e41b748b65293892a1949583b37380f873f8302647a704cf0eb15bdc059",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/FullBalanced_seed29/predictions.csv": {
+      "sha256": "e5a32a01ef9935a18497f78fbf2f049a78dd6bf6163d6bfe93c55685bda89535",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/NoUWB_seed17/predictions.csv": {
+      "sha256": "e0e90ff71e92a1dfa413e506be6c775d6a8c95a71943c6a225d203f4569ccfcf",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/NoUWB_seed23/predictions.csv": {
+      "sha256": "791c2841f594b559cbc91c66d3cb763756add50c5f20e16642eb3a24e851699a",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/NoUWB_seed29/predictions.csv": {
+      "sha256": "7006fe9a8e228a0093576d69aaf571adaab2df4c4cd56416ae9d5b5e441f9ef7",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/NoHD_seed17/predictions.csv": {
+      "sha256": "fc7f5ae0b09f5a1b2ce2d431fbe2ada86ba9a5201545541463fb1cd737bcd15c",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/NoHD_seed23/predictions.csv": {
+      "sha256": "123cab0c7df0d9975f26cd753401a66c41a8b0a34f4621234ef207265cd7d99e",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/NoHD_seed29/predictions.csv": {
+      "sha256": "ac3c185b1bc794840af78a540531cd6af3585f07af3ff776a856d2a8b833c5ce",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/NoAkl_seed17/predictions.csv": {
+      "sha256": "3654e121f3c268538120bfaeea33b39e2a81cece67ca39dfa4a4f35bbc8cab11",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/NoAkl_seed23/predictions.csv": {
+      "sha256": "c2277f1c2496f87669f402c36f4fe972ff6109f5f9745b3cbd2f3c26cdfb9d4d",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_2/NoAkl_seed29/predictions.csv": {
+      "sha256": "91c2455d8cfdb399999789562ea1c86ab4ad106445263778c44e8af595be5efd",
+      "bytes": 159613,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_formal_os_20261007/fold_3/predictions.csv": {
+      "sha256": "f277a9e8a05eeae5c72a5648e81e4e3ad72865c6c302635b909419bf6642245f",
+      "bytes": 215911,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/CurrentOnly_seed17/predictions.csv": {
+      "sha256": "1936fb8137d44e8581c83efac2d1ab60e8d00236e0b3e13228101fd04fee4864",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/CurrentOnly_seed23/predictions.csv": {
+      "sha256": "08ffcec5bc621ee8847848763f4fb30069d7bfc04724d8cb67e77eac9bb5781a",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/CurrentOnly_seed29/predictions.csv": {
+      "sha256": "36390c9f680680b9e5786ff8bad089266479118c7c4f044a2fafcba1fb38502e",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/RecurrentOnly_seed17/predictions.csv": {
+      "sha256": "b509cb7a865e1847ee0bdbd6f2906ef889090bc59289344edb8ccd7c3159500f",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/RecurrentOnly_seed23/predictions.csv": {
+      "sha256": "c3c77e6940b34ab13729eae8994a816a9653492520fb896222c5e3882d86f3e1",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/RecurrentOnly_seed29/predictions.csv": {
+      "sha256": "505ceb4dd29d97dd9a9b449caad60c800350066ef7ce4c44ccf790ec9dd0d5c7",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/FullUniform_seed17/predictions.csv": {
+      "sha256": "856407a63a4bea475f3d43310a4c3fce808af9a15977710910dd27083db6df73",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/FullUniform_seed23/predictions.csv": {
+      "sha256": "60d37c9f5803bdc8b3315c864185241b9116ca271d02c089018e915c80d12fdd",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/FullUniform_seed29/predictions.csv": {
+      "sha256": "c9f53b2570131b02b75455e22860a57dd7bdeb22288e3bc556dbb8110d91e45c",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/FullBalanced_seed17/predictions.csv": {
+      "sha256": "757d1ee6ed01ce543949e1c647a64d9e411fac0b861eca907e78a457dc7d2f51",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/FullBalanced_seed23/predictions.csv": {
+      "sha256": "2af412dfecdc521c3ecb83dc1834dff90936793e79b3e0aad4dd59463c909dd1",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/FullBalanced_seed29/predictions.csv": {
+      "sha256": "fe9810015e97c0faa8d33888f454e62087a868a79ef6b2cb9b7654ebece0a5d2",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/NoUWB_seed17/predictions.csv": {
+      "sha256": "a5e3788dd6247f4d66c31b3f5b1a5b268851ecfdce62d57c928b2eccc57dcfa2",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/NoUWB_seed23/predictions.csv": {
+      "sha256": "7787a06303b30258ef2b35527606b2827ed17ccb14357fff57e16419d1d43c92",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/NoUWB_seed29/predictions.csv": {
+      "sha256": "5dfb8f9faaf07d22d1dce9a7dd8a69812a1cd0def8c752d7b66468003de986c8",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/NoHD_seed17/predictions.csv": {
+      "sha256": "5999f2c79e0bc2267c8b6375018ac7e351869ec0feef4d0398d93bbe6f86b842",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/NoHD_seed23/predictions.csv": {
+      "sha256": "82418f550c9c0a94506cfa03ca5e760170055f53655ba69e501b9bcc4e12301a",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/NoHD_seed29/predictions.csv": {
+      "sha256": "dd5ddc8f63254c7b7bc30ffd474c089583f461aa813266b2f7eea4d3de8928fb",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/NoAkl_seed17/predictions.csv": {
+      "sha256": "f6367aa9de61f4441f8d07828305a46275e4c169bf28d64fe78c29a51073f2d1",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/NoAkl_seed23/predictions.csv": {
+      "sha256": "041b83ec43f99488748429fd43d5992b5f67c2516c2c23b562e0a34c12046c46",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_3/NoAkl_seed29/predictions.csv": {
+      "sha256": "fe1d4800232fa6f01cec9951d2de3ce6afd3cec68098341ed30c3c0ce9f34953",
+      "bytes": 159579,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_formal_os_20261007/fold_4/predictions.csv": {
+      "sha256": "5856ed87efbc3a054b401f9864bf32cef3ab669d381075e5c1f4e03460030687",
+      "bytes": 215129,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/CurrentOnly_seed17/predictions.csv": {
+      "sha256": "1a9c30a022dac6fab300deb011af6b7be74291bee3a564b871b75268e00aa025",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/CurrentOnly_seed23/predictions.csv": {
+      "sha256": "85b8b966e442411477352550cb86b0271c811e3f38116de03db0382a0f913a1c",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/CurrentOnly_seed29/predictions.csv": {
+      "sha256": "fe4e2995c7493d74462cdec26ecb35f50a1d09f6b295035279b57d822e8ea39c",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/RecurrentOnly_seed17/predictions.csv": {
+      "sha256": "929d68d57b977d7e449733f7496f82b182acc92185eb0ee389e69cbdfbb7dbc5",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/RecurrentOnly_seed23/predictions.csv": {
+      "sha256": "3af4c73a98465a1b37e524ee480e250c3d388645e4d88aed44773799081600e9",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/RecurrentOnly_seed29/predictions.csv": {
+      "sha256": "e16374be792bdcad78f463f260c8399907103696db0adc0b51e75fab576f0df2",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/FullUniform_seed17/predictions.csv": {
+      "sha256": "03acf6f515c7df439fde6343697273b4d2a617ce272aa3a8c4d02d9cac8ee370",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/FullUniform_seed23/predictions.csv": {
+      "sha256": "e439848728af7a3d0a7a8bc0c771d29e5f3f6e1fade664e29f976332b877c031",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/FullUniform_seed29/predictions.csv": {
+      "sha256": "d16709ae725bd5e083466d8bdec3b423d0572cc9796d782f2104363a0bf9c328",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/FullBalanced_seed17/predictions.csv": {
+      "sha256": "1860d9166f2058a7e8aaeea3539f415e0f0df0b8409253c9e382f0f7bc7bd284",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/FullBalanced_seed23/predictions.csv": {
+      "sha256": "567fd7de4635fca223d7d77a163ea16cad80b0a262f60b66a312574f5415c49b",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/FullBalanced_seed29/predictions.csv": {
+      "sha256": "2c3ee56052597a84615bbad97105dd2191102c27137ae07619a608f8e80a1896",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/NoUWB_seed17/predictions.csv": {
+      "sha256": "e60420aea38444634c0df65dc757f83d9c6c7204e4ccc2f8fdcbe2bdf5b64f63",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/NoUWB_seed23/predictions.csv": {
+      "sha256": "b7899e88331449dd848ea64bb7157c3ea1b1deabb4c66c6fbfc84ee83bd6477d",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/NoUWB_seed29/predictions.csv": {
+      "sha256": "07ee984d4e8f2cae7aa48e2d86eae9cc82e3022de66c9c80a686b365a3d2abbd",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/NoHD_seed17/predictions.csv": {
+      "sha256": "c4e6e73b1950421f07f85ac2c077867b75c44339ba4405d4819a90eeeeb8346d",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/NoHD_seed23/predictions.csv": {
+      "sha256": "6b3b2dd5e8b566217a938f2e4fddb660f1a66a642eebbbe58bdc75c6966ce8d2",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/NoHD_seed29/predictions.csv": {
+      "sha256": "73e300fd4747f6ea60d53a59c9968e94943db0edf759dd0fc9b230b380d0c308",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/NoAkl_seed17/predictions.csv": {
+      "sha256": "b471cfb5f011f193b9d62b1814893ad5fad11e3ef06c0e2497b2303039cc22fc",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/NoAkl_seed23/predictions.csv": {
+      "sha256": "afa0013ae30cce30259a1c5c6f8e37c28d7209b33cd57833e820c90871337d6a",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_4/NoAkl_seed29/predictions.csv": {
+      "sha256": "1adde819520bfb8a6a5771a91842b1d79409c11ffa527e3fdedc15e888728f7e",
+      "bytes": 159001,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_formal_os_20261007/fold_5/predictions.csv": {
+      "sha256": "c29af566ffdf3ab1bddecb058b0b074f74eda3079ec29288612969951878817e",
+      "bytes": 215704,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/CurrentOnly_seed17/predictions.csv": {
+      "sha256": "3a297210cb836b5b553840a469f3daf6c49f1f769451bd663e2bd66e8d8e7252",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/CurrentOnly_seed23/predictions.csv": {
+      "sha256": "1da027a04c273e1c643d7785c9a76315979d165db55158378d83aef8c616dc32",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/CurrentOnly_seed29/predictions.csv": {
+      "sha256": "c9592fc34da3079ce8087f9d2298a9312517745d7c2073320e9ffa8838f60561",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/RecurrentOnly_seed17/predictions.csv": {
+      "sha256": "39c24d71274532143f155b4715941e9c830f772d53bd7d2ba506fa25f4f8acfc",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/RecurrentOnly_seed23/predictions.csv": {
+      "sha256": "a66ebb9de2e9b2efe4a2fb749e86500f9b944df8edd255a2235c4a62a507e336",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/RecurrentOnly_seed29/predictions.csv": {
+      "sha256": "daabcf1991716472f2c8022dc695e89de9e001f7c7e54b607f2d9e324f52c37d",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/FullUniform_seed17/predictions.csv": {
+      "sha256": "e38cb846e304155b02b012873fe6b23b7c8ba9c0e223ef8732e25e67ee214e7f",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/FullUniform_seed23/predictions.csv": {
+      "sha256": "4be56aa78f0158726d89597865cee0447370a39c81388ce9b2a6beb7d920a631",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/FullUniform_seed29/predictions.csv": {
+      "sha256": "5bfcf09dbec90043f7254fcf4b6dbfc8f3a08153281f0d0b199e33108254b587",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/FullBalanced_seed17/predictions.csv": {
+      "sha256": "0e03b79dfd94f9b8857e9bca640b742e6a7f4f45a0f2f0a96cd7328e35bbf551",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/FullBalanced_seed23/predictions.csv": {
+      "sha256": "a7633fee2b07291ccf00eff14995897c714e0a4dcfb46fc13b62294ae29565c3",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/FullBalanced_seed29/predictions.csv": {
+      "sha256": "2c2f61adcda65326897f2aed662b14840120718affcd3fe184b54fda9da3f81d",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/NoUWB_seed17/predictions.csv": {
+      "sha256": "9a876770a5dc7ecc04f41f1b1c882b638020867d9147a1f30cf2d432dbd1e6e9",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/NoUWB_seed23/predictions.csv": {
+      "sha256": "3c5111df4ac73571d9f3e7fb9bac49d3e012e241168f94469d78ec7aa18fe554",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/NoUWB_seed29/predictions.csv": {
+      "sha256": "ce4c53d19cbf110c07234070aed05022acab7861f980637853ff94a296c7e9c4",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/NoHD_seed17/predictions.csv": {
+      "sha256": "a9a8efcbd7dff31cfbbdfa706defd2813cd28d9fa2d3ee0e456a3169b917e5e9",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/NoHD_seed23/predictions.csv": {
+      "sha256": "4075c294b7d78d248df52080829174069fe5d69ac5a1bfead2796bbc78d53dad",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/NoHD_seed29/predictions.csv": {
+      "sha256": "269a18a5a7574f252fb03754b9216d3eb958f6c5dcc95c7d8c8ff7de31c07a6e",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/NoAkl_seed17/predictions.csv": {
+      "sha256": "94589974330e7d52eb5e60222131a2860905fe2e0e98c930efa8bea1120751da",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/NoAkl_seed23/predictions.csv": {
+      "sha256": "ce8df074b84222c468f34793f25f1de36ff94183647fc27b9fa57464c66a1c65",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    },
+    "reports/sensor_motion_architecture_formal_attempt2_20261009/OS/fold_5/NoAkl_seed29/predictions.csv": {
+      "sha256": "99f9e6c6bc7f4c565343e23696afb38071bc371a37232ce622f6452a44335b3a",
+      "bytes": 159426,
+      "matches_main_summary_source": false
+    }
+  },
+  "raw_data_redistributed": false,
+  "dataset_license": "CC-BY-NC-SA-4.0 for reused labels/derived input fragments; source attribution required"
+}

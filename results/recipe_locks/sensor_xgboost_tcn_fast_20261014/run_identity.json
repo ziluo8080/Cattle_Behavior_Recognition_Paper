@@ -1,0 +1,128 @@
+{
+  "config": {
+    "name": "sensor_xgboost_tcn_fast_20261014",
+    "output": "reports/sensor_xgboost_tcn_fast_20261014",
+    "performance_revision": "strict_deterministic_channels_last_height_one_convolution",
+    "previous_attempt": "reports/sensor_xgboost_tcn_20261014",
+    "optimization_validation": "reports/sensor_tcn_fast_validation_20261014/VALIDATION.json",
+    "source": "data/sensor_formal_0725_20261007",
+    "reuse_architecture_root": "reports/sensor_architecture_comparison_20261011",
+    "base_config": "configs/sensor_classic_comparison_20261012.json",
+    "environment_spec": "configs/sensor_xgboost_tcn_env_20261014.json",
+    "protocols": [
+      "TS",
+      "OS"
+    ],
+    "folds": [
+      "fold_1",
+      "fold_2",
+      "fold_3",
+      "fold_4",
+      "fold_5"
+    ],
+    "models": [
+      "XGBoost-Window",
+      "TCN-Window-VAL"
+    ],
+    "selection_seed": 17,
+    "formal_seeds": [
+      17,
+      23,
+      29
+    ],
+    "learning_rates": [
+      0.001,
+      0.0003
+    ],
+    "max_epochs": 100,
+    "minimum_training_epochs": 20,
+    "patience": 10,
+    "weight_decay": 0.01,
+    "batch_size": 256,
+    "threads": 4,
+    "expected_parameters": {
+      "TCN-Window-VAL": 86812
+    },
+    "tcn": {
+      "hidden_channels": 23,
+      "dilations": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "convolutions_per_block": 2,
+      "kernel_size": 3,
+      "receptive_field": 125,
+      "dropout": 0.1,
+      "normalization": "per_time_channel_LayerNorm",
+      "readout": "same_endpoint_validity_gate_and_current_skip_as_GRU"
+    },
+    "xgboost": {
+      "objective": "multi:softprob",
+      "num_class": 7,
+      "tree_method": "hist",
+      "device": "cpu",
+      "eta": 0.05,
+      "max_bin": 256,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "min_child_weight": 1.0,
+      "lambda": 1.0,
+      "nthread": 4,
+      "disable_default_eval_metric": 1,
+      "candidates": [
+        {
+          "max_depth": 3
+        },
+        {
+          "max_depth": 6
+        }
+      ],
+      "max_rounds": 500,
+      "early_stopping_rounds": 20,
+      "sample_weight": "TRAIN_or_Fit_balanced_class_frequency",
+      "selection_metric": "VAL_fixed_seven_class_macro_F1_with_common_missing_fallback"
+    },
+    "selection_jobs": 40,
+    "formal_jobs": 60,
+    "max_parallel": 1,
+    "automatic_hyperparameter_changes": false,
+    "historical_Test_exposure": true,
+    "new_blind_evaluation": false,
+    "mainline_automatically_replaced": false
+  },
+  "sources": {
+    "configs/sensor_xgboost_tcn_fast_20261014.json": "c786f3f9fb063075001209fd3583d0adcd3769a823c61750ab03eb6b36262466",
+    "/q3/mmcows-sensor-behavior-20261007/scripts/run_sensor_xgboost_tcn_fast_20261014.py": "65eb64c51276e77ad1fecc4e23eb6702af420f019382a6e5e1c732df9d50f86f",
+    "scripts/sensor_tcn_model_fast_20261014.py": "a23498131cc430a872a7356f601e902547697c8090aac71c36d6959fabb339b2",
+    "reports/sensor_tcn_fast_validation_20261014/VALIDATION.json": "3f3790c0853b1e367016c9a6ec21270c8fab2b48226d121262e057314091bd16",
+    "scripts/check_sensor_tcn_fast_20261014.py": "074132500723804c14ab0257486f60e469155cf3e40fe98870393a15d6d824ce",
+    "configs/sensor_classic_comparison_20261012.json": "5b3e12a484afe5edf971e32dff9f069237862b56ea90888810de483b9f7392c0",
+    "scripts/run_sensor_classic_comparison_20261012.py": "6147eb6a6a90bfaeb4c80c711dbff1333bf8bc3a3e7f36d3e04f33da6f367574",
+    "configs/sensor_xgboost_tcn_env_20261014.json": "5f066e1fffcd42bab60cee71bd2cc63a32ac28da77c6e0302e904902573a1b52",
+    "scripts/sensor_classic_features_20261012.py": "49d941ad28115a4aae7b848f3bf4ee7b436a22f4a2d72c039f5b3865d908699e",
+    "reports/sensor_xgboost_tcn_fast_20261014/ENV_WITNESS.json": "295013b13b92b8504bdc212823f8d30af149a3fd5c231f4cc3f19fdb41cfea1a",
+    "reports/sensor_xgboost_tcn_fast_20261014/INDEPENDENT_ENV_WITNESS.json": "4fef1a889f719b00c640755bd42be16713446d9bb3ed485e16524a9142db98cc",
+    "configs/sensor_architecture_comparison_20261011.json": "39018d25e37aca858d1103a085aae39c49c8d84809089d75375b6f0f2a184232",
+    "/q3/mmcows-sensor-behavior-20261007/scripts/run_sensor_architecture_comparison_20261011.py": "9c195c90d61dd7428642dfa715000081ffe5b19961aa70557668da14b0c92c48",
+    "scripts/sensor_architecture_models_20261011.py": "b1949348916926d3ad265185797e7547e40a0fe871ed444d74481cda02044d4a",
+    "scripts/sensor_architecture_data_20261011.py": "565fbf25d4e92acce38f0d2b37da9104aeff4c3731211ac4d4973afb1b3e0552",
+    "scripts/summarize_sensor_architecture_comparison_20261011.py": "c7ce6a2f700caf617bfabf8a6263e161adaee17684f484cacab39fb237bc83ba",
+    "scripts/launch_sensor_architecture_comparison_20261011.py": "17aa8b4460607b175fa5f075d3cc1e4cc95fae062dffc38f74658d3aea3a9041",
+    "scripts/run_sensor_history_controls_20261011.py": "5f48847a68c86ee89ce28ef013c1a39ca78e1492ee9b7c2f7b195272cfa96ffa",
+    "scripts/train_sensor_baselines.py": "a7314e6004df0d023515b7f2a0db8053499ac91150a1dede20f1f28e3713fbba",
+    "scripts/run_sensor_formal_ts.py": "4a1d169fe9118aa5ce8edb9b366a2a181c9ee49ac20ba1f53404fbeffbbe3058",
+    "scripts/sensor_os_protocol.py": "0ae35de3bfce491785f128784e89593f32bf5727171d7a43ca2a2c4097bcb17d",
+    "q3_sensor/__init__.py": "6176aab524b96b833e78c85e1c4b8bd11e30c1e121d9219ce6eaadc3c45378c6",
+    "q3_sensor/archive.py": "5f2fb576c36b2841fd92754b0af3ae70941270653ad78a603974271857507bac",
+    "q3_sensor/endpoint_models.py": "0db9b15b681866799b440637d48ed23d6cdccc31cbe9521465cb6a2486aed5c5",
+    "q3_sensor/evaluation.py": "0ceb887174997541c8c490cf4daf2b498251cce563fdbf1b70c28bba41fcd0cd",
+    "q3_sensor/model.py": "773a78c41762c83c88a1111b87b0d869be68e3dd39a550b1a4648be83f77c335",
+    "q3_sensor/official.py": "aa2c2f8608f4c4b6e853ec2675100b9ad316b86f8df36ad2208b8030f6f501eb",
+    "q3_sensor/protocol.py": "120c8ab68a64898a2a7980ead48977385f7bda92fcdcb0be4cc25b5022e99350",
+    "q3_sensor/stress.py": "61a00af67e1912c2e03ca811d28ce5b8871c3ceecf994e4022838923898b6077"
+  },
+  "environment_spec_sha256": "5f066e1fffcd42bab60cee71bd2cc63a32ac28da77c6e0302e904902573a1b52"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "synthetic_only": true,
+  "scientific_F1": false,
+  "versions": {
+    "torch": "2.4.1+cu121",
+    "numpy": "1.24.4",
+    "numba": "0.60.0",
+    "llvmlite": "0.43.0",
+    "sklearn": "1.3.2"
+  },
+  "actual_features": 9996,
+  "native_seed_reproducible": true,
+  "batch_transform_exact": true,
+  "ridge_fit_finite": true,
+  "CUDA_kernel_finite": true,
+  "environment_canonical_sha256": "9742432e8a0e32228f266c4dd7143eb7fae228f7a9fb29c89a95c78094a991f9",
+  "vendor_sha256": "e48c16b9b9b122d3794638d4e01303396c2db76f44b561b6cd6b21331035d940"
+}

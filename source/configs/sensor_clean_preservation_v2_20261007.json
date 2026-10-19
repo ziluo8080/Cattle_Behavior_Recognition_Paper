@@ -1,0 +1,29 @@
+{
+  "stage": "frozen_TS_OS_fold1_TRAIN_VAL_clean_preservation_v2",
+  "execution": "bitahub-root_cloud_only",
+  "output": "reports/sensor_clean_preservation_v2_20261007",
+  "cache": "data/sensor_clean_preservation_v2_20261007",
+  "source": "data/sensor_formal_0725_20261007",
+  "protocols": ["TS", "OS"],
+  "training": {"epochs": 20, "seeds": [17, 23, 29], "batch_size": 256, "learning_rate": 0.001, "weight_decay": 0.01, "threads": 4, "selection": "fixed_final_epoch", "augmentation_seed_offset": 200000, "dropout_seed_offset": 100000},
+  "arms": [
+    {"name": "P0", "augmentation": false, "distillation": false},
+    {"name": "P1", "augmentation": true, "distillation": false, "augmentation_regimes": {"all_clean": 0.50, "joint_delay30": 0.10, "independent_per_modality": 0.40}},
+    {"name": "P2", "augmentation": true, "distillation": false, "augmentation_regimes": {"all_clean": 0.75, "joint_delay30": 0.05, "independent_per_modality": 0.20}},
+    {"name": "P3", "augmentation": true, "distillation": true, "augmentation_regimes": {"all_clean": 0.50, "joint_delay30": 0.10, "independent_per_modality": 0.40}, "temperature": 2.0, "lambda": 0.5}
+  ],
+  "train_modes": ["clean", "drop", "delay15", "delay30", "rate", "burst0", "burst100", "burst200"],
+  "train_mode_probabilities": [0.35, 0.20, 0.15, 0.15, 0.075, 0.025, 0.025, 0.025],
+  "training_rate_factors": {"uwb": 2, "hd": 10, "akl": 2},
+  "training_burst": {"period_seconds": 300, "missing_seconds": 30, "phase_offsets": [0, 100, 200]},
+  "gates": {"clean_macro_drop_limit_vs_P0": 0.005, "clean_any_class_drop_limit_vs_P0": 0.01, "class_decline_reporting_threshold": 0.005, "critical_drop_limit_vs_P1": 0.01, "primary_gain_vs_P0": 0.03, "primary_paired_CI_lower_positive": true},
+  "primary_conditions": ["drop_uwb", "hd_delay_30"],
+  "critical_conditions": ["drop_uwb", "hd_delay_30", "uwb_delay_30", "all_delay_30"],
+  "candidate_order": ["P2", "P3"],
+  "selection_rule": "pass_all_checks_both_protocols_then_max_min_protocol_clean_gain_vs_P0_tie_prefers_P2",
+  "interval": {"replicates": 2000, "seed": 20261007, "block_seconds": 300},
+  "TEST_scoring": false,
+  "new_blindness": false,
+  "formal_refit_automatic": false,
+  "local_experiment_execution_allowed": false
+}

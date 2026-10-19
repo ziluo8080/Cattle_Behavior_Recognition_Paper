@@ -1,0 +1,24 @@
+{
+  "base_spec": "configs/sensor_classic_env_20261012.json",
+  "python": "3.11.16",
+  "torch": "2.4.1+cu121",
+  "numpy": "1.24.4",
+  "sklearn": "1.3.2",
+  "xgboost": "2.1.4",
+  "isolated_directory": ".xgb_deps_20261014",
+  "pip_phases": [["xgboost-cpu==2.1.4"]],
+  "installation": "--no-deps --only-binary=:all: --target .xgb_deps_20261014",
+  "env": {
+    "PYTHONPATH": ".xgb_deps_20261014:.classic_deps_20261012:.sensor_deps:.",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "NUMBA_NUM_THREADS": "4",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "xgboost_device": "cpu",
+  "witness": "python -m scripts.run_sensor_xgboost_tcn_20261014 witness",
+  "sentinel": "XGBOOST_TCN_ENV_WITNESS_PASS"
+}

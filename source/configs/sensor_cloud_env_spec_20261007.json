@@ -1,0 +1,15 @@
+{
+  "provider": "bitahub-root",
+  "project": "/q3/mmcows-sensor-behavior-20261007",
+  "base_python": "/q3/mmcows-rgbs-convnext/.venv/bin/python",
+  "base_venv_modified": false,
+  "isolated_dependency_target": "/q3/mmcows-sensor-behavior-20261007/.sensor_deps",
+  "additional_packages_no_deps": ["scikit-learn==1.3.2", "joblib==1.3.2", "threadpoolctl==3.2.0"],
+  "device": "NVIDIA_GeForce_RTX_4090",
+  "gpu_index": 0,
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "precision": "FP32_TF32_disabled",
+  "local_experiment_execution_allowed": false,
+  "sensor_cloud_execution_authorized": true,
+  "rgb_cloud_jobs_remain_paused": true
+}

@@ -1,0 +1,300 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="166mm" height="114.125mm" viewBox="0 0 1600 1100">
+<title>多源历史与当前状态融合结构</title><desc>紧凑大字号版本。文字最小28逻辑像素，在166毫米图宽时约8.24磅。三个独立GRU分支产生192维历史特征；完整当前端点26维仅在218维处融合。全图矢量，中文文本可编辑。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#172D47"/></marker>
+<linearGradient id="process" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0" stop-color="#F2F7FD"/>
+<stop offset="0.48" stop-color="#D8E8F6"/>
+<stop offset="1" stop-color="#E4EFFB"/></linearGradient>
+<linearGradient id="head" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0" stop-color="#FAFBFC"/>
+<stop offset="0.48" stop-color="#F1F3F5"/>
+<stop offset="1" stop-color="#E7EBEF"/></linearGradient>
+<linearGradient id="blueFront" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0" stop-color="#BEDCF4"/>
+<stop offset="0.48" stop-color="#A9CDEA"/>
+<stop offset="1" stop-color="#91B8DB"/></linearGradient>
+<linearGradient id="blueTop" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0" stop-color="#E8F2FB"/>
+<stop offset="1" stop-color="#C1DDF1"/></linearGradient>
+<linearGradient id="blueSide" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0" stop-color="#B8D4EA"/>
+<stop offset="1" stop-color="#6E96BB"/></linearGradient>
+<linearGradient id="greenFront" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0" stop-color="#D5EADC"/>
+<stop offset="0.48" stop-color="#B7DECC"/>
+<stop offset="1" stop-color="#9BCBB6"/></linearGradient>
+<linearGradient id="greenTop" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0" stop-color="#EDF6ED"/>
+<stop offset="1" stop-color="#C9E3D6"/></linearGradient>
+<linearGradient id="greenSide" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0" stop-color="#BDDBC9"/>
+<stop offset="1" stop-color="#739E8B"/></linearGradient>
+<linearGradient id="purpleFront" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0" stop-color="#E0D9F0"/>
+<stop offset="0.48" stop-color="#CCC0E3"/>
+<stop offset="1" stop-color="#B3A0D4"/></linearGradient>
+<linearGradient id="purpleTop" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0" stop-color="#F1ECF8"/>
+<stop offset="1" stop-color="#D8CCE9"/></linearGradient>
+<linearGradient id="purpleSide" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0" stop-color="#C4B7DC"/>
+<stop offset="1" stop-color="#8775AE"/></linearGradient>
+<linearGradient id="currentFront" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0" stop-color="#F2F4F7"/>
+<stop offset="0.48" stop-color="#E3E7EB"/>
+<stop offset="1" stop-color="#D6DCE2"/></linearGradient>
+<linearGradient id="currentTop" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0" stop-color="#FFFFFF"/>
+<stop offset="1" stop-color="#E9EDF1"/></linearGradient>
+<linearGradient id="currentSide" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0" stop-color="#DEE3E8"/>
+<stop offset="1" stop-color="#9BA5B0"/></linearGradient>
+</defs>
+<rect x="0" y="0" width="1600" height="1100" rx="0" fill="white" stroke="none" stroke-width="1.5" />
+<text id="text_000" x="113" y="40" font-family="Noto Sans CJK SC" font-size="32" font-weight="600" fill="#101E31" text-anchor="middle">UWB 历史</text>
+<text id="text_001" x="113" y="78" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#101E31" text-anchor="middle">60 × 8</text>
+<polygon points="40,118 70,96 190,96 160,118" fill="url(#blueTop)" stroke="#5C7FA4" stroke-width="1.3" stroke-linejoin="round" />
+<polygon points="160,118 190,96 190,141 160,163" fill="url(#blueSide)" stroke="#5C7FA4" stroke-width="1.3" stroke-linejoin="round" />
+<rect x="40" y="118" width="120" height="45" rx="0" fill="url(#blueFront)" stroke="#5C7FA4" stroke-width="1.3" />
+<path d="M 57 163 V 118 L 87 96" fill="none" stroke="#5C7FA4" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 74 163 V 118 L 104 96" fill="none" stroke="#5C7FA4" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 91 163 V 118 L 121 96" fill="none" stroke="#5C7FA4" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 123 163 V 118 L 153 96" fill="none" stroke="#5C7FA4" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 143 163 V 118 L 173 96" fill="none" stroke="#5C7FA4" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="91" y="118" width="32" height="45" rx="0" fill="white" stroke="none" stroke-width="1.5" opacity="0.27"/>
+<polygon points="91,118 121,96 153,96 123,118" fill="#FFFFFF" stroke="none" stroke-width="0" stroke-linejoin="round" opacity="0.42"/>
+<text id="text_002" x="106" y="157" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<path d="M 40 173 H 160" fill="none" stroke="#172D47" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_003" x="36" y="203" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="start">t−59</text>
+<text id="text_004" x="160" y="203" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="end">t</text>
+<path d="M 192 150 H 208" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="215" y="108" width="150" height="84" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 225 112 H 355" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_005" x="290.0" y="142.0" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#101E31" text-anchor="middle">投影32维</text>
+<text id="text_006" x="290.0" y="180.0" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#101E31" text-anchor="middle">GELU</text>
+<path d="M 368 150 H 398" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_007" x="565" y="41" font-family="Noto Sans CJK SC" font-size="28" font-weight="500" fill="#101E31" text-anchor="middle">单层单向GRU · 64维</text>
+<text id="text_008" x="443" y="80" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">t−59</text>
+<text id="text_009" x="563" y="80" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<text id="text_010" x="688" y="80" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">t</text>
+<path d="M 409 99 v -5 q 0 -4 4 -4 H 717 q 4 0 4 4 v 5" fill="none" stroke="#172D47" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="405" y="114" width="75" height="72" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 415 118 H 470" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_011" x="442.5" y="161.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">GRU</text>
+<rect x="525" y="114" width="75" height="72" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 535 118 H 590" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_012" x="562.5" y="161.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">GRU</text>
+<rect x="650" y="114" width="75" height="72" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 660 118 H 715" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_013" x="687.5" y="161.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">GRU</text>
+<path d="M 483 150 H 517" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 603 150 H 611" fill="none" stroke="#172D47" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_014" x="624" y="160" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<path d="M 640 150 H 645" fill="none" stroke="#172D47" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 729 150 H 767" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="775" y="108" width="190" height="84" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 785 112 H 955" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_015" x="870.0" y="142.0" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#101E31" text-anchor="middle">末步读出</text>
+<text id="text_016" x="870.0" y="180.0" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#101E31" text-anchor="middle">层归一化</text>
+<path d="M 968 150 H 997" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1005" y="104" width="190" height="92" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 1015 108 H 1185" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_017" x="1100.0" y="142.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">端点有效性</text>
+<text id="text_018" x="1100.0" y="180.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">门控</text>
+<path d="M 1198 150 H 1227" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_019" x="1303" y="105" font-family="Noto Sans CJK SC" font-size="30" font-weight="500" fill="#101E31" text-anchor="middle">64维</text>
+<polygon points="1235,133 1245,123 1380,123 1370,133" fill="url(#blueTop)" stroke="#5C7FA4" stroke-width="1.3" stroke-linejoin="round" />
+<polygon points="1370,133 1380,123 1380,157 1370,167" fill="url(#blueSide)" stroke="#5C7FA4" stroke-width="1.3" stroke-linejoin="round" />
+<rect x="1235" y="133" width="135" height="34" rx="0" fill="url(#blueFront)" stroke="#5C7FA4" stroke-width="1.3" />
+<path d="M 1254 167 V 133 l 10 -10" fill="none" stroke="#5C7FA4" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1273 167 V 133 l 10 -10" fill="none" stroke="#5C7FA4" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1332 167 V 133 l 10 -10" fill="none" stroke="#5C7FA4" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1351 167 V 133 l 10 -10" fill="none" stroke="#5C7FA4" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="1273" y="133" width="59" height="34" rx="0" fill="white" stroke="none" stroke-width="1.5" opacity="0.27"/>
+<text id="text_020" x="1302.5" y="159.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<path d="M 1383 150 H 1402 Q 1414 150 1414 162 V 188 Q 1414 200 1426 200 H 1443" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_021" x="113" y="240" font-family="Noto Sans CJK SC" font-size="32" font-weight="600" fill="#101E31" text-anchor="middle">头部方向历史</text>
+<text id="text_022" x="113" y="278" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#101E31" text-anchor="middle">60 × 14</text>
+<polygon points="40,318 70,296 190,296 160,318" fill="url(#greenTop)" stroke="#6F9A8A" stroke-width="1.3" stroke-linejoin="round" />
+<polygon points="160,318 190,296 190,341 160,363" fill="url(#greenSide)" stroke="#6F9A8A" stroke-width="1.3" stroke-linejoin="round" />
+<rect x="40" y="318" width="120" height="45" rx="0" fill="url(#greenFront)" stroke="#6F9A8A" stroke-width="1.3" />
+<path d="M 57 363 V 318 L 87 296" fill="none" stroke="#6F9A8A" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 74 363 V 318 L 104 296" fill="none" stroke="#6F9A8A" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 91 363 V 318 L 121 296" fill="none" stroke="#6F9A8A" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 123 363 V 318 L 153 296" fill="none" stroke="#6F9A8A" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 143 363 V 318 L 173 296" fill="none" stroke="#6F9A8A" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="91" y="318" width="32" height="45" rx="0" fill="white" stroke="none" stroke-width="1.5" opacity="0.27"/>
+<polygon points="91,318 121,296 153,296 123,318" fill="#FFFFFF" stroke="none" stroke-width="0" stroke-linejoin="round" opacity="0.42"/>
+<text id="text_023" x="106" y="357" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<path d="M 40 373 H 160" fill="none" stroke="#172D47" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_024" x="36" y="403" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="start">t−59</text>
+<text id="text_025" x="160" y="403" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="end">t</text>
+<path d="M 192 350 H 208" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="215" y="308" width="150" height="84" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 225 312 H 355" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_026" x="290.0" y="342.0" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#101E31" text-anchor="middle">投影32维</text>
+<text id="text_027" x="290.0" y="380.0" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#101E31" text-anchor="middle">GELU</text>
+<path d="M 368 350 H 398" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_028" x="565" y="241" font-family="Noto Sans CJK SC" font-size="28" font-weight="500" fill="#101E31" text-anchor="middle">单层单向GRU · 64维</text>
+<text id="text_029" x="443" y="280" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">t−59</text>
+<text id="text_030" x="563" y="280" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<text id="text_031" x="688" y="280" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">t</text>
+<path d="M 409 299 v -5 q 0 -4 4 -4 H 717 q 4 0 4 4 v 5" fill="none" stroke="#172D47" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="405" y="314" width="75" height="72" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 415 318 H 470" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_032" x="442.5" y="361.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">GRU</text>
+<rect x="525" y="314" width="75" height="72" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 535 318 H 590" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_033" x="562.5" y="361.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">GRU</text>
+<rect x="650" y="314" width="75" height="72" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 660 318 H 715" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_034" x="687.5" y="361.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">GRU</text>
+<path d="M 483 350 H 517" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 603 350 H 611" fill="none" stroke="#172D47" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_035" x="624" y="360" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<path d="M 640 350 H 645" fill="none" stroke="#172D47" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 729 350 H 767" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="775" y="308" width="190" height="84" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 785 312 H 955" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_036" x="870.0" y="342.0" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#101E31" text-anchor="middle">末步读出</text>
+<text id="text_037" x="870.0" y="380.0" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#101E31" text-anchor="middle">层归一化</text>
+<path d="M 968 350 H 997" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1005" y="304" width="190" height="92" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 1015 308 H 1185" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_038" x="1100.0" y="342.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">端点有效性</text>
+<text id="text_039" x="1100.0" y="380.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">门控</text>
+<path d="M 1198 350 H 1227" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_040" x="1303" y="305" font-family="Noto Sans CJK SC" font-size="30" font-weight="500" fill="#101E31" text-anchor="middle">64维</text>
+<polygon points="1235,333 1245,323 1380,323 1370,333" fill="url(#greenTop)" stroke="#6F9A8A" stroke-width="1.3" stroke-linejoin="round" />
+<polygon points="1370,333 1380,323 1380,357 1370,367" fill="url(#greenSide)" stroke="#6F9A8A" stroke-width="1.3" stroke-linejoin="round" />
+<rect x="1235" y="333" width="135" height="34" rx="0" fill="url(#greenFront)" stroke="#6F9A8A" stroke-width="1.3" />
+<path d="M 1254 367 V 333 l 10 -10" fill="none" stroke="#6F9A8A" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1273 367 V 333 l 10 -10" fill="none" stroke="#6F9A8A" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1332 367 V 333 l 10 -10" fill="none" stroke="#6F9A8A" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1351 367 V 333 l 10 -10" fill="none" stroke="#6F9A8A" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="1273" y="333" width="59" height="34" rx="0" fill="white" stroke="none" stroke-width="1.5" opacity="0.27"/>
+<text id="text_041" x="1302.5" y="359.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<path d="M 1383 350 H 1443" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_042" x="113" y="440" font-family="Noto Sans CJK SC" font-size="32" font-weight="600" fill="#101E31" text-anchor="middle">踝部状态历史</text>
+<text id="text_043" x="113" y="478" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#101E31" text-anchor="middle">60 × 4</text>
+<polygon points="40,518 70,496 190,496 160,518" fill="url(#purpleTop)" stroke="#8B7BA5" stroke-width="1.3" stroke-linejoin="round" />
+<polygon points="160,518 190,496 190,541 160,563" fill="url(#purpleSide)" stroke="#8B7BA5" stroke-width="1.3" stroke-linejoin="round" />
+<rect x="40" y="518" width="120" height="45" rx="0" fill="url(#purpleFront)" stroke="#8B7BA5" stroke-width="1.3" />
+<path d="M 57 563 V 518 L 87 496" fill="none" stroke="#8B7BA5" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 74 563 V 518 L 104 496" fill="none" stroke="#8B7BA5" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 91 563 V 518 L 121 496" fill="none" stroke="#8B7BA5" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 123 563 V 518 L 153 496" fill="none" stroke="#8B7BA5" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 143 563 V 518 L 173 496" fill="none" stroke="#8B7BA5" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="91" y="518" width="32" height="45" rx="0" fill="white" stroke="none" stroke-width="1.5" opacity="0.27"/>
+<polygon points="91,518 121,496 153,496 123,518" fill="#FFFFFF" stroke="none" stroke-width="0" stroke-linejoin="round" opacity="0.42"/>
+<text id="text_044" x="106" y="557" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<path d="M 40 573 H 160" fill="none" stroke="#172D47" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_045" x="36" y="603" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="start">t−59</text>
+<text id="text_046" x="160" y="603" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="end">t</text>
+<path d="M 192 550 H 208" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="215" y="508" width="150" height="84" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 225 512 H 355" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_047" x="290.0" y="542.0" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#101E31" text-anchor="middle">投影32维</text>
+<text id="text_048" x="290.0" y="580.0" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#101E31" text-anchor="middle">GELU</text>
+<path d="M 368 550 H 398" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_049" x="565" y="441" font-family="Noto Sans CJK SC" font-size="28" font-weight="500" fill="#101E31" text-anchor="middle">单层单向GRU · 64维</text>
+<text id="text_050" x="443" y="480" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">t−59</text>
+<text id="text_051" x="563" y="480" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<text id="text_052" x="688" y="480" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">t</text>
+<path d="M 409 499 v -5 q 0 -4 4 -4 H 717 q 4 0 4 4 v 5" fill="none" stroke="#172D47" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="405" y="514" width="75" height="72" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 415 518 H 470" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_053" x="442.5" y="561.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">GRU</text>
+<rect x="525" y="514" width="75" height="72" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 535 518 H 590" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_054" x="562.5" y="561.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">GRU</text>
+<rect x="650" y="514" width="75" height="72" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 660 518 H 715" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_055" x="687.5" y="561.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">GRU</text>
+<path d="M 483 550 H 517" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 603 550 H 611" fill="none" stroke="#172D47" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_056" x="624" y="560" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<path d="M 640 550 H 645" fill="none" stroke="#172D47" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 729 550 H 767" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="775" y="508" width="190" height="84" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 785 512 H 955" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_057" x="870.0" y="542.0" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#101E31" text-anchor="middle">末步读出</text>
+<text id="text_058" x="870.0" y="580.0" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#101E31" text-anchor="middle">层归一化</text>
+<path d="M 968 550 H 997" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1005" y="504" width="190" height="92" rx="8" fill="url(#process)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 1015 508 H 1185" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_059" x="1100.0" y="542.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">端点有效性</text>
+<text id="text_060" x="1100.0" y="580.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">门控</text>
+<path d="M 1198 550 H 1227" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_061" x="1303" y="505" font-family="Noto Sans CJK SC" font-size="30" font-weight="500" fill="#101E31" text-anchor="middle">64维</text>
+<polygon points="1235,533 1245,523 1380,523 1370,533" fill="url(#purpleTop)" stroke="#8B7BA5" stroke-width="1.3" stroke-linejoin="round" />
+<polygon points="1370,533 1380,523 1380,557 1370,567" fill="url(#purpleSide)" stroke="#8B7BA5" stroke-width="1.3" stroke-linejoin="round" />
+<rect x="1235" y="533" width="135" height="34" rx="0" fill="url(#purpleFront)" stroke="#8B7BA5" stroke-width="1.3" />
+<path d="M 1254 567 V 533 l 10 -10" fill="none" stroke="#8B7BA5" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1273 567 V 533 l 10 -10" fill="none" stroke="#8B7BA5" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1332 567 V 533 l 10 -10" fill="none" stroke="#8B7BA5" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 1351 567 V 533 l 10 -10" fill="none" stroke="#8B7BA5" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="1273" y="533" width="59" height="34" rx="0" fill="white" stroke="none" stroke-width="1.5" opacity="0.27"/>
+<text id="text_062" x="1302.5" y="559.0" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<path d="M 1383 550 H 1402 Q 1414 550 1414 538 V 512 Q 1414 500 1426 500 H 1443" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_063" x="1500" y="40" font-family="Noto Sans CJK SC" font-size="32" font-weight="600" fill="#101E31" text-anchor="middle">历史拼接</text>
+<text id="text_064" x="1500" y="82" font-family="Noto Sans CJK SC" font-size="34" font-weight="600" fill="#101E31" text-anchor="middle">192维</text>
+<rect x="1450" y="125" width="100" height="150" rx="0" fill="url(#blueFront)" stroke="#5C7FA4" stroke-width="1.3" />
+<polygon points="1550,125 1562,113 1562,263 1550,275" fill="url(#blueSide)" stroke="#5C7FA4" stroke-width="1.3" stroke-linejoin="round" />
+<text id="text_065" x="1500" y="189" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">UWB</text>
+<text id="text_066" x="1500" y="228" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">64维</text>
+<rect x="1450" y="275" width="100" height="150" rx="0" fill="url(#greenFront)" stroke="#6F9A8A" stroke-width="1.3" />
+<polygon points="1550,275 1562,263 1562,413 1550,425" fill="url(#greenSide)" stroke="#6F9A8A" stroke-width="1.3" stroke-linejoin="round" />
+<text id="text_067" x="1500" y="339" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">头部</text>
+<text id="text_068" x="1500" y="378" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">64维</text>
+<rect x="1450" y="425" width="100" height="150" rx="0" fill="url(#purpleFront)" stroke="#8B7BA5" stroke-width="1.3" />
+<polygon points="1550,425 1562,413 1562,563 1550,575" fill="url(#purpleSide)" stroke="#8B7BA5" stroke-width="1.3" stroke-linejoin="round" />
+<text id="text_069" x="1500" y="489" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">踝部</text>
+<text id="text_070" x="1500" y="528" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">64维</text>
+<polygon points="1450,125 1462,113 1562,113 1550,125" fill="url(#blueTop)" stroke="#5C7FA4" stroke-width="1.3" stroke-linejoin="round" />
+<path d="M 1500 578 V 673 H 485 V 742" fill="none" stroke="#172D47" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_071" x="977" y="655" font-family="Noto Sans CJK SC" font-size="30" font-weight="500" fill="#101E31" text-anchor="middle">192维历史</text>
+<text id="text_072" x="177" y="900" font-family="Noto Sans CJK SC" font-size="32" font-weight="600" fill="#101E31" text-anchor="middle">当前端点 z(t)</text>
+<text id="text_073" x="177" y="943" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#101E31" text-anchor="middle">完整当前 · 26维</text>
+<polygon points="60,975 70,965 300,965 290,975" fill="url(#currentTop)" stroke="#75808E" stroke-width="1.3" stroke-linejoin="round" />
+<polygon points="290,975 300,965 300,1010 290,1020" fill="url(#currentSide)" stroke="#75808E" stroke-width="1.3" stroke-linejoin="round" />
+<rect x="60" y="975" width="230" height="45" rx="0" fill="url(#currentFront)" stroke="#75808E" stroke-width="1.3" />
+<path d="M 79 1020 V 975 l 10 -10" fill="none" stroke="#75808E" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 98 1020 V 975 l 10 -10" fill="none" stroke="#75808E" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 252 1020 V 975 l 10 -10" fill="none" stroke="#75808E" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M 271 1020 V 975 l 10 -10" fill="none" stroke="#75808E" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<rect x="98" y="975" width="154" height="45" rx="0" fill="white" stroke="none" stroke-width="1.5" opacity="0.27"/>
+<text id="text_074" x="175.0" y="1006.5" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">⋯</text>
+<path d="M 306 1000 H 406" fill="none" stroke="#172D47" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="415" y="750" width="140" height="78" rx="0" fill="url(#blueFront)" stroke="#5C7FA4" stroke-width="1.3" />
+<polygon points="555,750 567,738 567,816 555,828" fill="url(#blueSide)" stroke="#5C7FA4" stroke-width="1.3" stroke-linejoin="round" />
+<text id="text_075" x="485" y="781" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">UWB</text>
+<text id="text_076" x="485" y="815" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">64维</text>
+<rect x="415" y="828" width="140" height="78" rx="0" fill="url(#greenFront)" stroke="#6F9A8A" stroke-width="1.3" />
+<polygon points="555,828 567,816 567,894 555,906" fill="url(#greenSide)" stroke="#6F9A8A" stroke-width="1.3" stroke-linejoin="round" />
+<text id="text_077" x="485" y="859" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">头部</text>
+<text id="text_078" x="485" y="893" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">64维</text>
+<rect x="415" y="906" width="140" height="78" rx="0" fill="url(#purpleFront)" stroke="#8B7BA5" stroke-width="1.3" />
+<polygon points="555,906 567,894 567,972 555,984" fill="url(#purpleSide)" stroke="#8B7BA5" stroke-width="1.3" stroke-linejoin="round" />
+<text id="text_079" x="485" y="937" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">踝部</text>
+<text id="text_080" x="485" y="971" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">64维</text>
+<polygon points="415,750 427,738 567,738 555,750" fill="url(#blueTop)" stroke="#5C7FA4" stroke-width="1.3" stroke-linejoin="round" />
+<rect x="415" y="984" width="140" height="43" rx="0" fill="url(#currentFront)" stroke="#75808E" stroke-width="1.3" />
+<polygon points="555,984 567,972 567,1015 555,1027" fill="url(#currentSide)" stroke="#75808E" stroke-width="1.3" stroke-linejoin="round" />
+<text id="text_081" x="485" y="1014" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">当前26维</text>
+<text id="text_082" x="485" y="1070" font-family="Noto Sans CJK SC" font-size="32" font-weight="600" fill="#101E31" text-anchor="middle">拼接218维</text>
+<path d="M 574 873 H 617" fill="none" stroke="#172D47" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text id="text_083" x="934" y="781" font-family="Noto Sans CJK SC" font-size="32" font-weight="600" fill="#101E31" text-anchor="middle">分类头 218 → 128 → 7</text>
+<rect x="625" y="823" width="180" height="100" rx="8" fill="url(#head)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 635 827 H 795" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_084" x="715" y="862" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#101E31" text-anchor="middle">全连接</text>
+<text id="text_085" x="715" y="901" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">218 → 128</text>
+<path d="M 808 873 H 842" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="850" y="823" width="190" height="100" rx="8" fill="url(#head)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 860 827 H 1030" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_086" x="945" y="862" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#101E31" text-anchor="middle">GELU</text>
+<text id="text_087" x="945" y="901" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">Dropout 0.1</text>
+<path d="M 1043 873 H 1072" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1080" y="823" width="170" height="100" rx="8" fill="url(#head)" stroke="#334F70" stroke-width="1.5" />
+<path d="M 1090 827 H 1240" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="text_088" x="1165" y="862" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#101E31" text-anchor="middle">全连接</text>
+<text id="text_089" x="1165" y="901" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="middle">128 → 7</text>
+<path d="M 1253 873 H 1282" fill="none" stroke="#172D47" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1290" y="742" width="270" height="287" rx="10" fill="url(#head)" stroke="#334F70" stroke-width="1.5" />
+<text id="text_090" x="1425" y="791" font-family="Noto Sans CJK SC" font-size="34" font-weight="600" fill="#101E31" text-anchor="middle">七类行为</text>
+<text id="text_091" x="1320" y="831" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="start">1. 行走</text>
+<text id="text_092" x="1320" y="862" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="start">2. 站立</text>
+<text id="text_093" x="1320" y="893" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="start">3. 抬头采食</text>
+<text id="text_094" x="1320" y="924" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="start">4. 低头采食</text>
+<text id="text_095" x="1320" y="955" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="start">5. 舔舐</text>
+<text id="text_096" x="1320" y="986" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="start">6. 饮水</text>
+<text id="text_097" x="1320" y="1017" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="start">7. 躺卧</text>
+<text id="text_098" x="625" y="983" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="start">端点全无效 → 该路历史读出置零</text>
+<text id="text_099" x="625" y="1026" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#101E31" text-anchor="start">参数量：86,695</text>
+</svg>

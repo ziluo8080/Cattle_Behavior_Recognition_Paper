@@ -1,0 +1,332 @@
+{
+  "status": "full_author_daily_members_ready",
+  "method_lock_sha256": "3da0eadff0168791b7657070bbb93a546f8aad38638c6d5caa04c74ad8434e69",
+  "archive_revision": "532a193d5fd90ed6cfb2d640923c4358ceca00b4",
+  "scope": "July25_C01_to_C10_original_sensor_and_GT_CSVs_for_locked_TS_comparison",
+  "url": "https://huggingface.co/datasets/neis-lab/mmcows/resolve/532a193d5fd90ed6cfb2d640923c4358ceca00b4/sensor_data.zip",
+  "members": [
+    {
+      "cow_id": 1,
+      "kind": "uwb",
+      "member": "sensor_data/main_data/uwb/T01/T01_0725.csv",
+      "bytes": 179971,
+      "crc32_verified": true,
+      "sha256": "1aaeba3253ebaadb8537847b9ad0d83ef4f64d00523b8604e41fa4ebec132be3"
+    },
+    {
+      "cow_id": 1,
+      "kind": "hd",
+      "member": "sensor_data/sub_data/head_direction/T01/T01_0725.csv",
+      "bytes": 36817134,
+      "crc32_verified": true,
+      "sha256": "411717d1fdbe0206448c287b5a2fa2efbdaa16d6d42990073635b1c4b5f6d487"
+    },
+    {
+      "cow_id": 1,
+      "kind": "akl",
+      "member": "sensor_data/main_data/ankle/C01/C01_0725.csv",
+      "bytes": 51866,
+      "crc32_verified": true,
+      "sha256": "3f253e0f0f0ac0902d82e78150a29f673b453e328de3f13061ba874099a4c0a7"
+    },
+    {
+      "cow_id": 1,
+      "kind": "labels",
+      "member": "sensor_data/behavior_labels/individual/C01_0725.csv",
+      "bytes": 1864828,
+      "crc32_verified": true,
+      "sha256": "9140c902fc8b31b33c8c7afb6cb7917fb4bb06eca6aca39de935d652a8660a2d"
+    },
+    {
+      "cow_id": 2,
+      "kind": "uwb",
+      "member": "sensor_data/main_data/uwb/T02/T02_0725.csv",
+      "bytes": 179105,
+      "crc32_verified": true,
+      "sha256": "36bfb255de70fbd9c996eef37a2cc3088a47de0f06c36a2b388a6ce14f18cbca"
+    },
+    {
+      "cow_id": 2,
+      "kind": "hd",
+      "member": "sensor_data/sub_data/head_direction/T02/T02_0725.csv",
+      "bytes": 37475136,
+      "crc32_verified": true,
+      "sha256": "7bacb9743ec0b8ced7249459bb33b13d49d151861e8166e01c5c9846e94115d3"
+    },
+    {
+      "cow_id": 2,
+      "kind": "akl",
+      "member": "sensor_data/main_data/ankle/C02/C02_0725.csv",
+      "bytes": 51866,
+      "crc32_verified": true,
+      "sha256": "e4bf2336536a4239995fda2be13ec0f53e08b9969bdf2b7e282cef5e60fcc961"
+    },
+    {
+      "cow_id": 2,
+      "kind": "labels",
+      "member": "sensor_data/behavior_labels/individual/C02_0725.csv",
+      "bytes": 1864828,
+      "crc32_verified": true,
+      "sha256": "072b53587d2b01445b24f5dbb4188e3e17181bb1f76aa6c9f944aaecf8791b9f"
+    },
+    {
+      "cow_id": 3,
+      "kind": "uwb",
+      "member": "sensor_data/main_data/uwb/T03/T03_0725.csv",
+      "bytes": 180857,
+      "crc32_verified": true,
+      "sha256": "3a19235fb78472df5ff3b42642160a76d5cce80af4be9fca2861d0597b26d957"
+    },
+    {
+      "cow_id": 3,
+      "kind": "hd",
+      "member": "sensor_data/sub_data/head_direction/T03/T03_0725.csv",
+      "bytes": 37503307,
+      "crc32_verified": true,
+      "sha256": "1f85a85094b94568355ee09ec3e3d9231e60d15206dca3136b872533d9e83933"
+    },
+    {
+      "cow_id": 3,
+      "kind": "akl",
+      "member": "sensor_data/main_data/ankle/C03/C03_0725.csv",
+      "bytes": 51866,
+      "crc32_verified": true,
+      "sha256": "65e96c034d905559e2ed5f11b4ec72980b036f6b3e7ecfcdc73384eba4b94fb2"
+    },
+    {
+      "cow_id": 3,
+      "kind": "labels",
+      "member": "sensor_data/behavior_labels/individual/C03_0725.csv",
+      "bytes": 2037628,
+      "crc32_verified": true,
+      "sha256": "5645d0b92d704efd0c07b04cdeb706dcf63c6d8373f16c2a401e4a196e68cf04"
+    },
+    {
+      "cow_id": 4,
+      "kind": "uwb",
+      "member": "sensor_data/main_data/uwb/T04/T04_0725.csv",
+      "bytes": 180071,
+      "crc32_verified": true,
+      "sha256": "68b7041bd5c076a9b720d3476894f8dc48a44fc28c1fcc0e8a127af69e4365b4"
+    },
+    {
+      "cow_id": 4,
+      "kind": "hd",
+      "member": "sensor_data/sub_data/head_direction/T04/T04_0725.csv",
+      "bytes": 37042452,
+      "crc32_verified": true,
+      "sha256": "7d881ce2df887c52878dd2bd86d43b1f2d357b7158d9f75d24e351d5966e5465"
+    },
+    {
+      "cow_id": 4,
+      "kind": "akl",
+      "member": "sensor_data/main_data/ankle/C04/C04_0725.csv",
+      "bytes": 51866,
+      "crc32_verified": true,
+      "sha256": "fae2cdbb5d7bee1c920e77f8a1559d749b963d7255d84604477785f2fdc1c470"
+    },
+    {
+      "cow_id": 4,
+      "kind": "labels",
+      "member": "sensor_data/behavior_labels/individual/C04_0725.csv",
+      "bytes": 2037628,
+      "crc32_verified": true,
+      "sha256": "8125f84397463211bce507011da13073fd9799f981685d0eb6b4143df300cda2"
+    },
+    {
+      "cow_id": 5,
+      "kind": "uwb",
+      "member": "sensor_data/main_data/uwb/T05/T05_0725.csv",
+      "bytes": 180896,
+      "crc32_verified": true,
+      "sha256": "1429d996ba90898210ae0c0b627aa593fcf1ec8df80ac4334dabe61b7568370b"
+    },
+    {
+      "cow_id": 5,
+      "kind": "hd",
+      "member": "sensor_data/sub_data/head_direction/T05/T05_0725.csv",
+      "bytes": 37135455,
+      "crc32_verified": true,
+      "sha256": "b2971150edccc57d5b0866b64d301f33dace06bc7bc428956d3b096a14dd18ee"
+    },
+    {
+      "cow_id": 5,
+      "kind": "akl",
+      "member": "sensor_data/main_data/ankle/C05/C05_0725.csv",
+      "bytes": 51866,
+      "crc32_verified": true,
+      "sha256": "8d79ba396ae0ad10fad69787b6a3ad72d64c6fb9b312d62ed7e192dacc247a49"
+    },
+    {
+      "cow_id": 5,
+      "kind": "labels",
+      "member": "sensor_data/behavior_labels/individual/C05_0725.csv",
+      "bytes": 1864828,
+      "crc32_verified": true,
+      "sha256": "f28bf0da8dee5b5f080a265397faf0beebb090dc46be2fd0ee3574868e128025"
+    },
+    {
+      "cow_id": 6,
+      "kind": "uwb",
+      "member": "sensor_data/main_data/uwb/T06/T06_0725.csv",
+      "bytes": 184491,
+      "crc32_verified": true,
+      "sha256": "fce420fc289b6a031cb1aa14f6be62e802bda2b4baf1ffbbee6351d498db0e50"
+    },
+    {
+      "cow_id": 6,
+      "kind": "hd",
+      "member": "sensor_data/sub_data/head_direction/T06/T06_0725.csv",
+      "bytes": 37497243,
+      "crc32_verified": true,
+      "sha256": "9cef19839b705429a732126ea846f69284be74adbfa1e9b854488f1deeda78e8"
+    },
+    {
+      "cow_id": 6,
+      "kind": "akl",
+      "member": "sensor_data/main_data/ankle/C06/C06_0725.csv",
+      "bytes": 51866,
+      "crc32_verified": true,
+      "sha256": "57b345a29eb9056d6e9315a0db374631dc0ae71085d63490f20a62aecb589907"
+    },
+    {
+      "cow_id": 6,
+      "kind": "labels",
+      "member": "sensor_data/behavior_labels/individual/C06_0725.csv",
+      "bytes": 2037628,
+      "crc32_verified": true,
+      "sha256": "c84e52fc72b9dd30a320c9f7e6614dc8adadb24b74dc20954f4d02e6835f5459"
+    },
+    {
+      "cow_id": 7,
+      "kind": "uwb",
+      "member": "sensor_data/main_data/uwb/T07/T07_0725.csv",
+      "bytes": 177824,
+      "crc32_verified": true,
+      "sha256": "a12534a707fc1f164189c58f72c3ed45175d1a11c455935d3f8633a487bdc530"
+    },
+    {
+      "cow_id": 7,
+      "kind": "hd",
+      "member": "sensor_data/sub_data/head_direction/T07/T07_0725.csv",
+      "bytes": 37811778,
+      "crc32_verified": true,
+      "sha256": "9d5c16e3998c2d5b9cf148b97284632805e7c2ce72a5ec68c8843a5c1ee41971"
+    },
+    {
+      "cow_id": 7,
+      "kind": "akl",
+      "member": "sensor_data/main_data/ankle/C07/C07_0725.csv",
+      "bytes": 51866,
+      "crc32_verified": true,
+      "sha256": "882ce65e13a1eb85756f7f40dcc97346581e442fe44d26d31df5af2f354715d4"
+    },
+    {
+      "cow_id": 7,
+      "kind": "labels",
+      "member": "sensor_data/behavior_labels/individual/C07_0725.csv",
+      "bytes": 2037628,
+      "crc32_verified": true,
+      "sha256": "769a6b5b0ef6ef340c3b5ff3f7975628355e8b997e7ed577ff689bf439ffb24a"
+    },
+    {
+      "cow_id": 8,
+      "kind": "uwb",
+      "member": "sensor_data/main_data/uwb/T08/T08_0725.csv",
+      "bytes": 179787,
+      "crc32_verified": true,
+      "sha256": "7b289e000644a9b507a51ff772d61a76b65fd06feda168e1f3046f82b00cb4f2"
+    },
+    {
+      "cow_id": 8,
+      "kind": "hd",
+      "member": "sensor_data/sub_data/head_direction/T08/T08_0725.csv",
+      "bytes": 37351898,
+      "crc32_verified": true,
+      "sha256": "ef3f2f6af6c892e304e96ea9b2b09b46336be9c53bc25933f89de3bba2399301"
+    },
+    {
+      "cow_id": 8,
+      "kind": "akl",
+      "member": "sensor_data/main_data/ankle/C08/C08_0725.csv",
+      "bytes": 51866,
+      "crc32_verified": true,
+      "sha256": "c73f091a41c3906c4cbebd295b6f7da4f213f949aa1fe1b6a2cbfd6414caf21a"
+    },
+    {
+      "cow_id": 8,
+      "kind": "labels",
+      "member": "sensor_data/behavior_labels/individual/C08_0725.csv",
+      "bytes": 2037628,
+      "crc32_verified": true,
+      "sha256": "d66629b26f97ceb4961257c8738f08a377bb269777397e32aedea434338d4078"
+    },
+    {
+      "cow_id": 9,
+      "kind": "uwb",
+      "member": "sensor_data/main_data/uwb/T09/T09_0725.csv",
+      "bytes": 180086,
+      "crc32_verified": true,
+      "sha256": "5304b6c26b6d7b425674feaacac33e886a25fdd1322830c05cfd8cd66acd4156"
+    },
+    {
+      "cow_id": 9,
+      "kind": "hd",
+      "member": "sensor_data/sub_data/head_direction/T09/T09_0725.csv",
+      "bytes": 37219317,
+      "crc32_verified": true,
+      "sha256": "23b89cb92cb2462b97c7bb7b78e2b8285d6b83cbf7a0dabfcc6b17966a7c6a15"
+    },
+    {
+      "cow_id": 9,
+      "kind": "akl",
+      "member": "sensor_data/main_data/ankle/C09/C09_0725.csv",
+      "bytes": 51866,
+      "crc32_verified": true,
+      "sha256": "ea1de0b170437a05d9821256be819ebdb90366e2cd6548850388fea0f2f2ed76"
+    },
+    {
+      "cow_id": 9,
+      "kind": "labels",
+      "member": "sensor_data/behavior_labels/individual/C09_0725.csv",
+      "bytes": 2037628,
+      "crc32_verified": true,
+      "sha256": "814e5aed7cc07779d0a9821de60ec2d7a9072b693350a00e00384d4aff6e3add"
+    },
+    {
+      "cow_id": 10,
+      "kind": "uwb",
+      "member": "sensor_data/main_data/uwb/T10/T10_0725.csv",
+      "bytes": 178075,
+      "crc32_verified": true,
+      "sha256": "352779020b441a1da60b7990742214671d8afe4e832f121174d547d7420152f3"
+    },
+    {
+      "cow_id": 10,
+      "kind": "hd",
+      "member": "sensor_data/sub_data/head_direction/T10/T10_0725.csv",
+      "bytes": 37389802,
+      "crc32_verified": true,
+      "sha256": "86526dc13fff99665d353c96a0a8daa0248991a81629ab819b33efb613846882"
+    },
+    {
+      "cow_id": 10,
+      "kind": "akl",
+      "member": "sensor_data/main_data/ankle/C10/C10_0725.csv",
+      "bytes": 51866,
+      "crc32_verified": true,
+      "sha256": "b773137b4be8f9628ff9fd8336b700f06a278faf565e95fdf6040bb843bcb3fb"
+    },
+    {
+      "cow_id": 10,
+      "kind": "labels",
+      "member": "sensor_data/behavior_labels/individual/C10_0725.csv",
+      "bytes": 2037628,
+      "crc32_verified": true,
+      "sha256": "ebbfcc90ab2bc2a4b072ae2358b34495f4421c900d942eed25bf592cb9aaf7ce"
+    }
+  ],
+  "full_archive_sha_verified": false,
+  "all_40_member_CRCs_verified": true,
+  "TEST_access_after_method_lock": true
+}

@@ -1,0 +1,74 @@
+{
+  "alignment": {
+    "role": "TRAIN",
+    "target": {
+      "cow_id": 1,
+      "end": 1690308720,
+      "label": 4,
+      "segment": "group_1_1+group_1_2+group_2_1+group_2_2+group_2_3",
+      "split": "train",
+      "start": 1690271838,
+      "timestamp": 1690271910
+    },
+    "native_observations": {
+      "uwb": {
+        "native_rows": 4,
+        "input_csv_sha256": "b3b7de6d869ff35dea3d60bba9d2167b387ae9bb88f058f163f4d97adaa43827",
+        "display_transform": "cm to m"
+      },
+      "hd": {
+        "native_rows": 600,
+        "input_csv_sha256": "8676f9ccc27aaa17161f65ec71102445813f5ddcd089f4c9c97cd9b48e4cb76d",
+        "display_transform": "sin(yaw in radians)"
+      },
+      "akl": {
+        "native_rows": 1,
+        "input_csv_sha256": "1673b1b2452e281a7a75f0eb0e4c90723700ed9c11721cd72d49b66f136c9fb4",
+        "display_transform": "unchanged state"
+      }
+    },
+    "cache_sha256": "f17268f583953a2b4f363db7fa78b439dea8923b88c473aef0e8381c8f76d8c6",
+    "cached_value_transform": "inverse saved per-channel affine normalization for display only",
+    "new_alignment_or_normalizer_fit": false
+  },
+  "cases": {
+    "protocol": "TS",
+    "fold": "fold_1",
+    "seed": 17,
+    "history_model": "E-GRU-SQRT-VAL",
+    "current_model": "CurrentRepeat-GRU-VAL",
+    "history_predictions_sha256": "4c1c00eadf6ae8bc7b2d9dadf55cf4e7d77e24833bd1f3dcda7cfcec0b0b6231",
+    "current_predictions_sha256": "299d01812899af7cae6bc48f87ce12ae2115077005dc1c8699ce3b1f42c13fa3",
+    "verified_against_frozen_result_manifest": true,
+    "all_target_keys_and_labels_equal": true,
+    "official_target_count": 9027,
+    "windows": [
+      {
+        "id": "a",
+        "type": "stable",
+        "cow_id": 1,
+        "start_timestamp": 1690324901,
+        "end_timestamp": 1690325351,
+        "target_count": 31,
+        "target_spacing_seconds": 15,
+        "file": "case_a.csv"
+      },
+      {
+        "id": "b",
+        "type": "walking_transition",
+        "cow_id": 1,
+        "start_timestamp": 1690319591,
+        "end_timestamp": 1690320041,
+        "target_count": 31,
+        "target_spacing_seconds": 15,
+        "file": "case_b.csv"
+      }
+    ],
+    "selection_rule": "First eligible 31-point windows in cow/time order, with 15s continuity; stable all-one-label window and walking-containing mixed-label window (at least 2 walking points). No prediction-based ranking.",
+    "no_interpolation": true,
+    "single_seed_not_ensemble": true
+  },
+  "new_training": false,
+  "new_inference": false,
+  "new_metric_computation": false
+}

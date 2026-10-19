@@ -1,0 +1,100 @@
+{
+  "status": "LOCKED_AFTER_DEVELOPMENT",
+  "config": {
+    "name": "sensor_history_controls_20261011",
+    "execution": "bitahub-root_cloud_only",
+    "output": "reports/sensor_history_controls_20261011",
+    "systems": [
+      "CurrentRepeat-GRU",
+      "W-RF"
+    ],
+    "protocols": [
+      "TS",
+      "OS"
+    ],
+    "folds": [
+      "fold_1",
+      "fold_2",
+      "fold_3",
+      "fold_4",
+      "fold_5"
+    ],
+    "seeds": [
+      17,
+      23,
+      29
+    ],
+    "epochs": 20,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "threads": 4,
+    "loss": "sqrt_balanced_CE",
+    "selection": "fixed_final_epoch",
+    "expected_parameters": 86695,
+    "RF": {
+      "n_estimators": 100,
+      "class_weight": "balanced"
+    },
+    "rf_feature_order": "modality_then_x_flat_valid_flat_fresh_flat_log_age_flat",
+    "rf_expected_features": 1560,
+    "current_repeat": "repeat_last_x_valid_fresh_age_60_times_no_real_history_metadata",
+    "current_repeat_fallback": "Fit_prior_if_all_endpoint_fields_unavailable",
+    "development_source": "data/sensor_windows_fold1_20261007",
+    "formal_source": "data/sensor_formal_0725_20261007",
+    "parent_roots": {
+      "TS": "reports/sensor_formal_ts_20261007",
+      "OS": "reports/sensor_formal_os_20261007"
+    },
+    "mainline_configuration": "configs/sensor_gru_sqrt_mainline_20261011.json",
+    "environment_spec": "configs/sensor_cloud_env_spec_20261007.json",
+    "environment_canonical_sha256": "8b34947cb29c24a2c6bf54019329887620a1048af4213c0b2a3703bf4d0d667b",
+    "historical_TEST_exposure": true,
+    "new_blind_evaluation": false,
+    "development_gate": "all_six_jobs_complete_finite_and_identity_verified_no_score_selection",
+    "formal_primary_comparisons": [
+      "Base_minus_CurrentRepeat-GRU",
+      "Base_minus_W-RF"
+    ],
+    "bootstrap": {
+      "replicates": 2000,
+      "seed": 20261011,
+      "block_seconds": 300
+    },
+    "interval_scope": "conditional_on_fixed_trained_models_and_existing_folds_not_training_or_new_farm_uncertainty",
+    "automatic_non_OOM_retry": false,
+    "automatic_hyperparameter_changes": false,
+    "mainline_replacement": false
+  },
+  "identity_sha256": "61a6ec180dd73e64c695c75f7bcbc5cb9ac00cd018dc8a0f46f0db4aa5eb55eb",
+  "developmental_jobs": [
+    {
+      "job_id": "development/fold_1/CurrentRepeat-GRU_seed17",
+      "complete_sha256": "444eec880a67b30db14e9fa704051c7db0f225e6552d8e8eebc5639e99fdd3ad"
+    },
+    {
+      "job_id": "development/fold_1/CurrentRepeat-GRU_seed23",
+      "complete_sha256": "a09c3a107570314756c1901c063d3d22b0a69f9a7fe3e5419e809c952abb0cfd"
+    },
+    {
+      "job_id": "development/fold_1/CurrentRepeat-GRU_seed29",
+      "complete_sha256": "3c3f584bf4add79f7f687ab29046f0d3ac4b82083db1d0b596049f5f549d2f59"
+    },
+    {
+      "job_id": "development/fold_1/W-RF_seed17",
+      "complete_sha256": "6f38ced56e5ecdd7f5de3cef7db671c6c9c8d5402047b07ed8641ab6beb96399"
+    },
+    {
+      "job_id": "development/fold_1/W-RF_seed23",
+      "complete_sha256": "08aa488a85776e4b4db1a8dee96a4f2dcd973328e6b101029b19f0bf662e39a3"
+    },
+    {
+      "job_id": "development/fold_1/W-RF_seed29",
+      "complete_sha256": "6d65d906f0b0a991368c309d6eb72243ca59eb11c3f0aa92b032dc2dd2265a2b"
+    }
+  ],
+  "score_selection": false,
+  "historical_TEST_exposure": true,
+  "formal_jobs": 60,
+  "created_UTC": "2026-10-11T13:28:44Z"
+}

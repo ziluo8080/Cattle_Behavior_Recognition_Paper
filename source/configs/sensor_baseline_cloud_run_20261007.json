@@ -1,0 +1,22 @@
+{
+  "scope": "fold1_TRAIN_VAL_no_TEST",
+  "execution_environment": "bitahub-root_cloud",
+  "source_local_config": "configs/sensor_baseline_run_20261007.json",
+  "hyperparameters_inherited_without_tuning": true,
+  "local_development_exposure_preserved": true,
+  "seeds": [17, 23, 29],
+  "epochs": 20,
+  "batch_size": 256,
+  "threads": 4,
+  "device": "cuda",
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "loss": "balanced_cross_entropy_TRAIN_target_counts",
+  "checkpoint_selection": "highest_fixed_seven_class_VAL_macro_F1_earliest_tie",
+  "normalization": "TRAIN_real_observations_only",
+  "augmentation": "none",
+  "scheduler": "none",
+  "precision": "FP32_TF32_disabled",
+  "test_evaluated": false,
+  "rgb_tasks_remain_paused": true
+}

@@ -1,0 +1,16 @@
+{
+  "status": "saved_prediction_rescore_complete",
+  "models": 11,
+  "actual_formal_models": 310,
+  "comparisons": 40,
+  "new_fits": 0,
+  "outputs": {
+    "verified_summary.json": "65ade2c05f51125459268cf3eeb3582183e2141d89c3280841cb4a0a32266538",
+    "seed_results.csv": "074a3156a75d15877163937743527e1f2f00fa3af2c64ae3f605526f1c6d5f6e",
+    "fold_results.csv": "b51b1c69d122843748c77e88edde2e2f545e502449881fdcfaa7579a00ccf872",
+    "class_results.csv": "c216a62cc584d03e1842e857d17f295ef8949039352de5bba17e6bb20c3bc11b",
+    "confusion_matrices.csv": "e1869d64df0e4a8d2684f3ae0ce7c31391aa2def23496a4a23a9b0d5ed832488",
+    "RESULTS.md": "da11823d6acbff881ab9a158690ad6067490dc90983d64a24a1b5896c2a5cce3",
+    "paired_comparisons.csv": "8ed16f452a5dd35933862ef063a3bbc49c3b5d9f39eeb588378086622b2b09f0"
+  }
+}

@@ -1,0 +1,5 @@
+* -text
+*.docx binary
+*.pdf binary
+*.npz binary
+*.gz binary

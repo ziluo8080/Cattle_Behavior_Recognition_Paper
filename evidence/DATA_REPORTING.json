@@ -1,0 +1,595 @@
+{
+  "status": "verified_existing_data_aggregation_no_training_no_inference",
+  "generated_date": "2026-10-19",
+  "universe": {
+    "unique_targets": 46821,
+    "cow_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "independent_biological_units": 10,
+    "date": "2023-07-25",
+    "timezone": "America/Chicago",
+    "utc_offset_at_recording": "-05:00",
+    "scope": "官方加载器在UWB时间戳同步并删除未知标签、合并后dropna保留的目标；15秒目标及60秒窗口重叠，46821不是独立生物学样本。"
+  },
+  "class_support": [
+    {
+      "label": 1,
+      "class_name": "行走",
+      "targets": 694,
+      "definition_zh": "相邻帧之间从一个位置移动到另一个位置"
+    },
+    {
+      "label": 2,
+      "class_name": "站立",
+      "targets": 12547,
+      "definition_zh": "腿直立，且头部不在采食区域"
+    },
+    {
+      "label": 3,
+      "class_name": "抬头采食",
+      "targets": 3370,
+      "definition_zh": "头部在采食区域，嘴高于饲料"
+    },
+    {
+      "label": 4,
+      "class_name": "低头采食",
+      "targets": 5323,
+      "definition_zh": "头部在采食区域，嘴接触饲料"
+    },
+    {
+      "label": 5,
+      "class_name": "舔舐",
+      "targets": 390,
+      "definition_zh": "舔舐矿物质（盐）块"
+    },
+    {
+      "label": 6,
+      "class_name": "饮水",
+      "targets": 556,
+      "definition_zh": "在水槽处饮水，嘴接触水面"
+    },
+    {
+      "label": 7,
+      "class_name": "躺卧",
+      "targets": 23941,
+      "definition_zh": "牛在卧栏中躺卧"
+    }
+  ],
+  "cow_support": [
+    {
+      "cow_id": 1,
+      "targets": 4692,
+      "first_timestamp": 1690271846,
+      "last_timestamp": 1690347431,
+      "first_local": "2023-07-25T02:57:26-05:00",
+      "last_local": "2023-07-25T23:57:11-05:00",
+      "label_1": 71,
+      "label_2": 995,
+      "label_3": 196,
+      "label_4": 425,
+      "label_5": 0,
+      "label_6": 65,
+      "label_7": 2940
+    },
+    {
+      "cow_id": 2,
+      "targets": 4695,
+      "first_timestamp": 1690271846,
+      "last_timestamp": 1690347431,
+      "first_local": "2023-07-25T02:57:26-05:00",
+      "last_local": "2023-07-25T23:57:11-05:00",
+      "label_1": 46,
+      "label_2": 1390,
+      "label_3": 287,
+      "label_4": 717,
+      "label_5": 57,
+      "label_6": 39,
+      "label_7": 2159
+    },
+    {
+      "cow_id": 3,
+      "targets": 4681,
+      "first_timestamp": 1690271846,
+      "last_timestamp": 1690347431,
+      "first_local": "2023-07-25T02:57:26-05:00",
+      "last_local": "2023-07-25T23:57:11-05:00",
+      "label_1": 50,
+      "label_2": 818,
+      "label_3": 551,
+      "label_4": 398,
+      "label_5": 43,
+      "label_6": 84,
+      "label_7": 2737
+    },
+    {
+      "cow_id": 4,
+      "targets": 4704,
+      "first_timestamp": 1690271846,
+      "last_timestamp": 1690347431,
+      "first_local": "2023-07-25T02:57:26-05:00",
+      "last_local": "2023-07-25T23:57:11-05:00",
+      "label_1": 51,
+      "label_2": 1514,
+      "label_3": 504,
+      "label_4": 409,
+      "label_5": 50,
+      "label_6": 57,
+      "label_7": 2119
+    },
+    {
+      "cow_id": 5,
+      "targets": 4658,
+      "first_timestamp": 1690271846,
+      "last_timestamp": 1690347431,
+      "first_local": "2023-07-25T02:57:26-05:00",
+      "last_local": "2023-07-25T23:57:11-05:00",
+      "label_1": 86,
+      "label_2": 1651,
+      "label_3": 423,
+      "label_4": 549,
+      "label_5": 0,
+      "label_6": 70,
+      "label_7": 1879
+    },
+    {
+      "cow_id": 6,
+      "targets": 4693,
+      "first_timestamp": 1690271846,
+      "last_timestamp": 1690347431,
+      "first_local": "2023-07-25T02:57:26-05:00",
+      "last_local": "2023-07-25T23:57:11-05:00",
+      "label_1": 87,
+      "label_2": 2000,
+      "label_3": 401,
+      "label_4": 662,
+      "label_5": 60,
+      "label_6": 68,
+      "label_7": 1415
+    },
+    {
+      "cow_id": 7,
+      "targets": 4694,
+      "first_timestamp": 1690271846,
+      "last_timestamp": 1690347431,
+      "first_local": "2023-07-25T02:57:26-05:00",
+      "last_local": "2023-07-25T23:57:11-05:00",
+      "label_1": 55,
+      "label_2": 508,
+      "label_3": 417,
+      "label_4": 452,
+      "label_5": 107,
+      "label_6": 22,
+      "label_7": 3133
+    },
+    {
+      "cow_id": 8,
+      "targets": 4682,
+      "first_timestamp": 1690271846,
+      "last_timestamp": 1690347431,
+      "first_local": "2023-07-25T02:57:26-05:00",
+      "last_local": "2023-07-25T23:57:11-05:00",
+      "label_1": 103,
+      "label_2": 1178,
+      "label_3": 217,
+      "label_4": 572,
+      "label_5": 4,
+      "label_6": 67,
+      "label_7": 2541
+    },
+    {
+      "cow_id": 9,
+      "targets": 4673,
+      "first_timestamp": 1690271846,
+      "last_timestamp": 1690347431,
+      "first_local": "2023-07-25T02:57:26-05:00",
+      "last_local": "2023-07-25T23:57:11-05:00",
+      "label_1": 66,
+      "label_2": 1262,
+      "label_3": 136,
+      "label_4": 700,
+      "label_5": 34,
+      "label_6": 36,
+      "label_7": 2439
+    },
+    {
+      "cow_id": 10,
+      "targets": 4649,
+      "first_timestamp": 1690271846,
+      "last_timestamp": 1690347431,
+      "first_local": "2023-07-25T02:57:26-05:00",
+      "last_local": "2023-07-25T23:57:11-05:00",
+      "label_1": 79,
+      "label_2": 1231,
+      "label_3": 238,
+      "label_4": 439,
+      "label_5": 35,
+      "label_6": 48,
+      "label_7": 2579
+    }
+  ],
+  "fold_counts": [
+    {
+      "protocol": "TS",
+      "fold": "fold_1",
+      "TRAIN": 27563,
+      "VAL": 10231,
+      "FIT_TRAIN_plus_VAL": 37794,
+      "TEST": 9027,
+      "TRAIN_cows": "1,2,3,4,5,6,7,8,9,10",
+      "VAL_cows": "1,2,3,4,5,6,7,8,9,10",
+      "TEST_cows": "1,2,3,4,5,6,7,8,9,10"
+    },
+    {
+      "protocol": "TS",
+      "fold": "fold_2",
+      "TRAIN": 28516,
+      "VAL": 9027,
+      "FIT_TRAIN_plus_VAL": 37543,
+      "TEST": 9278,
+      "TRAIN_cows": "1,2,3,4,5,6,7,8,9,10",
+      "VAL_cows": "1,2,3,4,5,6,7,8,9,10",
+      "TEST_cows": "1,2,3,4,5,6,7,8,9,10"
+    },
+    {
+      "protocol": "TS",
+      "fold": "fold_3",
+      "TRAIN": 29682,
+      "VAL": 9278,
+      "FIT_TRAIN_plus_VAL": 38960,
+      "TEST": 7861,
+      "TRAIN_cows": "1,2,3,4,5,6,7,8,9,10",
+      "VAL_cows": "1,2,3,4,5,6,7,8,9,10",
+      "TEST_cows": "1,2,3,4,5,6,7,8,9,10"
+    },
+    {
+      "protocol": "TS",
+      "fold": "fold_4",
+      "TRAIN": 28536,
+      "VAL": 7861,
+      "FIT_TRAIN_plus_VAL": 36397,
+      "TEST": 10424,
+      "TRAIN_cows": "1,2,3,4,5,6,7,8,9,10",
+      "VAL_cows": "1,2,3,4,5,6,7,8,9,10",
+      "TEST_cows": "1,2,3,4,5,6,7,8,9,10"
+    },
+    {
+      "protocol": "TS",
+      "fold": "fold_5",
+      "TRAIN": 26166,
+      "VAL": 10424,
+      "FIT_TRAIN_plus_VAL": 36590,
+      "TEST": 10231,
+      "TRAIN_cows": "1,2,3,4,5,6,7,8,9,10",
+      "VAL_cows": "1,2,3,4,5,6,7,8,9,10",
+      "TEST_cows": "1,2,3,4,5,6,7,8,9,10"
+    },
+    {
+      "protocol": "OS",
+      "fold": "fold_1",
+      "TRAIN": 28123,
+      "VAL": 9376,
+      "FIT_TRAIN_plus_VAL": 37499,
+      "TEST": 9322,
+      "TRAIN_cows": "1,2,3,4,5,6",
+      "VAL_cows": "7,8",
+      "TEST_cows": "9,10"
+    },
+    {
+      "protocol": "OS",
+      "fold": "fold_2",
+      "TRAIN": 28112,
+      "VAL": 9322,
+      "FIT_TRAIN_plus_VAL": 37434,
+      "TEST": 9387,
+      "TRAIN_cows": "3,4,5,6,7,8",
+      "VAL_cows": "9,10",
+      "TEST_cows": "1,2"
+    },
+    {
+      "protocol": "OS",
+      "fold": "fold_3",
+      "TRAIN": 28049,
+      "VAL": 9387,
+      "FIT_TRAIN_plus_VAL": 37436,
+      "TEST": 9385,
+      "TRAIN_cows": "5,6,7,8,9,10",
+      "VAL_cows": "1,2",
+      "TEST_cows": "3,4"
+    },
+    {
+      "protocol": "OS",
+      "fold": "fold_4",
+      "TRAIN": 28085,
+      "VAL": 9385,
+      "FIT_TRAIN_plus_VAL": 37470,
+      "TEST": 9351,
+      "TRAIN_cows": "1,2,7,8,9,10",
+      "VAL_cows": "3,4",
+      "TEST_cows": "5,6"
+    },
+    {
+      "protocol": "OS",
+      "fold": "fold_5",
+      "TRAIN": 28094,
+      "VAL": 9351,
+      "FIT_TRAIN_plus_VAL": 37445,
+      "TEST": 9376,
+      "TRAIN_cows": "1,2,3,4,9,10",
+      "VAL_cows": "5,6",
+      "TEST_cows": "7,8"
+    }
+  ],
+  "selection_flow": {
+    "raw_source_receipt_members": 40,
+    "raw_row_counts_historical_receipt": {
+      "raw_rows": {
+        "1": {
+          "uwb": 5745,
+          "hd": 864000,
+          "akl": 1440
+        },
+        "2": {
+          "uwb": 5736,
+          "hd": 864000,
+          "akl": 1440
+        },
+        "3": {
+          "uwb": 5736,
+          "hd": 864000,
+          "akl": 1440
+        },
+        "4": {
+          "uwb": 5742,
+          "hd": 864000,
+          "akl": 1440
+        },
+        "5": {
+          "uwb": 5735,
+          "hd": 864000,
+          "akl": 1440
+        },
+        "6": {
+          "uwb": 5737,
+          "hd": 863999,
+          "akl": 1440
+        },
+        "7": {
+          "uwb": 5733,
+          "hd": 864000,
+          "akl": 1440
+        },
+        "8": {
+          "uwb": 5740,
+          "hd": 863999,
+          "akl": 1440
+        },
+        "9": {
+          "uwb": 5735,
+          "hd": 864000,
+          "akl": 1440
+        },
+        "10": {
+          "uwb": 5733,
+          "hd": 863999,
+          "akl": 1440
+        }
+      },
+      "eligible_targets_per_cow": {
+        "1": 4692,
+        "2": 4695,
+        "3": 4681,
+        "4": 4704,
+        "5": 4658,
+        "6": 4693,
+        "7": 4694,
+        "8": 4682,
+        "9": 4673,
+        "10": 4649
+      }
+    },
+    "UWB_candidate_rows_from_historical_receipt": 57372,
+    "final_targets": 46821,
+    "intermediate_unknown_label_and_dropna_counts": "not_yet_rebuilt_from_raw_CSV",
+    "loader_order": [
+      "HD时间戳向下取整，逐秒均值",
+      "HD与标签仅保留UWB时间戳",
+      "HD与踝部数据merge_asof(direction=nearest)",
+      "标签删除behavior=0，并据此过滤UWB与HD",
+      "UWB/HD/标签内连接",
+      "dropna作用于删除accel_norm和relative_angle之前的全部合并列",
+      "再删除accel_norm和relative_angle，保留最终目标"
+    ],
+    "warning": "不能把输入窗口内部缺测编码解释为已覆盖被官方loader排除的目标；nearest仅属官方目标继承流程，新网络历史仍用过去来源对齐。"
+  },
+  "figure2": {
+    "figure": "2",
+    "source_role": "development_TRAIN",
+    "cow_id": 1,
+    "end": 1690308720,
+    "label": 4,
+    "segment": "group_1_1+group_1_2+group_2_1+group_2_2+group_2_3",
+    "split": "train",
+    "start": 1690271838,
+    "timestamp": 1690271910,
+    "in_formal_46821": false
+  },
+  "figure5": {
+    "protocol": "TS",
+    "fold": "fold_1",
+    "seed": 17,
+    "history_model": "E-GRU-SQRT-VAL",
+    "current_model": "CurrentRepeat-GRU-VAL",
+    "history_predictions_sha256": "4c1c00eadf6ae8bc7b2d9dadf55cf4e7d77e24833bd1f3dcda7cfcec0b0b6231",
+    "current_predictions_sha256": "299d01812899af7cae6bc48f87ce12ae2115077005dc1c8699ce3b1f42c13fa3",
+    "verified_against_frozen_result_manifest": true,
+    "all_target_keys_and_labels_equal": true,
+    "official_target_count": 9027,
+    "windows": [
+      {
+        "id": "a",
+        "type": "stable",
+        "cow_id": 1,
+        "start_timestamp": 1690324901,
+        "end_timestamp": 1690325351,
+        "target_count": 31,
+        "target_spacing_seconds": 15,
+        "file": "case_a.csv"
+      },
+      {
+        "id": "b",
+        "type": "walking_transition",
+        "cow_id": 1,
+        "start_timestamp": 1690319591,
+        "end_timestamp": 1690320041,
+        "target_count": 31,
+        "target_spacing_seconds": 15,
+        "file": "case_b.csv"
+      }
+    ],
+    "selection_rule": "First eligible 31-point windows in cow/time order, with 15s continuity; stable all-one-label window and walking-containing mixed-label window (at least 2 walking points). No prediction-based ranking.",
+    "no_interpolation": true,
+    "single_seed_not_ensemble": true
+  },
+  "historical_choices": {
+    "window_60_seconds": {
+      "evidence": "refine-logs/sensor_baselines_20261007/EXPERIMENT_PLAN.md 与 FORMAL_TS_POLICY.md均已记载60秒输入",
+      "status": "有实施记录；未找到窗口长度比较或预注册证据，不能宣称经最优长度验证或研究全局先定"
+    },
+    "sqrt_weights": {
+      "evidence": "refine-logs/sensor_baselines_20261007/CLOUD_EXECUTION.md记载balanced与SQRT开发三臂；maintenance/github_restore_repository/project/reports/sensor_endpoint_screen_20261007/METHOD_LOCK.json记载E-GRU-SQRT开发晋级；configs/sensor_gru_sqrt_mainline_20261011.json记载2026-10-11用户主线选择及historical_TEST_exposure=true",
+      "status": "属于当前数据开发与后续主线选择形成；不得扩大METHOD_LOCK中局部test_read_before_method_lock=false为全研究无测试接触"
+    },
+    "TS_primary_OS_secondary": {
+      "evidence": "configs/sensor_os_20261007.json显示OS继承TS锁定模型；原稿v9段68及123明确TS主要OS补充",
+      "status": "本次报告范围安排；未找到全研究开始前固定该优先级的证据"
+    }
+  },
+  "operational_definition_source": "reports/ars_paper_mainline_20261015/phase2_structure/literature_count_sources/mmcows_supp.txt，PDF第5页Table1，C.2；抬头采食标签包含嘴高于食物的状态，不等于每帧实际摄食。",
+  "sources": [
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_formal_ts_20261007\\fold_1\\targets.jsonl",
+      "sha256": "3511d9d920f196856cb7f62616021187c27464d53eaa0d866ea115c84e33c558"
+    },
+    {
+      "path": "E:\\cows_research\\configs\\official_ts.json",
+      "sha256": "9dc4f0e3b72925c097f41448dd4b31e496c1d79a1ad623758ccb9ad222952215"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_formal_ts_20261007\\fold_1\\targets.jsonl",
+      "sha256": "3511d9d920f196856cb7f62616021187c27464d53eaa0d866ea115c84e33c558"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_architecture_comparison_20261011\\data\\selection\\TS\\fold_1\\DATA_RECEIPT.json",
+      "sha256": "2021eb6d01c3c1ab4b3cac646bb999ce728a09fd53144fbfde9918c2383c8c83"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_formal_ts_20261007\\fold_2\\targets.jsonl",
+      "sha256": "02ce16b60a0063317a5808da6f26da98c464e9d1ac5b7338c43ef08544dbb20d"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_architecture_comparison_20261011\\data\\selection\\TS\\fold_2\\DATA_RECEIPT.json",
+      "sha256": "b9692ba07c6032f0583114ccbc88d0d87bf881e7150a21a9ad4682fa20cad293"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_formal_ts_20261007\\fold_3\\targets.jsonl",
+      "sha256": "8ba80aa56fc7d187c773080a99077bf62a0b74d84e7e2bd5cd2b06cec1a79441"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_architecture_comparison_20261011\\data\\selection\\TS\\fold_3\\DATA_RECEIPT.json",
+      "sha256": "e8673b4ce78b52aa9290f36b2388e3e87a464e0231ff3703b7e8e101ccd29824"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_formal_ts_20261007\\fold_4\\targets.jsonl",
+      "sha256": "4b784b17a234fd70da80bf5186a4564219774a1d7a6b1da417e03ad6435e1bb3"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_architecture_comparison_20261011\\data\\selection\\TS\\fold_4\\DATA_RECEIPT.json",
+      "sha256": "4e8d7f4a89b1365b9f405d53e7c7fe1685ee2f8d4df306c6bedd4b0f7065cbbf"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_formal_ts_20261007\\fold_5\\targets.jsonl",
+      "sha256": "a0d1167621d9284bbae1d468862875be9d7fd7c790ae81302eab793056a1e731"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_architecture_comparison_20261011\\data\\selection\\TS\\fold_5\\DATA_RECEIPT.json",
+      "sha256": "b3a6560ec75ea364d9b32f0b7f836721f6c27716198ba310bce908779325539f"
+    },
+    {
+      "path": "E:\\cows_research\\configs\\official_os.json",
+      "sha256": "9fb896b8d24e9d84eebf7bf47fc1c78a3b57e964deb433a6f0e4105dff698ee8"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_formal_os_20261007\\fold_1\\targets.jsonl",
+      "sha256": "0453e131c5e2f8ec8f8db51a54c349ff08118ff57b6f6159e2df5b723eae1862"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_architecture_comparison_20261011\\data\\selection\\OS\\fold_1\\DATA_RECEIPT.json",
+      "sha256": "0effc2670da308a2b068007db39ef6a49b5db2a2e7c1ab0881fe63add3a24ebd"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_formal_os_20261007\\fold_2\\targets.jsonl",
+      "sha256": "c93cffef153e4ab75840723a893373180ba27e798cd330d58479ae34f53fae8e"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_architecture_comparison_20261011\\data\\selection\\OS\\fold_2\\DATA_RECEIPT.json",
+      "sha256": "801fe187fa5e02d31238beac57c8b82ad84a1a9469192766999d02da56876a1b"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_formal_os_20261007\\fold_3\\targets.jsonl",
+      "sha256": "d2b2e3a1cdcf923aafffa5a3ccc4c113a78e7e79cee3c42e8fff9371a93cf287"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_architecture_comparison_20261011\\data\\selection\\OS\\fold_3\\DATA_RECEIPT.json",
+      "sha256": "ff1c08fd006b8920b4d1a8402070559519792f6d29aadd4bd89228d0eb438ab6"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_formal_os_20261007\\fold_4\\targets.jsonl",
+      "sha256": "cef2f6fa710ca7bafd49708744ca6c43ddaf462633d2ef6646fbbcade0ee11a2"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_architecture_comparison_20261011\\data\\selection\\OS\\fold_4\\DATA_RECEIPT.json",
+      "sha256": "eee6fd13d668edf2cc5ba8ecc02a8ca4311a2507977717d97ae5752dd1d47d68"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_formal_os_20261007\\fold_5\\targets.jsonl",
+      "sha256": "ed543a7326c7be628941bb6c02fae2d26ff0eb99cd82d7968a1eb4d83d64f316"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_architecture_integrity_20261011\\FINAL_AUDIT_SNAPSHOT\\reports\\sensor_architecture_comparison_20261011\\data\\selection\\OS\\fold_5\\DATA_RECEIPT.json",
+      "sha256": "0d2b34a76ebb45f90ed9f99e6ca76ff86f6b50cb36c08829e5f146a8701e4832"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\ars_paper_mainline_20261015\\phase7_word\\figure_drafts_20261016_v1\\plot_data\\provenance.json",
+      "sha256": "87cc44371ee4ea23e63d707f5f149edc085db1768a41c2de950cff430bd0f477"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\ars_paper_mainline_20261015\\phase7_word\\figure_drafts_20261016_v1\\plot_data\\case_a.csv",
+      "sha256": "475e7016332bc82d6d2c0496f877bf6acec3224d08f6de00ef420462f8fd0eb2"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\ars_paper_mainline_20261015\\phase7_word\\figure_drafts_20261016_v1\\plot_data\\case_b.csv",
+      "sha256": "61644641cb580549917d1a4da9e922d7482f1b64a6891f30f7463f561bcef0db"
+    },
+    {
+      "path": "E:\\cows_research\\maintenance\\github_restore_repository\\project\\reports\\sensor_aug_formal_fresh_audit_20261007\\source_inputs\\raw_counts.json",
+      "sha256": "af6f2c66e5a353357193c4eaae0c5889e1a3a22bbb945ab9fd72976e1342b1da"
+    },
+    {
+      "path": "E:\\cows_research\\reports\\sensor_cloud_os_20261007\\archive_payload\\data\\sensor_formal_0725_20261007\\source_receipt.json",
+      "sha256": "ff86df412ea41a153edd316a900f5e76c8cf910942ef0073b8d5f8012a6d8cb1"
+    }
+  ],
+  "unfinished": [
+    "原始40 CSV未定位前，中间未知标签过滤与dropna损失不填数；历史raw_counts给出的总输入仅作receipt转述。"
+  ]
+}

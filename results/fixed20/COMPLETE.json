@@ -1,0 +1,18 @@
+{
+  "status": "full_official_ablation_matrix_complete_pending_audit",
+  "new_Base_fits": 210,
+  "new_neural_refiner_fits": 270,
+  "new_linear_fits": 30,
+  "new_threshold_fits": 30,
+  "new_classifier_fits": 540,
+  "classifier_fit_attempts": 541,
+  "neural_epochs": 9600,
+  "total_neural_epochs_including_failed": 9605,
+  "failed_partial_refiner_epochs": 5,
+  "reused_cases": 150,
+  "sanity_optimizer_steps": 18,
+  "prior_sanity_optimizer_steps": 18,
+  "seconds": 17796.653970628977,
+  "TEST_scoring": true,
+  "new_blindness": false
+}

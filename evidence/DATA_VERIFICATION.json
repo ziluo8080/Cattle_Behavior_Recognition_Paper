@@ -1,0 +1,25 @@
+{
+  "same_universe_in_all_ten_folds": true,
+  "each_protocol_test_covers_each_target_exactly_once": true,
+  "all_ten_selection_counts_match_saved_DATA_RECEIPT": true,
+  "figure5_all_62_keys_and_labels_match_final_universe": true,
+  "figure2_key_is_not_formal_target": true,
+  "training": false,
+  "inference": false,
+  "model_metrics_recomputed": false,
+  "artifact_hashes": {
+    "ALL_FOLD_TARGET_ROLE_INDEX.jsonl": "f18d3ad24af8cf3d6d105469c19bbc51908a84ed5995acc385b5ac0849a7f57c",
+    "build_data_reporting.py": "72d7ac2b3268b28d83b3639a133bf9532a2c57085b1d574a5929cc06f5a92c80",
+    "CLASS_SUPPORT.csv": "b5516290b53bbaeb2fd5dd408aff64c9057bffb18303e11fbe91b4e4f18692c4",
+    "COW_CLASS_SUPPORT.csv": "627eb6641784be448c62bb2902c1f11e07a9898e1ba4f3365c7c814ef8af4771",
+    "DATA_REPORTING.json": "de467980e59daf13123717da8c17c777201fe0f0af7611ae64149223dd1eab2c",
+    "FIGURE2_EXACT_TARGET_KEY.json": "d1d9d19dca36616630efb508b30c2833bd2a385aae248fbbfb17b3774d8c52cf",
+    "FIGURE5_EXACT_TARGET_KEYS.csv": "64712b29b375ff944183b4b803eb9c100880e4b314aa2852e181b2fff686f67e",
+    "FINAL_46821_TARGET_KEYS.jsonl": "9f72a98dee7be0586d04b6306d49aaef52f0538e6e363f06cf443947c73c609d",
+    "FOLD_ROLE_CLASS_SUPPORT.csv": "eb002d9f8dab65a30c332675c087bcbd8707ba0776bf4bc94ab50fb8f0e54da2",
+    "FOLD_TARGET_COUNTS.csv": "1c3d304393aa8240c58d118aeda34b417f60e0c39a3994a89ddad9f054d7d705",
+    "OFFICIAL_ROLE_RANGES.csv": "1991d2b41abdc0336864f6e7bb232727b1dc39f298e7f1ca81ccb0e01856b40d",
+    "PROPOSED_METHOD_PARAGRAPHS.json": "43da718a8b5f3986519a0e4ceae34942bdcdf7cb8fe57a47e965cc5fb733b9d8",
+    "RAW_SOURCE_MEMBER_INDEX.json": "91eb838b56cc004d2acc61c5d49a4683cdd0750e2bd85cd00b4133aaf853015f"
+  }
+}

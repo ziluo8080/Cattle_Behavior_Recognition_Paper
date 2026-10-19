@@ -1,0 +1,52 @@
+{
+  "name": "sensor_classic_with_original_rf_20261014",
+  "output": "reports/sensor_classic_with_original_rf_20261014_attempt2",
+  "execution": "bitahub-root_cloud_only",
+  "base_config": "configs/sensor_classic_comparison_20261012.json",
+  "base_results": "reports/sensor_classic_comparison_20261012",
+  "base_audit": "reports/sensor_classic_integrity_20261012/final_20261014/EXPERIMENT_AUDIT.json",
+  "models": ["Original-Paper-RF", "E-GRU-SQRT-VAL", "CurrentRepeat-GRU-VAL", "Stats-RF-Window", "Stats-RF-CurrentOnly", "MiniRocket-Window"],
+  "original_RF": {
+    "n_estimators": 100,
+    "class_weight": "balanced",
+    "random_state": 42,
+    "features": ["coord_x_cm", "coord_y_cm", "coord_z_cm", "roll", "pitch", "yaw", "lying"],
+    "fit_scope": "official_TRAIN_plus_VAL",
+    "reuse_roots": {"TS": "reports/sensor_formal_ts_20261007", "OS": "reports/sensor_formal_os_20261007"},
+    "reused_formal_models": 10,
+    "seeds_per_fold": [42],
+    "selection": "original_fixed_recipe_no_new_VAL_or_Test_selection",
+    "historical_audits": {
+      "TS": {
+        "path": "refine-logs/sensor_classic_with_original_rf_20261014/source_evidence/TS_audit_cloud_evidence.json",
+        "sha256": "b6a2eb66b583fd39dd02c08f40a772a2680b6410df0b0a69713aaf14b691bcad",
+        "hash_field": "input_hashes"
+      },
+      "OS": {
+        "path": "refine-logs/sensor_classic_with_original_rf_20261014/source_evidence/OS_EXPERIMENT_AUDIT.json",
+        "sha256": "ab3de2dc61335ede0f114542f456edc92eb063bd94a3ff387e4939a0e140d904",
+        "hash_field": "audited_input_hashes"
+      }
+    }
+  },
+  "base_seeds_per_fold": [17, 23, 29],
+  "new_fits": 0,
+  "require_original_checkpoint_Test_replay": true,
+  "require_same_ordered_Test_targets_and_raw_GT": true,
+  "primary_comparisons": [
+    ["E-GRU-SQRT-VAL", "Original-Paper-RF"],
+    ["CurrentRepeat-GRU-VAL", "Original-Paper-RF"],
+    ["Stats-RF-Window", "Original-Paper-RF"],
+    ["Stats-RF-CurrentOnly", "Original-Paper-RF"],
+    ["MiniRocket-Window", "Original-Paper-RF"],
+    ["E-GRU-SQRT-VAL", "CurrentRepeat-GRU-VAL"],
+    ["E-GRU-SQRT-VAL", "Stats-RF-Window"],
+    ["E-GRU-SQRT-VAL", "MiniRocket-Window"],
+    ["Stats-RF-Window", "Stats-RF-CurrentOnly"]
+  ],
+  "bootstrap": {"replicates": 2000, "seed": 20261012, "block_seconds": 300},
+  "addition_after_Test_exposure": true,
+  "new_blind_evaluation": false,
+  "mainline_automatically_replaced": false,
+  "threads": 4
+}

@@ -1,0 +1,13 @@
+{
+  "tag": "paper-v10-20261019",
+  "public_repository": "https://github.com/ziluo8080/Cattle_Behavior_Recognition_Paper",
+  "private_recovery_repository": "https://github.com/ziluo8080/Cattle_Behavior_Recognition",
+  "date": "2026-10-19",
+  "original_dataset": {
+    "repository": "https://huggingface.co/datasets/neis-lab/mmcows",
+    "pinned_revision": "532a193d5fd90ed6cfb2d640923c4358ceca00b4",
+    "license": "CC-BY-NC-SA-4.0",
+    "source_member_index": "evidence/RAW_SOURCE_MEMBER_INDEX.json"
+  },
+  "scope": "review of methods and recalculation from saved targets/predictions; large complete working assets remain in private recovery repository"
+}

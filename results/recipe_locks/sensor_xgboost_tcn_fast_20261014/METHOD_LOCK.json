@@ -1,0 +1,311 @@
+{
+  "identity_sha256": "b32a0fb734525a67d228d3e077df0f0ac0ec041754a6399c17ddf23af562e782",
+  "selected": {
+    "TS/fold_1/XGBoost-Window": {
+      "candidate_index": 1,
+      "epochs": 207,
+      "learning_rate": null,
+      "selection_job": "selection/TS/fold_1/XGBoost-Window/candidate1",
+      "validation_macro_f1": 0.8178363798057536
+    },
+    "TS/fold_1/TCN-Window-VAL": {
+      "candidate_index": 0,
+      "epochs": 24,
+      "learning_rate": 0.001,
+      "selection_job": "selection/TS/fold_1/TCN-Window-VAL/candidate0",
+      "validation_macro_f1": 0.8031813077198152
+    },
+    "TS/fold_2/XGBoost-Window": {
+      "candidate_index": 1,
+      "epochs": 201,
+      "learning_rate": null,
+      "selection_job": "selection/TS/fold_2/XGBoost-Window/candidate1",
+      "validation_macro_f1": 0.8191221881899728
+    },
+    "TS/fold_2/TCN-Window-VAL": {
+      "candidate_index": 0,
+      "epochs": 49,
+      "learning_rate": 0.001,
+      "selection_job": "selection/TS/fold_2/TCN-Window-VAL/candidate0",
+      "validation_macro_f1": 0.8245864725755816
+    },
+    "TS/fold_3/XGBoost-Window": {
+      "candidate_index": 1,
+      "epochs": 283,
+      "learning_rate": null,
+      "selection_job": "selection/TS/fold_3/XGBoost-Window/candidate1",
+      "validation_macro_f1": 0.8003331616395236
+    },
+    "TS/fold_3/TCN-Window-VAL": {
+      "candidate_index": 1,
+      "epochs": 39,
+      "learning_rate": 0.0003,
+      "selection_job": "selection/TS/fold_3/TCN-Window-VAL/candidate1",
+      "validation_macro_f1": 0.7999195531063226
+    },
+    "TS/fold_4/XGBoost-Window": {
+      "candidate_index": 1,
+      "epochs": 155,
+      "learning_rate": null,
+      "selection_job": "selection/TS/fold_4/XGBoost-Window/candidate1",
+      "validation_macro_f1": 0.8018671697727294
+    },
+    "TS/fold_4/TCN-Window-VAL": {
+      "candidate_index": 0,
+      "epochs": 38,
+      "learning_rate": 0.001,
+      "selection_job": "selection/TS/fold_4/TCN-Window-VAL/candidate0",
+      "validation_macro_f1": 0.8176603326259099
+    },
+    "TS/fold_5/XGBoost-Window": {
+      "candidate_index": 1,
+      "epochs": 235,
+      "learning_rate": null,
+      "selection_job": "selection/TS/fold_5/XGBoost-Window/candidate1",
+      "validation_macro_f1": 0.8072640560461314
+    },
+    "TS/fold_5/TCN-Window-VAL": {
+      "candidate_index": 1,
+      "epochs": 54,
+      "learning_rate": 0.0003,
+      "selection_job": "selection/TS/fold_5/TCN-Window-VAL/candidate1",
+      "validation_macro_f1": 0.8351209163215504
+    },
+    "OS/fold_1/XGBoost-Window": {
+      "candidate_index": 1,
+      "epochs": 12,
+      "learning_rate": null,
+      "selection_job": "selection/OS/fold_1/XGBoost-Window/candidate1",
+      "validation_macro_f1": 0.7850316053794959
+    },
+    "OS/fold_1/TCN-Window-VAL": {
+      "candidate_index": 0,
+      "epochs": 33,
+      "learning_rate": 0.001,
+      "selection_job": "selection/OS/fold_1/TCN-Window-VAL/candidate0",
+      "validation_macro_f1": 0.8067392121117949
+    },
+    "OS/fold_2/XGBoost-Window": {
+      "candidate_index": 1,
+      "epochs": 266,
+      "learning_rate": null,
+      "selection_job": "selection/OS/fold_2/XGBoost-Window/candidate1",
+      "validation_macro_f1": 0.7697333347715141
+    },
+    "OS/fold_2/TCN-Window-VAL": {
+      "candidate_index": 0,
+      "epochs": 16,
+      "learning_rate": 0.001,
+      "selection_job": "selection/OS/fold_2/TCN-Window-VAL/candidate0",
+      "validation_macro_f1": 0.7802284812444613
+    },
+    "OS/fold_3/XGBoost-Window": {
+      "candidate_index": 1,
+      "epochs": 172,
+      "learning_rate": null,
+      "selection_job": "selection/OS/fold_3/XGBoost-Window/candidate1",
+      "validation_macro_f1": 0.8124209436973261
+    },
+    "OS/fold_3/TCN-Window-VAL": {
+      "candidate_index": 0,
+      "epochs": 42,
+      "learning_rate": 0.001,
+      "selection_job": "selection/OS/fold_3/TCN-Window-VAL/candidate0",
+      "validation_macro_f1": 0.8213398688075687
+    },
+    "OS/fold_4/XGBoost-Window": {
+      "candidate_index": 1,
+      "epochs": 32,
+      "learning_rate": null,
+      "selection_job": "selection/OS/fold_4/XGBoost-Window/candidate1",
+      "validation_macro_f1": 0.7702555729409379
+    },
+    "OS/fold_4/TCN-Window-VAL": {
+      "candidate_index": 1,
+      "epochs": 27,
+      "learning_rate": 0.0003,
+      "selection_job": "selection/OS/fold_4/TCN-Window-VAL/candidate1",
+      "validation_macro_f1": 0.8065453711734418
+    },
+    "OS/fold_5/XGBoost-Window": {
+      "candidate_index": 1,
+      "epochs": 184,
+      "learning_rate": null,
+      "selection_job": "selection/OS/fold_5/XGBoost-Window/candidate1",
+      "validation_macro_f1": 0.789490247646859
+    },
+    "OS/fold_5/TCN-Window-VAL": {
+      "candidate_index": 0,
+      "epochs": 27,
+      "learning_rate": 0.001,
+      "selection_job": "selection/OS/fold_5/TCN-Window-VAL/candidate0",
+      "validation_macro_f1": 0.8082198429386585
+    }
+  },
+  "candidates": [
+    {
+      "job_id": "selection/TS/fold_1/XGBoost-Window/candidate0",
+      "complete_sha256": "1231086f1cdf32b33085d8677f29d3e66f9bd55657198c8d24a5089de24905bc"
+    },
+    {
+      "job_id": "selection/TS/fold_1/XGBoost-Window/candidate1",
+      "complete_sha256": "4ae82e89a03d78e41d90e3081f84767f8dc776ef160c7569a13766afb800b3b9"
+    },
+    {
+      "job_id": "selection/TS/fold_1/TCN-Window-VAL/candidate0",
+      "complete_sha256": "d5019cbd6dfdca0bef44b9eb237e3087a74cbc61267571f9aadcbbc093934b87"
+    },
+    {
+      "job_id": "selection/TS/fold_1/TCN-Window-VAL/candidate1",
+      "complete_sha256": "f567a3883b13f634d96842b3ffc3ce6a9420dbaa2403e6c84e8268c8b31aacb3"
+    },
+    {
+      "job_id": "selection/TS/fold_2/XGBoost-Window/candidate0",
+      "complete_sha256": "70eeb4b69206c5f4b4989c7e0ebea004c0e144a3f901fb02dd9981f58f48f1e5"
+    },
+    {
+      "job_id": "selection/TS/fold_2/XGBoost-Window/candidate1",
+      "complete_sha256": "fb86a830b6e726b1fa7ed2c53facff5140141f756738069b32a75d8a16703d0d"
+    },
+    {
+      "job_id": "selection/TS/fold_2/TCN-Window-VAL/candidate0",
+      "complete_sha256": "b1024916e225bae981bf14dd6a4f6fe1de30fb48ae6ce223aaff1dbb9d8dce3c"
+    },
+    {
+      "job_id": "selection/TS/fold_2/TCN-Window-VAL/candidate1",
+      "complete_sha256": "344d5b157977c88b4e47fffd55956bc48f0bf450f600349221ec8f843b588ad1"
+    },
+    {
+      "job_id": "selection/TS/fold_3/XGBoost-Window/candidate0",
+      "complete_sha256": "019c84fdfa3fa2319ad5cc31ef9832cc7ee3692f91258dc0af824ee55b798135"
+    },
+    {
+      "job_id": "selection/TS/fold_3/XGBoost-Window/candidate1",
+      "complete_sha256": "785a7279a7a168d44d591eae1fe7105119631784a93076f0cf14290583918c58"
+    },
+    {
+      "job_id": "selection/TS/fold_3/TCN-Window-VAL/candidate0",
+      "complete_sha256": "f6b11464cee07d3d25ed33c16a357215546b40a963e747fa9a26955467c829df"
+    },
+    {
+      "job_id": "selection/TS/fold_3/TCN-Window-VAL/candidate1",
+      "complete_sha256": "df09f3fbe087f23408dc6b087d3536e8fb09836ac403f57210b750530cfa9ac1"
+    },
+    {
+      "job_id": "selection/TS/fold_4/XGBoost-Window/candidate0",
+      "complete_sha256": "e8c4dd4fd715b31c9cdbbebfb39b6771287944ee23aa7384e59653ae927569ff"
+    },
+    {
+      "job_id": "selection/TS/fold_4/XGBoost-Window/candidate1",
+      "complete_sha256": "46a4c1094dd300f8e7f3ec095376969ac4177dad042a4f2293576708066f9a10"
+    },
+    {
+      "job_id": "selection/TS/fold_4/TCN-Window-VAL/candidate0",
+      "complete_sha256": "46413bec0cb3eace379e6f67df25fe095fa7e505790a06bf8fd4d828b8e454e2"
+    },
+    {
+      "job_id": "selection/TS/fold_4/TCN-Window-VAL/candidate1",
+      "complete_sha256": "f0f18bd0eb14a95f65171301bd91218b119deb91829177c242230db47a32f64a"
+    },
+    {
+      "job_id": "selection/TS/fold_5/XGBoost-Window/candidate0",
+      "complete_sha256": "f905b3813881d3bf60d3e49b8b332885849665d8be999f6a729550c92f7d31ee"
+    },
+    {
+      "job_id": "selection/TS/fold_5/XGBoost-Window/candidate1",
+      "complete_sha256": "54df4b3827d05746a4e5550b674f4578d77dc127b78e0aef7890b47f18e4554d"
+    },
+    {
+      "job_id": "selection/TS/fold_5/TCN-Window-VAL/candidate0",
+      "complete_sha256": "a9afcacbf9448dac0e741cffc980841decff0d680f24ed02b07f2967b4f4de6f"
+    },
+    {
+      "job_id": "selection/TS/fold_5/TCN-Window-VAL/candidate1",
+      "complete_sha256": "3d125a431461bb6c289d66b400d17d91fa2f2c2484532cbc1558b2e135be7c5a"
+    },
+    {
+      "job_id": "selection/OS/fold_1/XGBoost-Window/candidate0",
+      "complete_sha256": "c1fdc08a7e7e871b1c576d301c4eece05448d27da7ae6d49b4e064e8290a29d7"
+    },
+    {
+      "job_id": "selection/OS/fold_1/XGBoost-Window/candidate1",
+      "complete_sha256": "b6faf17f3edb2240e601f4309f6741ec3dea64419887c1841dc286bddbb349e8"
+    },
+    {
+      "job_id": "selection/OS/fold_1/TCN-Window-VAL/candidate0",
+      "complete_sha256": "43f253740c4929b212587c22d44b81a9668181323784fac9fd80079269baa166"
+    },
+    {
+      "job_id": "selection/OS/fold_1/TCN-Window-VAL/candidate1",
+      "complete_sha256": "a5cb7924c19ccc135d59eaeca67e59847eb2c92d2fb4aafe1f495e635d1eb598"
+    },
+    {
+      "job_id": "selection/OS/fold_2/XGBoost-Window/candidate0",
+      "complete_sha256": "645af78363f9c7fed5c78c951cd63738f4815da674b78b49c016facb2c7fa4cf"
+    },
+    {
+      "job_id": "selection/OS/fold_2/XGBoost-Window/candidate1",
+      "complete_sha256": "392f819d02d4d0d2f2b53409446dd70d423b683a1f50660cea4e140da9494ca7"
+    },
+    {
+      "job_id": "selection/OS/fold_2/TCN-Window-VAL/candidate0",
+      "complete_sha256": "ea828c89aa36014e582fed8fd9eadba3cf6a405d907bfa292308340ba3338325"
+    },
+    {
+      "job_id": "selection/OS/fold_2/TCN-Window-VAL/candidate1",
+      "complete_sha256": "3e8e57a57603c938a7b8b95a169455bdad25fd2057833841af76242991d95fca"
+    },
+    {
+      "job_id": "selection/OS/fold_3/XGBoost-Window/candidate0",
+      "complete_sha256": "6930fb3095ac96c04817a427a2926ef1edfa58206e0302c4ff208aac670a818a"
+    },
+    {
+      "job_id": "selection/OS/fold_3/XGBoost-Window/candidate1",
+      "complete_sha256": "445ea6e9d3e47c341b19db53767ad2e6e3d4c38f5f28b40826f68ca95a7283b1"
+    },
+    {
+      "job_id": "selection/OS/fold_3/TCN-Window-VAL/candidate0",
+      "complete_sha256": "d301c16b5c8624d98c4050e5a4fbd66eca011b92593158cd774cdb5408d5a3d9"
+    },
+    {
+      "job_id": "selection/OS/fold_3/TCN-Window-VAL/candidate1",
+      "complete_sha256": "4c600c636d83f0ea9fbe25a1c578ff378cb0d8a2ed8824a0e830eaf1cad68122"
+    },
+    {
+      "job_id": "selection/OS/fold_4/XGBoost-Window/candidate0",
+      "complete_sha256": "38360737ef3842d79858501d801d158aec3b712383e5688d6885de1257de38cf"
+    },
+    {
+      "job_id": "selection/OS/fold_4/XGBoost-Window/candidate1",
+      "complete_sha256": "4448770352fb53737fd1c10a1933e1573dd7fd4fc3dd2f499e6bfbb2aebb1dd4"
+    },
+    {
+      "job_id": "selection/OS/fold_4/TCN-Window-VAL/candidate0",
+      "complete_sha256": "1ad7a9e31284d12f89f2858e57cbdf63419d83ef40ad6595fb7c5135e3793076"
+    },
+    {
+      "job_id": "selection/OS/fold_4/TCN-Window-VAL/candidate1",
+      "complete_sha256": "3218efdafa157323159fdfe1819d98dd697ceb924f5047598cfaa4a4e779dbcb"
+    },
+    {
+      "job_id": "selection/OS/fold_5/XGBoost-Window/candidate0",
+      "complete_sha256": "05e6b80a4598385f00f841de9af8fb49342005fd73f09d20dfdd9721901b0fbf"
+    },
+    {
+      "job_id": "selection/OS/fold_5/XGBoost-Window/candidate1",
+      "complete_sha256": "1526b188cfc6265f3a2bc00991f36c2c98bd5e71d0dd6811e33756211a4e1405"
+    },
+    {
+      "job_id": "selection/OS/fold_5/TCN-Window-VAL/candidate0",
+      "complete_sha256": "d2f034ec4ed8e3c6383d58b00d9daa9a91537e19dcc83cda37d27d6ffcecf789"
+    },
+    {
+      "job_id": "selection/OS/fold_5/TCN-Window-VAL/candidate1",
+      "complete_sha256": "bde5f3a14db6b1374fc2683e8cd3876e6bf71bc8fa9e805de18912cc7af54587"
+    }
+  ],
+  "selection_jobs": 40,
+  "formal_jobs": 60,
+  "historical_Test_exposure": true,
+  "created_UTC": "2026-10-14T12:13:52Z"
+}

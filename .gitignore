@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+_verification_output/
+.env
+.env.*
+*.pem
+*.key
+.venv/

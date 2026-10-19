@@ -1,0 +1,25 @@
+{
+  "commit": "78ba6d85abc41ef00eacebdd33a2704c08d110ab",
+  "files": [
+    {
+      "name": "data_loader.py",
+      "url": "https://raw.githubusercontent.com/neis-lab/mmcows/78ba6d85abc41ef00eacebdd33a2704c08d110ab/benchmarks/1_behavior_cls/uwb_hd_akl/data_loader.py",
+      "sha256": "c6db0c9dcfb77aef62f72d9d8c2a81c03874821cc0103e5123f40a6c1b2bb35e"
+    },
+    {
+      "name": "rf_classifer.py",
+      "url": "https://raw.githubusercontent.com/neis-lab/mmcows/78ba6d85abc41ef00eacebdd33a2704c08d110ab/benchmarks/1_behavior_cls/uwb_hd_akl/rf_classifer.py",
+      "sha256": "1f65f288403fa38d22fa79b684654e87694ba02cbbaf9dd409dd6c71e6c731ea"
+    },
+    {
+      "name": "train_uwb_hd_akl_s2.py",
+      "url": "https://raw.githubusercontent.com/neis-lab/mmcows/78ba6d85abc41ef00eacebdd33a2704c08d110ab/benchmarks/1_behavior_cls/uwb_hd_akl/train_uwb_hd_akl_s2.py",
+      "sha256": "944d22fae8f372936ceae9b3e556bbf81dfe9711018dfcd753665ff2ec35a4a9"
+    },
+    {
+      "name": "cmb_eval.py",
+      "url": "https://raw.githubusercontent.com/neis-lab/mmcows/78ba6d85abc41ef00eacebdd33a2704c08d110ab/benchmarks/1_behavior_cls/uwb_hd_akl/cmb_eval.py",
+      "sha256": "5fa8284fe64990e0171ed25ce4f42fc179ab8f1f90eba2c9c6f49006141166c5"
+    }
+  ]
+}
