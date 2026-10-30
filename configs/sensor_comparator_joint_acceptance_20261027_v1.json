@@ -1,0 +1,44 @@
+{
+  "version": "joint-stationarity-generalization/1",
+  "output": "reports/sensor_comparator_joint_acceptance_20261027_v1",
+  "neural_output": "reports/sensor_comparator_convergence_20261027_v2",
+  "neural_config": "configs/sensor_comparator_convergence_20261027_v2.json",
+  "tree_output": "reports/sensor_tree_convergence_regularized_20261027_v2",
+  "tree_config": "configs/sensor_tree_convergence_regularized_20261027_v2.json",
+  "user_authorization": "2026-10-27: 并且这些对比实验充分收敛后还不能过拟合",
+  "reference": "Within-stage minimum mean DEV CE window; earliest tie. Separate maximum mean DEV F1 window. Existing observed DEV only, no Test/outerVAL.",
+  "neural": {
+    "reference_rows": 5,
+    "tail_rows": 20,
+    "max_DEV_CE_deterioration_relative": 0.01,
+    "max_DEV_F1_drop_pp": 0.5,
+    "max_DEV_CE_deterioration_absolute": 0.0001,
+    "max_CE_gap_growth_absolute": 0.005,
+    "max_CE_gap_growth_relative_to_reference_DEV_CE": 0.02,
+    "max_F1_gap_growth_pp": 1,
+    "minimum_stage_rows": 40
+  },
+  "tree": {
+    "reference_rows": 3,
+    "tail_rows": 5,
+    "max_DEV_CE_deterioration_relative": 0.01,
+    "max_DEV_F1_drop_pp": 0.5,
+    "max_DEV_CE_deterioration_absolute": 0.0001,
+    "max_CE_gap_growth_absolute": 0.005,
+    "max_CE_gap_growth_relative_to_reference_DEV_CE": 0.02,
+    "max_F1_gap_growth_pp": 1,
+    "minimum_stage_rows": 5
+  },
+  "absolute_fit_DEV_gap": "Report only; neither zero-gap requirement nor an independent overfitting verdict because TS/OS domains differ.",
+  "adoption": "Original convergence AND new generalization screen must both pass. An unchecked or incomplete method is ineligible. Original PASS records are preserved and refer only to optimization stationarity.",
+  "threshold_provenance": "New conservative engineering acceptance tolerances selected for the author's added requirement before re-audit. They are not universal statistical thresholds, a preregistration, or a proof of no overfitting.",
+  "MultiRocket": "Numerical linear-system residual does not satisfy generalization gate; requires separate TRAIN-internal regularization/held-validation evidence.",
+  "Test_allowed": false,
+  "outer_VAL_allowed": false,
+  "formal_refit_allowed": false,
+  "scientific_boundary": "Empirical screen for material validation deterioration and progressive Fit/DEV divergence on already observed DEV. Does not certify absence of overfitting or generalization to new dates/cows. Final untouched Test is evaluation only, never a tuning signal.",
+  "watch": {
+    "interval_seconds": 60,
+    "maximum_seconds": 172800
+  }
+}

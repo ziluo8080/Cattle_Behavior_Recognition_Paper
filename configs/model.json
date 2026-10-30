@@ -1,0 +1,17 @@
+{
+  "width": 32,
+  "heads": 4,
+  "ff": 128,
+  "dropout": 0.1,
+  "dynamic_shape": [
+    100,
+    8
+  ],
+  "state_shape": [
+    60,
+    26
+  ],
+  "context_width": 136,
+  "current_width": 26,
+  "classes": 7
+}

@@ -1,0 +1,692 @@
+[
+  {
+    "path": "configs/sensor_b_low_lr_20261027_v1.json",
+    "bytes": 1625,
+    "sha256": "ddbdb200f4503e6fb268918f2c7c7145f571292a9e67cfcde12038aad11b1a35"
+  },
+  {
+    "path": "configs/sensor_converged_fivefold_20261027_v1.json",
+    "bytes": 4394,
+    "sha256": "a9de308936695224b7cfc5567cc9b4370a95aa8a8f19db213acfbf20a3cceda4"
+  },
+  {
+    "path": "configs/sensor_convtran_context_20261022_v1.json",
+    "bytes": 1775,
+    "sha256": "f47e0a0eaa10641eb49e4dfaaaa2c7dfbca0c75bbf028ef1e4d2988c2601ed57"
+  },
+  {
+    "path": "configs/sensor_convtran_endpoint_pilot_20261022_v1.json",
+    "bytes": 1609,
+    "sha256": "9e3b14632dcd91de3ae947d45701097be70c58cbf27bda3124b04de76de8b3c8"
+  },
+  {
+    "path": "configs/sensor_joint_converged_validated_20261027.json",
+    "bytes": 14521,
+    "sha256": "25f71ee21ee2f068e85f622e686b682e7b700fdda68ff6be57a7235660756315"
+  },
+  {
+    "path": "configs/sensor_shared_fusion_fivefold_env_20261024_v1.json",
+    "bytes": 696,
+    "sha256": "a7b120169925f783599063b5809f992bff2f02f4f8843b0667ad5d18d9277e63"
+  },
+  {
+    "path": "experiments/sensor_comparator_pilot_20261022_v2/cpu.py",
+    "bytes": 11237,
+    "sha256": "ec7cf5685be2d89485057c5daa8c4b66fbabb22a96664bcbcfe0f1ef7f2ae6b3"
+  },
+  {
+    "path": "q3_sensor/__init__.py",
+    "bytes": 75,
+    "sha256": "6176aab524b96b833e78c85e1c4b8bd11e30c1e121d9219ce6eaadc3c45378c6"
+  },
+  {
+    "path": "q3_sensor/archive.py",
+    "bytes": 5975,
+    "sha256": "5f2fb576c36b2841fd92754b0af3ae70941270653ad78a603974271857507bac"
+  },
+  {
+    "path": "q3_sensor/endpoint_models.py",
+    "bytes": 2071,
+    "sha256": "0db9b15b681866799b440637d48ed23d6cdccc31cbe9521465cb6a2486aed5c5"
+  },
+  {
+    "path": "q3_sensor/evaluation.py",
+    "bytes": 1929,
+    "sha256": "0ceb887174997541c8c490cf4daf2b498251cce563fdbf1b70c28bba41fcd0cd"
+  },
+  {
+    "path": "q3_sensor/model.py",
+    "bytes": 2798,
+    "sha256": "773a78c41762c83c88a1111b87b0d869be68e3dd39a550b1a4648be83f77c335"
+  },
+  {
+    "path": "q3_sensor/official.py",
+    "bytes": 1734,
+    "sha256": "aa2c2f8608f4c4b6e853ec2675100b9ad316b86f8df36ad2208b8030f6f501eb"
+  },
+  {
+    "path": "q3_sensor/protocol.py",
+    "bytes": 7777,
+    "sha256": "120c8ab68a64898a2a7980ead48977385f7bda92fcdcb0be4cc25b5022e99350"
+  },
+  {
+    "path": "q3_sensor/stress.py",
+    "bytes": 3807,
+    "sha256": "61a00af67e1912c2e03ca811d28ce5b8871c3ceecf994e4022838923898b6077"
+  },
+  {
+    "path": "scripts/check_empirical_convergence_20261027.py",
+    "bytes": 4684,
+    "sha256": "17af1eb7a8685358c4190eb20dcbd9396952cc22f056db6fc4b337ff7ed663aa"
+  },
+  {
+    "path": "scripts/converged_fivefold_common_20261027.py",
+    "bytes": 7777,
+    "sha256": "5817e172cddbd7597cf5f9d1f601c7c91c2645264b3dd85d777e7315779bef1a"
+  },
+  {
+    "path": "scripts/prepare_converged_fivefold_20261027.py",
+    "bytes": 4688,
+    "sha256": "865adb036bd088e8f4acbf82ded8f13d4aca2e7d2a4973ae7d3fd4a28a69e887"
+  },
+  {
+    "path": "scripts/run_b_early_schedule_20261024.py",
+    "bytes": 19342,
+    "sha256": "3d0e57e8912fdee6eed5dcc12ee19af4b0d79119b146302240ace64a82c6f44a"
+  },
+  {
+    "path": "scripts/run_b_epoch_extension_20261024.py",
+    "bytes": 21887,
+    "sha256": "61291a1d243db71cf27dcd24230a61adbbdb2207121b582dbb47a0107cce1a02"
+  },
+  {
+    "path": "scripts/run_b_low_lr_20261027.py",
+    "bytes": 15624,
+    "sha256": "cae9cb08d3b73a3cf72dedfef22fd4b8ca5ae94c3cddad59e641513108c49397"
+  },
+  {
+    "path": "scripts/run_converged_fivefold_20261027.py",
+    "bytes": 20256,
+    "sha256": "acf4b086c558d5691483bdc4a70ff534e2b0074121f9dcf5900aa608e0d08802"
+  },
+  {
+    "path": "scripts/run_convtran_context_20261022.py",
+    "bytes": 20497,
+    "sha256": "345dac77b24b0d0309831461b9901c88bd5532e746663dcec76a74f438064eea"
+  },
+  {
+    "path": "scripts/run_convtran_endpoint_20261022.py",
+    "bytes": 17321,
+    "sha256": "0497c8ff68f55a7de25dc377e0a121211dbbef2fbe32b7e82cea7369f71d22bb"
+  },
+  {
+    "path": "scripts/run_full_convergence_20261027.py",
+    "bytes": 13114,
+    "sha256": "a736acb400827ea550e3c64217fe702797b9eefded403678d4ee44b5ef08979e"
+  },
+  {
+    "path": "scripts/run_tree_convergence_20261027.py",
+    "bytes": 14098,
+    "sha256": "abd321beef06ad37e5e846449d19b8360e8e9349dee369679e8386468dc8c6fb"
+  },
+  {
+    "path": "scripts/run_zero_head_replication_20261024.py",
+    "bytes": 26131,
+    "sha256": "c9d41918ddeeb45745c2f2bd2cc84f05fcf98912b1582a02d333e31a48bb02a0"
+  },
+  {
+    "path": "scripts/sensor_bn_momentum_20261027.py",
+    "bytes": 1461,
+    "sha256": "b37c05e3d177cc4c3c58e59976f05a6c5755c0b27eea81ef7defc19499a628e8"
+  },
+  {
+    "path": "scripts/sensor_convtran_context_model_20261022.py",
+    "bytes": 8127,
+    "sha256": "af3cdaa6c6b14b9d4d06370cec3de89a08b644f0bed3031f6fbe0b0f5a452861"
+  },
+  {
+    "path": "scripts/sensor_convtran_endpoint_interaction_20261022.py",
+    "bytes": 5587,
+    "sha256": "417410400c55134a73ddd69e3f20b83f14f695f412cb3d74d5d52482f7dca860"
+  },
+  {
+    "path": "scripts/sensor_fusion_stability_20261027.py",
+    "bytes": 2103,
+    "sha256": "1283cab3884ed616c7c702844edbdd865dca5a35b883b61ba6b5f738eae65889"
+  },
+  {
+    "path": "scripts/sensor_learned_fusion_data_20261023.py",
+    "bytes": 16732,
+    "sha256": "6f97d21148361a98a94765001cf83fe027e3ea0311249fa6d906f4dba0ee7b5f"
+  },
+  {
+    "path": "scripts/sensor_native_convtran_20261021.py",
+    "bytes": 1839,
+    "sha256": "0ae1cd76d7091d7cf358ecb64cae1b780e7bef707b0a639eee1f765ff1ec324c"
+  },
+  {
+    "path": "scripts/sensor_native_immu_training_20261021.py",
+    "bytes": 14464,
+    "sha256": "86c7cc64b5d35a5576b3f3e66b690fa171974f052c861ec89a272b6ded0a0a0e"
+  },
+  {
+    "path": "scripts/sensor_state_average_20261027.py",
+    "bytes": 1509,
+    "sha256": "e251015ac21b0435b2f006c91e4a5afa813d73505260f3c611db8d7480298a33"
+  },
+  {
+    "path": "scripts/sensor_uwb_event_motion_20261020.py",
+    "bytes": 6803,
+    "sha256": "511aae6d3a4f9663d9b2d0bfc7f1ff3f80ff02bacc95d4006e7ceae49d660679"
+  },
+  {
+    "path": "scripts/sensor_xgb_b_fusion_20261022.py",
+    "bytes": 2375,
+    "sha256": "90c01e33b2b46b07710839ae6b7866e82ded23a279abf79e23a1810fea09c41e"
+  },
+  {
+    "path": "scripts/witness_converged_fivefold_20261027.py",
+    "bytes": 8303,
+    "sha256": "ab763ef672d38af08b265afaf8128ff56e077be9a8f8ec4d86013b260d750205"
+  },
+  {
+    "path": "third_party/convtran_20261021_v1/Models/AbsolutePositionalEncoding.py",
+    "bytes": 4870,
+    "sha256": "2090a6090fa2f5a7064ad568736fa6e31f27f1a2497d918f9cd1cd451ab83b86"
+  },
+  {
+    "path": "third_party/convtran_20261021_v1/Models/Attention.py",
+    "bytes": 6554,
+    "sha256": "072bcc98c9249e9e9ab1c6ae07fc152593641d59cbf8bd7081dd1c69a2f38cb5"
+  },
+  {
+    "path": "third_party/convtran_20261021_v1/Models/analysis.py",
+    "bytes": 20421,
+    "sha256": "5bbafc08610546dc9c7ef3127be8a23c53960cd26b8d45be6bc24604a68978ec"
+  },
+  {
+    "path": "third_party/convtran_20261021_v1/Models/loss.py",
+    "bytes": 830,
+    "sha256": "05b5ff386fe293f8fd2ec5ab69a3835d3272bf43ea62a9f473e5226e10a656a9"
+  },
+  {
+    "path": "third_party/convtran_20261021_v1/Models/model.py",
+    "bytes": 10042,
+    "sha256": "ecd85b2cef183db854d7f0a2938d2f7b894ac0432ac12d11b54fcac9e6bd931c"
+  },
+  {
+    "path": "third_party/convtran_20261021_v1/Models/optimizers.py",
+    "bytes": 10653,
+    "sha256": "c01d3e0d056b11105311079d09721036a5d69563235b01f5c56c7e31e67b3f1f"
+  },
+  {
+    "path": "third_party/convtran_20261021_v1/Models/utils.py",
+    "bytes": 14483,
+    "sha256": "e12d2015b0160e882f9121789261f2c6effa061c310958877bf5337849d9a956"
+  },
+  {
+    "path": "third_party/convtran_context_20261022_v1/Models/AbsolutePositionalEncoding.py",
+    "bytes": 4871,
+    "sha256": "aba587c92ae524b0be336d133a9dab8ee3bf2aec065cf8b0be903b922933171f"
+  },
+  {
+    "path": "third_party/convtran_context_20261022_v1/Models/Attention.py",
+    "bytes": 6555,
+    "sha256": "46e9055c2e2c116b818d6d80765441d5c5bd7df4f501dc4644da1e80ed54e42c"
+  },
+  {
+    "path": "third_party/convtran_context_20261022_v1/Models/model.py",
+    "bytes": 10043,
+    "sha256": "343eb65377d88fee85aa67212d092cfd47c5684ba0b3df84fc423d85d0f93536"
+  },
+  {
+    "path": "configs/sensor_fusion_incumbent_20261022_v1.json",
+    "bytes": 793,
+    "sha256": "fe616ef2107066140850bc4f3944dafc32d28632ff2cd57d7e74182963fa8745"
+  },
+  {
+    "path": "configs/sensor_gru_margin_targets_20261022_v4.json",
+    "bytes": 2265,
+    "sha256": "af26ad47d3db2ae9ee3cfeca6f516b3c6f1d09d9be7e317edf44f5577f3eb5bd"
+  },
+  {
+    "path": "configs/sensor_shared_fusion_fivefold_20261024_v1.json",
+    "bytes": 2659,
+    "sha256": "4d72841eb3db5362ffd1a84f3732dcbecd8b36c4b308ff2352182d6adf18483b"
+  },
+  {
+    "path": "experiments/sensor_comparator_pilot_20261022_v2/config.json",
+    "bytes": 3089,
+    "sha256": "0cdf85a0d25a4c1101276ddddcc6a4e31e8aebf460b98c501cd4892684238e6b"
+  },
+  {
+    "path": "scripts/bootstrap_shared_fusion_fivefold_20261024.py",
+    "bytes": 3719,
+    "sha256": "c032eccc3b22d8f4c06db1efe2a697174212904e96e4cb87d17a1e0874c0e6f4"
+  },
+  {
+    "path": "scripts/freeze_shared_fusion_fivefold_20261024.py",
+    "bytes": 3704,
+    "sha256": "1600b00374492a0893f63b9c0d240c713c82eb75b6cf54bd9e19c6d3d2e716c1"
+  },
+  {
+    "path": "scripts/prepare_sensor_native_immu_20261021.py",
+    "bytes": 9056,
+    "sha256": "ddc5c912f2914c35f4179bb68ec90200326ec0fa163da4e94d0c2558baa8351b"
+  },
+  {
+    "path": "scripts/prepare_shared_fusion_fivefold_20261024.py",
+    "bytes": 14217,
+    "sha256": "c96f7cc0f17ea2c0919b177600df7dc0cb8922bf2961417ac285e7bd76ad8545"
+  },
+  {
+    "path": "scripts/queue_shared_fusion_fivefold_20261024.py",
+    "bytes": 4484,
+    "sha256": "5ae74a1be68b63b01ed12fa2213ba3351e836701c8775fa03455b78441d586a4"
+  },
+  {
+    "path": "scripts/report_convtran_context_20261022.py",
+    "bytes": 7360,
+    "sha256": "006b56033d0711f7eb7280991e039bd14b3a4513ab34d17fd7f81da32f307a4d"
+  },
+  {
+    "path": "scripts/report_shared_fusion_fivefold_20261024.py",
+    "bytes": 11126,
+    "sha256": "ee76b7b058de8ea8ea87a9658ef306d81f45ac8589acef7390111c282337bf55"
+  },
+  {
+    "path": "scripts/run_sensor_formal_ts.py",
+    "bytes": 10845,
+    "sha256": "4a1d169fe9118aa5ce8edb9b366a2a181c9ee49ac20ba1f53404fbeffbbe3058"
+  },
+  {
+    "path": "scripts/run_shared_fusion_fivefold_20261024.py",
+    "bytes": 20527,
+    "sha256": "99e243784a8f109dc7a27a57a3ea49762c11f57c376cadffe9a5ee0aa4f5192b"
+  },
+  {
+    "path": "scripts/sensor_classic_features_20261012.py",
+    "bytes": 7174,
+    "sha256": "49d941ad28115a4aae7b848f3bf4ee7b436a22f4a2d72c039f5b3865d908699e"
+  },
+  {
+    "path": "scripts/sensor_native_immu_data_20261021.py",
+    "bytes": 7308,
+    "sha256": "a75fc41549f176a3bd30d8bda6f124d48b47289985f40a47288766448090cb08"
+  },
+  {
+    "path": "scripts/sensor_native_immu_runner_20261021.py",
+    "bytes": 5597,
+    "sha256": "9f51dc9b404189f1a299c3e428da1f207d8cfc143c30a3e21a8d5ec47b06a3f0"
+  },
+  {
+    "path": "scripts/sensor_native_immu_selection_policy_20261021.py",
+    "bytes": 1799,
+    "sha256": "8d94979dc46d560053e2fb3403b7ea656a5beaf5ba498b208ebb26b30735a18c"
+  },
+  {
+    "path": "scripts/sensor_os_protocol.py",
+    "bytes": 4792,
+    "sha256": "0ae35de3bfce491785f128784e89593f32bf5727171d7a43ca2a2c4097bcb17d"
+  },
+  {
+    "path": "scripts/shared_fusion_fivefold_common_20261024.py",
+    "bytes": 7166,
+    "sha256": "ecb27197628755fb07080c5bf57dc7508af04f2e67ba989111b3583e43093af7"
+  },
+  {
+    "path": "tests/test_shared_fusion_fivefold_20261024.py",
+    "bytes": 5225,
+    "sha256": "8a23bd7ce803773d8a0058c729b0b0806dea5e61f1d2c3a448943e4144b227e5"
+  },
+  {
+    "path": "configs/sensor_comparators_fivefold_20261025_v1.json",
+    "bytes": 2382,
+    "sha256": "49ff03142967239a73cbb31b6d2a7f22d757ab2c121cfc31271f2dea342dde9b"
+  },
+  {
+    "path": "experiments/sensor_comparator_pilot_20261022_v2/models.py",
+    "bytes": 12881,
+    "sha256": "2192792cd210abdd92e2c0ed08f6ec4554e237a89b63656f751de8b14d0a0076"
+  },
+  {
+    "path": "scripts/report_comparators_fivefold_20261025.py",
+    "bytes": 6185,
+    "sha256": "34b821cf4c804c503c191c9016f8c75e65011645ef3eb89d804b3ac99b727652"
+  },
+  {
+    "path": "scripts/run_comparators_fivefold_20261025.py",
+    "bytes": 23264,
+    "sha256": "10ccbe38586661687667f0fc06b9fd82129b824bf1dcf308a3636c63baaa5ffd"
+  },
+  {
+    "path": "scripts/sensor_comparator_ridge_20261025.py",
+    "bytes": 5370,
+    "sha256": "c0d332b87dbe6a102e60a5c5bbf99dc63eee7255b5a57d703ca71f8411356868"
+  },
+  {
+    "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/moderntcn/ModernTCN-classification/models/ModernTCN_Layer.py",
+    "bytes": 2803,
+    "sha256": "b2291534c6a11ebd80882bed89f7cf8c76c721b8e0495294659f2c5b0fe88cea"
+  },
+  {
+    "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/moderntcn/ModernTCN-classification/models/ModernTCN.py",
+    "bytes": 15769,
+    "sha256": "ff510ce62aa9a8b7df26c2f7819a9cc499c4a93fb7b0067e22cc4fe3af58eaa3"
+  },
+  {
+    "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/multirocket/multirocket/multirocket_multivariate.py",
+    "bytes": 25009,
+    "sha256": "94d3afe31e4f89c7164e2c5e91bb95c0c7fcdfbcc6a948bca5de911f3c1c649e"
+  },
+  {
+    "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/tslanet/Classification/TSLANet_classification.py",
+    "bytes": 15874,
+    "sha256": "c503d4e841611136eaaa51cd39b49a2f4ada2feff28a023033e4c311a269f954"
+  },
+  {
+    "path": "configs/sensor_comparator_convergence_20261027_v2.json",
+    "bytes": 2803,
+    "sha256": "76a43e249ad6c3b5f816369b22ff4746e4cc8f124a464a6886a4256be1969be6"
+  },
+  {
+    "path": "scripts/run_comparator_convergence_20261027_v2.py",
+    "bytes": 20651,
+    "sha256": "8fb73666fedba70b71a630e3d90286dbc9749f614b748725b5c510bbd0da0599"
+  },
+  {
+    "path": "scripts/comparator_convergence_criteria_20261027_v2.py",
+    "bytes": 1936,
+    "sha256": "b19af10d6b72be84f0a482ef2ccfc42f356b079ae2aae20db65892e071907399"
+  },
+  {
+    "path": "scripts/comparator_convergence_criteria_20261027.py",
+    "bytes": 2652,
+    "sha256": "22d6765d8312f2d644a84b6eeab2eb34aa86c6103ab3f2a1ab0b28912980f036"
+  },
+  {
+    "path": "tests/test_comparator_convergence_20261027.py",
+    "bytes": 1801,
+    "sha256": "d4b27f003bf835428ccbd79494f4c4bdb1170a26ab819972019184a2becaa1fd"
+  },
+  {
+    "path": "tests/test_comparator_convergence_v2_20261027.py",
+    "bytes": 1026,
+    "sha256": "f7563871805c945242f23c15ecdfe5e24f6e2535e8025f5fdfb9239fb8943cd0"
+  },
+  {
+    "path": "scripts/sensor_native_immu_model_20261021_v2.py",
+    "bytes": 3335,
+    "sha256": "33d1744b1dca291e409a5d38bd545d362058978176516a621a3de4a922ea676f"
+  },
+  {
+    "path": "scripts/sensor_native_immu_model_20261021.py",
+    "bytes": 4333,
+    "sha256": "64b0826545b18eb3341fa75e7989e7d79b2ca2daf783a617d9d3a4ddb9e4a3dc"
+  },
+  {
+    "path": "scripts/run_sensor_history_controls_20261011.py",
+    "bytes": 24955,
+    "sha256": "5f48847a68c86ee89ce28ef013c1a39ca78e1492ee9b7c2f7b195272cfa96ffa"
+  },
+  {
+    "path": "scripts/train_sensor_baselines.py",
+    "bytes": 11446,
+    "sha256": "a7314e6004df0d023515b7f2a0db8053499ac91150a1dede20f1f28e3713fbba"
+  },
+  {
+    "path": "scripts/sensor_history_control_models_20261011.py",
+    "bytes": 1496,
+    "sha256": "f6c633000c09c13bcb870c8c16410cc58a5acffe1249c1b779635a3a2a3bb6b8"
+  },
+  {
+    "path": "scripts/report_zero_head_replication_20261024.py",
+    "bytes": 9346,
+    "sha256": "d561c977870de795a4e1280a44db7aa9cdb97e04e62c226bb71bc3ca0b0e2770"
+  },
+  {
+    "path": "scripts/report_tree_anchored_residual_20261024.py",
+    "bytes": 11678,
+    "sha256": "9eedbfc30e94056e77188d24f89b8ce00ff074fbb6c03aa8e0734e331957ec66"
+  },
+  {
+    "path": "scripts/tree_anchored_common_20261024.py",
+    "bytes": 5837,
+    "sha256": "3dbffc8aa6b21c0759dfb714db0fab07790897426711f4b9f764a12f17651423"
+  },
+  {
+    "path": "scripts/report_convtran_endpoint_20261022.py",
+    "bytes": 9492,
+    "sha256": "3674d7551b42dcedcd10680595e8950b67e83da8bd992211872d9909d01efc83"
+  },
+  {
+    "path": "q3_rgb/remote_zip.py",
+    "bytes": 3121,
+    "sha256": "f626b2ca3c8923e9fd967787cce4597f5829e0853d951958bb0665de7b7d67e3"
+  },
+  {
+    "path": "tests/test_comparator_fivefold_queue_20261029_v14.py",
+    "bytes": 3070,
+    "sha256": "0006ec50a1486c4ff64e79cfa32ebf78d804d6d976cc82fd51cbdfed89199e3c"
+  },
+  {
+    "path": "scripts/run_comparator_fivefold_retrain_20261029_v14.py",
+    "bytes": 14057,
+    "sha256": "11e649da15a534b824e31c9e29d533ad0e28072852fd7e6a7626a3f8c24c9eee"
+  },
+  {
+    "path": "scripts/comparator_fivefold_neural_20261029_v14.py",
+    "bytes": 21532,
+    "sha256": "c3943fdf7b5121f09c1a83278e25b05c78089bcb36e075a803feb7e39bd57e00"
+  },
+  {
+    "path": "scripts/comparator_fivefold_common_20261029_v14.py",
+    "bytes": 10449,
+    "sha256": "deb076fa9741556da830a69922a9aaa5bb1046ffd728864c2e0b030bd81d09aa"
+  },
+  {
+    "path": "scripts/accelerate_comparator_queue_20261028_v8b.py",
+    "bytes": 26338,
+    "sha256": "0e51f4c70a24e3ea52ab49c56f6a5e23693b2326734097006dbaabcf17f96d58"
+  },
+  {
+    "path": "scripts/comparator_repair_policy_20261028.py",
+    "bytes": 2287,
+    "sha256": "23ac54cf4486c635b2f8073cc8f8c96d3c6c2cac5defb8c3fe9976aea2cba884"
+  },
+  {
+    "path": "scripts/run_comparator_repair_20261028_v7.py",
+    "bytes": 14859,
+    "sha256": "09a4893f4540594edf54e85979e6c95d5ea1be7967e5001b2dd695c08efa9816"
+  },
+  {
+    "path": "scripts/resume_comparator_queue_20261028.py",
+    "bytes": 11142,
+    "sha256": "d0260813055df329cfff54afd2bca7f68ab4009608c5512b517356d5ff595fec"
+  },
+  {
+    "path": "scripts/comparator_generalization_gate_20261027.py",
+    "bytes": 5534,
+    "sha256": "3f976f87dfbed0a229983dd341c2a0b9e4b330000b6ef19e0906218070718b64"
+  },
+  {
+    "path": "scripts/report_b_low_lr_20261027.py",
+    "bytes": 5764,
+    "sha256": "4b4f842fc68bef03c247298f21b2e6ce70e4185a38e17011a0d8eb7fd7ce522c"
+  },
+  {
+    "path": "scripts/report_b_early_schedule_20261024.py",
+    "bytes": 10567,
+    "sha256": "8f0089eb859cc55f090f6f62abab1196c6a536a5d73ced43be40b0ae767add79"
+  },
+  {
+    "path": "scripts/sensor_b_lr_schedule_20261024.py",
+    "bytes": 871,
+    "sha256": "3428f6af6532d210f5ca0d24373391205bc2b162c47c96e659a18d01b5622def"
+  },
+  {
+    "path": "scripts/report_b_epoch_extension_20261024.py",
+    "bytes": 10171,
+    "sha256": "bcd2335bae143489e8ab8aeb172b34704ca53d8cd074535ec4c289fd164d900c"
+  },
+  {
+    "path": "scripts/run_comparator_stability_extension_20261028_v9.py",
+    "bytes": 21218,
+    "sha256": "b948466632fbb769c706a927168587f3bdbde16a0b185bc20799314150da1656"
+  },
+  {
+    "path": "scripts/comparator_fivefold_rocket_20261029_v14.py",
+    "bytes": 21134,
+    "sha256": "13b2a897524c40dd95ed5b0e8d79e7c47e10ce5288c9a99064c7dce09187de93"
+  },
+  {
+    "path": "scripts/run_multirocket_dev_regularization_20261028.py",
+    "bytes": 23008,
+    "sha256": "80f81c43fa757ddcf1aecac1737d64eafe6befacd6db029ebd35e5f2650d75fe"
+  },
+  {
+    "path": "scripts/report_comparator_fivefold_retrain_20261029_v14.py",
+    "bytes": 6373,
+    "sha256": "535203d7a70e0eb83bddc71c3084e581b164d0c303ccc5792cf7a9ecd671b9e9"
+  },
+  {
+    "path": "tests/test_comparator_fivefold_rocket_20261029_v14.py",
+    "bytes": 13652,
+    "sha256": "66ec21d4f6ec0d006a192b30098f4592f736be26a2d97b0f87f587f395f29488"
+  },
+  {
+    "path": "tests/test_comparator_fivefold_neural_20261029_v14.py",
+    "bytes": 6158,
+    "sha256": "5a9763c99d216eb85988b6cd119cad8219c64c6662fda9db992ec8ad58e5e955"
+  },
+  {
+    "path": "configs/sensor_comparator_fivefold_retrain_20261029_v14.json",
+    "bytes": 3942,
+    "sha256": "76c864efa83c95f342b00058ee3016654d809e8cfa709ccd02a6516f9155626a"
+  },
+  {
+    "path": "configs/sensor_comparator_joint_acceptance_20261027_v1.json",
+    "bytes": 2590,
+    "sha256": "869998d557f4d59eb4f264950c19d805174d2bb8615955b6831c9dd1c6ae9b92"
+  },
+  {
+    "path": "configs/sensor_timesnet_fivefold_20261029_v20.json",
+    "bytes": 4485,
+    "sha256": "09f9ec39c552ad52b1abedfa24351615222e8a2c631739c52683ecc8297a8972"
+  },
+  {
+    "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/PROVENANCE.json",
+    "bytes": 3884,
+    "sha256": "7b77da137fb1523339e5591da0523b19277808ced9ebca9a762415aa366e4a6a"
+  },
+  {
+    "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/moderntcn/LICENSE",
+    "bytes": 1064,
+    "sha256": "62c172f180a9c70514e597a2e3bd22f12d3eb6eb2af1cbd79c83d4292a749115"
+  },
+  {
+    "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/multirocket/LICENSE",
+    "bytes": 35149,
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+  },
+  {
+    "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/tslanet/LICENSE",
+    "bytes": 1074,
+    "sha256": "ad0f42199e022a64b41312ee330e742c3a2f9c660a7ee9f09725f7d81194d3c2"
+  },
+  {
+    "path": "experiments/sensor_timesnet_pilot_20261029_v17/CPU_TEST_RECEIPT.json",
+    "bytes": 1581,
+    "sha256": "59ac4fc1353ef21809d7193f1cbda08a3d13a29311628db2ec9977bdf5c8f36e"
+  },
+  {
+    "path": "experiments/sensor_timesnet_pilot_20261029_v17/SOURCE_MANIFEST.json",
+    "bytes": 4281,
+    "sha256": "2975c5a4aac82808802e0703b9438891900530578df55c1662bbb4c62848bce8"
+  },
+  {
+    "path": "experiments/sensor_timesnet_pilot_20261029_v17/model.py",
+    "bytes": 4424,
+    "sha256": "74dc1113d7729ca61129b800bb888372ebcb47ee29a1897a93ec767e0c2f0a3f"
+  },
+  {
+    "path": "experiments/sensor_timesnet_pilot_20261029_v17/vendor/Time-Series-Library/LICENSE",
+    "bytes": 1084,
+    "sha256": "8a6caa178ea3f33ebff5d7bb5558628cf5b423305dc30d3630f86564c7db94a2"
+  },
+  {
+    "path": "experiments/sensor_timesnet_pilot_20261029_v17/vendor/Time-Series-Library/layers/Conv_Blocks.py",
+    "bytes": 2376,
+    "sha256": "16d9f2d9e4fa094dc357901e32beecda9839709bcca02625e6447186933ce4e1"
+  },
+  {
+    "path": "experiments/sensor_timesnet_pilot_20261029_v17/vendor/Time-Series-Library/layers/Embed.py",
+    "bytes": 7012,
+    "sha256": "17e7c3577324c41a0da427a199c955b782fde905aabb1f7cbc3c4e15ebd4ae35"
+  },
+  {
+    "path": "experiments/sensor_timesnet_pilot_20261029_v17/vendor/Time-Series-Library/models/TimesNet.py",
+    "bytes": 8735,
+    "sha256": "f64c4bed1fd7347090044a0163bd4209c9f9ec1c1b19ceff47842df36b64bba7"
+  },
+  {
+    "path": "scripts/prediction_replay_verifier_20261029_v14r1.py",
+    "bytes": 3984,
+    "sha256": "28292e4563a6af7b5984c9f8ac579eaf26432241e5d4a477d379e9c064460dab"
+  },
+  {
+    "path": "scripts/report_timesnet_fivefold_20261029_v20.py",
+    "bytes": 5456,
+    "sha256": "0060b07e9372866187ddf8838bb2f7d1e7479954a1aedc4caa257691ba9c7dc4"
+  },
+  {
+    "path": "scripts/run_timesnet_fivefold_20261029_v20.py",
+    "bytes": 12233,
+    "sha256": "3a5f2d3f85f3f81bf46a758b299f25290f40d72961014aa03c8eabda9d0ded04"
+  },
+  {
+    "path": "scripts/run_timesnet_pilot_20261029_v17.py",
+    "bytes": 28215,
+    "sha256": "dae9aa4f3ade800318b5225355fbcf0158a91952c9d9dfa775b036b2e0297f97"
+  },
+  {
+    "path": "scripts/timesnet_fivefold_common_20261029_v20.py",
+    "bytes": 22341,
+    "sha256": "1e7edfb71e3681fec25a2928f2b4edd129bbea738bbcc4054b168f16215eb154"
+  },
+  {
+    "path": "scripts/timesnet_fivefold_neural_20261029_v20.py",
+    "bytes": 27270,
+    "sha256": "ddff81bd6135e883c3daecf74cb5af3a2480471d1134aa1113bb7223a3c1441a"
+  },
+  {
+    "path": "scripts/verify_timesnet_pilot_results_20261029_v17.py",
+    "bytes": 3244,
+    "sha256": "18e47be52f3a18412becd93d8ea85b99d439259b3e75b476fcf9396c576be359"
+  },
+  {
+    "path": "tests/test_timesnet_fivefold_neural_20261029_v20.py",
+    "bytes": 11013,
+    "sha256": "f5630b15296f9939dd11b3263f0f40bd4198415dcb55c18d5ca9974ad09814a0"
+  },
+  {
+    "path": "tests/test_timesnet_fivefold_queue_20261029_v20.py",
+    "bytes": 7337,
+    "sha256": "f18d568106958d7e316d10e07bacd77916c58fc450323da3c42af7ab85988462"
+  },
+  {
+    "path": "third_party/convtran_context_20261022_v1/LICENSE",
+    "bytes": 1118,
+    "sha256": "1482f131a7c1bc20f15e87c9315ea86ca4f3061834191b0cfb287fa04ab1bedc"
+  },
+  {
+    "path": "third_party/convtran_context_20261022_v1/PROVENANCE.json",
+    "bytes": 1063,
+    "sha256": "5b71de05d97159208e436603778601aaff2f2a6f508d4a03639acca508689640"
+  },
+  {
+    "path": "scripts/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

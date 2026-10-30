@@ -1,0 +1,117 @@
+{
+  "output": "reports/sensor_comparator_pilot_20261022_v2",
+  "mainline_output": "reports/sensor_convtran_endpoint_pilot_20261022_v1",
+  "reference_arms": [
+    "TwoRate_Concat",
+    "FullResidual_A",
+    "EndpointResidual_B"
+  ],
+  "protocols": [
+    "TS",
+    "OS"
+  ],
+  "fold": "fold_1",
+  "seeds": [
+    17,
+    23,
+    29
+  ],
+  "arms": [
+    "GRU_Fusion",
+    "Transformer_Fusion",
+    "ModernTCN_Fusion",
+    "TSLANet_Sup_Fusion"
+  ],
+  "cpu_arms": [
+    "XGBoost_Statistics",
+    "MultiRocket_Fusion"
+  ],
+  "epochs": 20,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "batch_size": 256,
+  "ema_decay": 0.998,
+  "ema_warmup_steps": 200,
+  "threads": 4,
+  "max_wall_seconds": 21600,
+  "maximum_wait_seconds": 43200,
+  "max_attempts": 1,
+  "primary_endpoint": "raw exactly epoch20 for neural models; fixed-budget final CPU classifier; three paired seeds; seven-class macro F1",
+  "secondary_endpoint": "EMA exactly epoch20 for neural models only; never replace the primary by an interim maximum",
+  "gru": {
+    "projection": 32,
+    "hidden": 128,
+    "layers": 1
+  },
+  "transformer": {
+    "width": 64,
+    "heads": 4,
+    "ff": 256,
+    "layers": 2,
+    "dropout": 0.1,
+    "attention": "whole past-only input window, missing-key mask"
+  },
+  "moderntcn": {
+    "dims": [
+      32,
+      64
+    ],
+    "blocks": [
+      1,
+      1
+    ],
+    "large_kernels": [
+      13,
+      13
+    ],
+    "small_kernels": [
+      5,
+      5
+    ],
+    "patch_size": 8,
+    "patch_stride": 4,
+    "ffn_ratio": 1,
+    "dropout": 0.1
+  },
+  "tslanet": {
+    "width": 128,
+    "depth": 2,
+    "patch_size": 8,
+    "dropout": 0.15,
+    "ASB": true,
+    "ICB": true,
+    "adaptive_filter": true,
+    "pretraining": false
+  },
+  "multirocket": {
+    "requested_features_per_branch": 25000,
+    "max_dilations_per_kernel": 32,
+    "features_per_kernel": 4,
+    "ridge_alpha": 1.0,
+    "ridge_solver": "lsqr",
+    "ridge_tol": 1E-06,
+    "ridge_max_iter": 10000,
+    "transform_batch_size": 256,
+    "class_weight": "TRAIN sqrt-balanced sample weights",
+    "internal_cross_validation": false
+  },
+  "xgboost": {
+    "rounds": 500,
+    "max_depth": 6,
+    "eta": 0.05,
+    "tree_method": "hist",
+    "device": "cpu",
+    "nthread": 4,
+    "sample_weight": "TRAIN sqrt-balanced",
+    "early_stopping": false
+  },
+  "common_inputs": "native100x8, state60x26, context136, current26; identical TRAIN-only normalization and target receipts to mainline",
+  "readout": "masked full-window and terminal features per branch, projected to64 each; context136->64; current26; common346->128->7 head",
+  "missingness": "physical values zeroed when invalid; validity and age channels retained; entirely missing inputs use TRAIN class prior",
+  "Test_allowed": false,
+  "additional_folds_allowed": false,
+  "formal_refit_allowed": false,
+  "automatic_expansion": false,
+  "discard_if_outperforms_mainline": false,
+  "acceptance_targets": "configs/sensor_gru_margin_targets_20261020_v3.json"
+}

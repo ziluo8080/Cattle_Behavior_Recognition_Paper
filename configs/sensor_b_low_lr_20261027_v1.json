@@ -1,0 +1,20 @@
+{
+  "output": "reports/sensor_b_low_lr_20261027_side_v1",
+  "B_config": "configs/sensor_convtran_endpoint_pilot_20261022_v1.json",
+  "data_parent": "reports/sensor_zero_head_replication_20261024_v1",
+  "reference": "reports/sensor_b_early_schedule_20261024_v1",
+  "source_seal": "reports/sensor_b_early_schedule_20261024_v1/SEAL.json",
+  "environment_spec": "configs/sensor_tree_anchored_env_20261024_v1.json",
+  "protocols": ["TS", "OS"], "inners": [0, 1, 2], "seeds": [17, 23, 29],
+  "arms": {"Constant_3e4": 0.0003, "Constant_1e4": 0.0001},
+  "epochs": 20, "batch_size": 256, "weight_decay": 0.01,
+  "ema_decay": 0.998, "ema_warmup_steps": 200,
+  "gate": {"family": "margin_select", "XGB_temperature": 2.0, "B_temperature": 1.0, "XGB_weight": 0.7},
+  "checkpoint_selection": "highest neural DEV macro-F1, exact ties choose earlier epoch; not fused-F1; fixed 20-epoch run, no dynamic early stopping",
+  "aggregation": "mean three seeds within each inner, then equal mean three inners; TS primary, OS supplementary",
+  "scope": "existing fold_1 TRAIN-internal development; no official Test or outer VAL; candidate only, do not overwrite manuscript or sealed formal results",
+  "budget": {"total_seconds": 10800, "job_seconds": 1200, "minimum_free_disk_GiB": 6, "gpu_parallel": 1, "max_attempts": 1},
+  "Test_allowed": false, "outer_VAL_allowed": false, "formal_refit_allowed": false,
+  "automatic_expansion": false, "new_paid_resources": false,
+  "user_authorization": "2026-10-27 current chat: 现在解决双模型融合没有收敛的问题；明确症状为训练损失或验证指标持续震荡；SSH端口42506。"
+}

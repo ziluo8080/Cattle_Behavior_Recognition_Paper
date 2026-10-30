@@ -1,12 +1,11 @@
 __pycache__/
 *.pyc
-_verification_output/
+.venv/
 .env
 .env.*
-*.pem
 *.key
-.venv/
-data/downloads/
+*.pem
 data/extracted/
-path.yaml
-source/reports/sensor_baselines_20261007/upstream/weights/
+data/*.tar.gz
+_verification_output/
+outputs/

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scope": "Data-free local CPU synthetic verification only; no science data, training runs or performance scores.",
+  "command": "python -m pytest tests/test_timesnet_model_20261029_v17.py -q",
+  "result": "8 passed in 2.78s",
+  "python": "3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]",
+  "torch": "2.5.1+cpu",
+  "device": "cpu",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "default_total_parameters": 403047,
+  "default_trainable_parameters": 403047,
+  "checks": [
+    "Pinned vendor SHA256 and sealed shared-adapter SHA256",
+    "Native100x8 and state60x26 encoder feature exact parity against independently executed pristine official classification model",
+    "Original batch-aggregate FFT selection and explicit batch-membership dependence",
+    "Nontrivial CE backward: every trainable parameter connected, finite and nonzero gradient",
+    "Missing physical/state NaN payload invariant; allmissing output exactly log TRAIN prior",
+    "346-dimensional full-window and terminal masked fusion readout",
+    "Same-device eval bit-exact repeat and state_dict roundtrip",
+    "Configured capacity options used"
+  ],
+  "model_sha256": "74dc1113d7729ca61129b800bb888372ebcb47ee29a1897a93ec767e0c2f0a3f",
+  "tests_sha256": "dc5c0d5baae6481d92862169c1b2b97384a342f4b03e74bdbb382631b1a548a8",
+  "limitations": [
+    "CUDA forward/backward and CUDA deterministic repeat require cloud verification.",
+    "Official FFT period selection remains batch-dependent; runner must record train/eval batch grouping."
+  ]
+}

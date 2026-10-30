@@ -1,0 +1,69 @@
+{
+  "files": [
+    {
+      "bytes": 15769,
+      "url": "https://raw.githubusercontent.com/luodhhh/ModernTCN/56a9a2c018385cd5acef015378cae7f084d1b11c/ModernTCN-classification/models/ModernTCN.py",
+      "commit": "56a9a2c018385cd5acef015378cae7f084d1b11c",
+      "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/moderntcn/ModernTCN-classification/models/ModernTCN.py",
+      "repo": "luodhhh/ModernTCN",
+      "sha256": "ff510ce62aa9a8b7df26c2f7819a9cc499c4a93fb7b0067e22cc4fe3af58eaa3"
+    },
+    {
+      "bytes": 2803,
+      "url": "https://raw.githubusercontent.com/luodhhh/ModernTCN/56a9a2c018385cd5acef015378cae7f084d1b11c/ModernTCN-classification/models/ModernTCN_Layer.py",
+      "commit": "56a9a2c018385cd5acef015378cae7f084d1b11c",
+      "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/moderntcn/ModernTCN-classification/models/ModernTCN_Layer.py",
+      "repo": "luodhhh/ModernTCN",
+      "sha256": "b2291534c6a11ebd80882bed89f7cf8c76c721b8e0495294659f2c5b0fe88cea"
+    },
+    {
+      "bytes": 4378,
+      "url": "https://raw.githubusercontent.com/luodhhh/ModernTCN/56a9a2c018385cd5acef015378cae7f084d1b11c/ModernTCN-classification/scripts/classification.sh",
+      "commit": "56a9a2c018385cd5acef015378cae7f084d1b11c",
+      "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/moderntcn/ModernTCN-classification/scripts/classification.sh",
+      "repo": "luodhhh/ModernTCN",
+      "sha256": "84d8c8f393fc2a25b10eeaa92c034d122b273e5e23474ffee40d2e597324d9ea"
+    },
+    {
+      "bytes": 1064,
+      "url": "https://raw.githubusercontent.com/luodhhh/ModernTCN/56a9a2c018385cd5acef015378cae7f084d1b11c/LICENSE",
+      "commit": "56a9a2c018385cd5acef015378cae7f084d1b11c",
+      "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/moderntcn/LICENSE",
+      "repo": "luodhhh/ModernTCN",
+      "sha256": "62c172f180a9c70514e597a2e3bd22f12d3eb6eb2af1cbd79c83d4292a749115"
+    },
+    {
+      "bytes": 15874,
+      "url": "https://raw.githubusercontent.com/emadeldeen24/TSLANet/ca0e88416d3ae49fd50e399c44ae94868378a94d/Classification/TSLANet_classification.py",
+      "commit": "ca0e88416d3ae49fd50e399c44ae94868378a94d",
+      "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/tslanet/Classification/TSLANet_classification.py",
+      "repo": "emadeldeen24/TSLANet",
+      "sha256": "c503d4e841611136eaaa51cd39b49a2f4ada2feff28a023033e4c311a269f954"
+    },
+    {
+      "bytes": 1074,
+      "url": "https://raw.githubusercontent.com/emadeldeen24/TSLANet/ca0e88416d3ae49fd50e399c44ae94868378a94d/LICENSE",
+      "commit": "ca0e88416d3ae49fd50e399c44ae94868378a94d",
+      "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/tslanet/LICENSE",
+      "repo": "emadeldeen24/TSLANet",
+      "sha256": "ad0f42199e022a64b41312ee330e742c3a2f9c660a7ee9f09725f7d81194d3c2"
+    },
+    {
+      "bytes": 25009,
+      "url": "https://raw.githubusercontent.com/ChangWeiTan/MultiRocket/3ccaa4f8ed11769b904af885e17018c39c89a2ac/multirocket/multirocket_multivariate.py",
+      "commit": "3ccaa4f8ed11769b904af885e17018c39c89a2ac",
+      "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/multirocket/multirocket/multirocket_multivariate.py",
+      "repo": "ChangWeiTan/MultiRocket",
+      "sha256": "94d3afe31e4f89c7164e2c5e91bb95c0c7fcdfbcc6a948bca5de911f3c1c649e"
+    },
+    {
+      "bytes": 35149,
+      "url": "https://raw.githubusercontent.com/ChangWeiTan/MultiRocket/3ccaa4f8ed11769b904af885e17018c39c89a2ac/LICENSE",
+      "commit": "3ccaa4f8ed11769b904af885e17018c39c89a2ac",
+      "path": "experiments/sensor_comparator_pilot_20261022_v2/vendor/multirocket/LICENSE",
+      "repo": "ChangWeiTan/MultiRocket",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    }
+  ],
+  "source_unmodified": true
+}

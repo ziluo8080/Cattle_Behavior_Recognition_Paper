@@ -1,0 +1,33 @@
+{
+  "schema": 4,
+  "created_Asia_Shanghai_date": "2026-10-22",
+  "supersedes_for_future_final_acceptance": "configs/sensor_gru_margin_targets_20261020_v3.json",
+  "user_instruction": "这个最终+1百分点，应该是在之前GRU路线中提高",
+  "reference_interpretation": "Both TS and OS use the paper historical GRU E-GRU-SQRT-VAL as reference; this replaces the previous per-protocol strongest-of-eleven reference for future final acceptance.",
+  "frozen_benchmark": "reports/sensor_extended_model_overview_20261014/all11_fast/verified_summary.json",
+  "frozen_benchmark_sha256": "65ade2c05f51125459268cf3eeb3582183e2141d89c3280841cb4a0a32266538",
+  "scope": "final method versus paper historical GRU in both protocols; no additional one-percentage-point requirement between ConvTran development candidates",
+  "reference_model": "E-GRU-SQRT-VAL",
+  "required_margin_percentage_points": "1.0",
+  "comparison_metric": "Same original targets and evaluation protocol: mean over three seeds within each fold, then unweighted mean over five folds.",
+  "precision_policy": "Use Decimal values parsed from the frozen summary without display rounding; accept iff each protocol final macro F1 reaches its exact reference+1pp threshold.",
+  "protocols": {
+    "TS": {
+      "frozen_reference_method": "E-GRU-SQRT-VAL",
+      "frozen_reference_percent": "81.3016602339995200",
+      "exact_plus_one_percent": "82.3016602339995200",
+      "effective_acceptance_percent": "82.3016602339995200"
+    },
+    "OS": {
+      "frozen_reference_method": "E-GRU-SQRT-VAL",
+      "frozen_reference_percent": "78.1585063350019100",
+      "exact_plus_one_percent": "79.1585063350019100",
+      "effective_acceptance_percent": "79.1585063350019100"
+    }
+  },
+  "class_requirement_carried_from_v3": "Report all seven classes; at least one standout class or consistent cross-fold/seed advantage; no all-class +1pp rule",
+  "historical_pilot_policy": "Do not rewrite completed pilot seals, endpoints, class guards, or their pass/fail decisions. This file changes the future final comparison reference only.",
+  "development_VAL_cannot_be_compared_to_old_Test_for_acceptance": true,
+  "new_training_authorized_by_this_config": false,
+  "Test_access_authorized_by_this_config": false
+}

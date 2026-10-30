@@ -1,0 +1,83 @@
+{
+  "repository": "https://github.com/thuml/Time-Series-Library",
+  "commit": "4e938a1767106324dd753b2a44832bf870a0252e",
+  "license": "MIT",
+  "retrieved_utc": "2026-10-29",
+  "files": [
+    {
+      "upstream_path": "models/TimesNet.py",
+      "local_path": "vendor/Time-Series-Library/models/TimesNet.py",
+      "url": "https://raw.githubusercontent.com/thuml/Time-Series-Library/4e938a1767106324dd753b2a44832bf870a0252e/models/TimesNet.py",
+      "sha256": "f64c4bed1fd7347090044a0163bd4209c9f9ec1c1b19ceff47842df36b64bba7",
+      "bytes": 8735,
+      "modified": false
+    },
+    {
+      "upstream_path": "layers/Embed.py",
+      "local_path": "vendor/Time-Series-Library/layers/Embed.py",
+      "url": "https://raw.githubusercontent.com/thuml/Time-Series-Library/4e938a1767106324dd753b2a44832bf870a0252e/layers/Embed.py",
+      "sha256": "17e7c3577324c41a0da427a199c955b782fde905aabb1f7cbc3c4e15ebd4ae35",
+      "bytes": 7012,
+      "modified": false
+    },
+    {
+      "upstream_path": "layers/Conv_Blocks.py",
+      "local_path": "vendor/Time-Series-Library/layers/Conv_Blocks.py",
+      "url": "https://raw.githubusercontent.com/thuml/Time-Series-Library/4e938a1767106324dd753b2a44832bf870a0252e/layers/Conv_Blocks.py",
+      "sha256": "16d9f2d9e4fa094dc357901e32beecda9839709bcca02625e6447186933ce4e1",
+      "bytes": 2376,
+      "modified": false
+    },
+    {
+      "upstream_path": "LICENSE",
+      "local_path": "vendor/Time-Series-Library/LICENSE",
+      "url": "https://raw.githubusercontent.com/thuml/Time-Series-Library/4e938a1767106324dd753b2a44832bf870a0252e/LICENSE",
+      "sha256": "8a6caa178ea3f33ebff5d7bb5558628cf5b423305dc30d3630f86564c7db94a2",
+      "bytes": 1084,
+      "modified": false
+    },
+    {
+      "upstream_path": "scripts/classification/TimesNet.sh",
+      "local_path": "vendor/Time-Series-Library/scripts/classification/TimesNet.sh",
+      "url": "https://raw.githubusercontent.com/thuml/Time-Series-Library/4e938a1767106324dd753b2a44832bf870a0252e/scripts/classification/TimesNet.sh",
+      "sha256": "3694ce11e690bf7bf1f094753efaae1c92e0fe7b249c3e27e7a6d3355dca022f",
+      "bytes": 3560,
+      "modified": false
+    }
+  ],
+  "PositionalEmbedding": "Original class is contained in layers/Embed.py; there is no separate required positional source file.",
+  "loading": "Only AST class/function definitions execute; author imports, training scripts and global layers package never execute.",
+  "core_preservation": [
+    "Original batch/channel mean FFT frequency selection; no per-sample substitution.",
+    "Original 2D Inception aggregation, residual, and shared LayerNorm after each TimesBlock.",
+    "Original DataEmbedding classification input path with x_mark=None and circular TokenEmbedding padding."
+  ],
+  "adapter": [
+    "Two independent backbones at native dynamic length100/channels8 and state length60/channels26.",
+    "Unused author flattened classification projection and temporal embedding are removed.",
+    "Original classification GELU/dropout and padding mask precede learned d_model-to64 plus LayerNorm sequence projection.",
+    "Same clean_inputs and full/terminal masked pooling; common346->128->7; allmissing TRAIN prior."
+  ],
+  "batch_dependence": "FFT_for_Period aggregates abs(rfft(x)) across batch and channels. Train and eval batch size, sample order and grouping must be recorded by the runner; changing them can alter outputs.",
+  "default_options": {
+    "d_model": 16,
+    "d_ff": 32,
+    "e_layers": 2,
+    "top_k": 3,
+    "num_kernels": 4,
+    "dropout": 0.1
+  },
+  "capacity_choice": "Data-free pre-training decision; d_model16/d_ff32 used by original official classification script; no validation-performance sweep.",
+  "shared_adapter": {
+    "path": "experiments/sensor_comparator_pilot_20261022_v2/models.py",
+    "sha256": "2192792cd210abdd92e2c0ed08f6ec4554e237a89b63656f751de8b14d0a0076",
+    "reuse": [
+      "clean_inputs",
+      "pooled",
+      "fast_convolutions"
+    ]
+  },
+  "fast_convolutions": "Existing helper is applied only to zero-padding Conv1d modules. Official circular TokenEmbedding Conv1d is kept unchanged.",
+  "default_total_parameters": 403047,
+  "default_trainable_parameters": 403047
+}

@@ -1,0 +1,11 @@
+{
+  "status": "RETAINED_DEVELOPMENT_INCUMBENT",
+  "date": "2026-10-22",
+  "source": "reports/sensor_xgb_b_fusion_20261022_v1",
+  "shared_recipe": {"id": "fusion_249", "view": "ema", "family": "margin_select", "XGB_weight": 0.7, "XGB_temperature": 2.0, "B_temperature": 1.0},
+  "shared_scores_percent": {"TS": 86.34925583956745, "OS": 85.331131916843},
+  "per_protocol_best_also_preserved": {"TS": {"id": "fusion_122", "mean_percent": 86.48554170249785}, "OS": {"id": "fusion_303", "mean_percent": 85.47823591651884}},
+  "preservation": "Do not overwrite the original SEAL, selected configuration, model checkpoints, probabilities or results. New experiments use separate directories and compare against the shared incumbent.",
+  "confirmation_pending": true,
+  "final1pp_established": false
+}

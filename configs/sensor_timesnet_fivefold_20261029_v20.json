@@ -1,0 +1,133 @@
+{
+  "output": "reports/sensor_timesnet_fivefold_20261029_v20",
+  "data_parent": "reports/sensor_zero_head_replication_20261024_v1",
+  "environment": "configs/sensor_shared_fusion_fivefold_env_20261024_v1.json",
+  "models": [
+    "TimesNet_DS"
+  ],
+  "protocols": [
+    "TS",
+    "OS"
+  ],
+  "inners": [
+    0
+  ],
+  "seeds": [
+    17,
+    23,
+    29
+  ],
+  "learning_rate": 0.0003,
+  "weight_decay": 0.03,
+  "batch_size": 256,
+  "BN_momentum": 0.01,
+  "EMA_decay": 0.998,
+  "EMA_warmup_steps": 200,
+  "evaluation_window": 3,
+  "scheduler": {
+    "mode": "min",
+    "factor": 0.2,
+    "patience": 2,
+    "threshold": 0.0001,
+    "threshold_mode": "rel",
+    "cooldown": 0,
+    "min_lr": 3e-06,
+    "eps": 0
+  },
+  "convergence": {
+    "minimum_stage_epochs": 40,
+    "consecutive_window_epochs": 20,
+    "max_abs_DEV_CE_relative_block_drift": 0.02,
+    "max_abs_fit_EMA_CE_relative_block_drift": 0.02,
+    "max_abs_train_CE_relative_block_drift": 0.05,
+    "max_abs_DEV_F1_block_drift_pp": 0.5,
+    "max_DEV_F1_window_range_pp": 1,
+    "max_relative_parameter_update": 0.002,
+    "DEV_CE_within_run_minimum_factor": 1.05,
+    "minimum_positive_learning_rate": 3e-06,
+    "max_DEV_CE_window_relative_range": 0.05,
+    "max_abs_cross_window_DEV_F1_drift_pp": 0.5,
+    "max_cross_window_DEV_F1_range_pp": 1,
+    "terminal_DEV_CE_within_run_minimum_factor": 1.05
+  },
+  "checkpoint_policy": "Restore actual minimum hard-label DEV CE saved EMA checkpoint; ties earlier. Do not call early checkpoint terminal optimizer convergence.",
+  "budget": {
+    "worker_seconds": 10800,
+    "prediction_worker_seconds": 3600,
+    "cleanup_seconds": 120,
+    "queue_seconds": 172800,
+    "gpu_parallel": 3,
+    "max_attempts": 1,
+    "minimum_free_disk_GiB": 20
+  },
+  "Test_allowed": true,
+  "outer_VAL_allowed": true,
+  "formal_refit_allowed": true,
+  "new_paid_resources": false,
+  "scope": "Exactly TimesNet_DS original V17 dropout0.1, TS/OS x five official folds x three seeds. Thirty fresh TRAIN/VAL calibration, thirty fresh FIT refit, thirty label-blind predictions; no scientific retries, no partial-fold scoring. Fixed batch-dependent FFT: train seeded shuffled batch256 including actual tail; inference ordered batch256 including actual tail.",
+  "user_authorization": "2026-10-29: 用户确认原dropout0.1 TimesNet两例经验训练稳定后开展完整五折验证，解除先前hold；不采用后续dropout0.2/0.3变体。",
+  "ledger": ".aris/compute/bitahub-root-timesnet-fivefold-20261029-v20.md",
+  "stopping": {
+    "minimum_epochs": 40,
+    "maximum_epochs": 160,
+    "patience_epochs": 20,
+    "relative_improvement": 0.001
+  },
+  "automatic_fivefold_expansion": true,
+  "source_max_epochs": 160,
+  "recovery_max_epochs": 0,
+  "GPU_processes": 3,
+  "Torch_memory_fraction_per_process": 0.15,
+  "minimum_free_GPU_MiB": 6144,
+  "timesnet": {
+    "d_model": 16,
+    "d_ff": 32,
+    "e_layers": 2,
+    "top_k": 3,
+    "num_kernels": 4,
+    "dropout": 0.1
+  },
+  "automatic_expansion": false,
+  "eval_batch_size": 256,
+  "threads": 4,
+  "admission_seconds": 120,
+  "model_config": "experiments/sensor_comparator_pilot_20261022_v2/config.json",
+  "selection_parent": "reports/sensor_converged_fivefold_20261027_v1",
+  "formal_parent": "reports/sensor_shared_fusion_fivefold_20261024_v1",
+  "reference_output": "reports/sensor_timesnet_pilot_20261029_v17",
+  "folds": [
+    "fold_1",
+    "fold_2",
+    "fold_3",
+    "fold_4",
+    "fold_5"
+  ],
+  "runtime_output": "reports/sensor_timesnet_fivefold_20261029_v20/runtime",
+  "runtime": {
+    "neural_minimum_free_MiB": 6144,
+    "neural_fraction": 0.15,
+    "GPU_processes": 3
+  },
+  "refit_epoch_transfer": "same_epochs",
+  "historical_Test_exposure": true,
+  "manuscript_replacement_allowed": false,
+  "calibration_stopping": {
+    "minimum_epochs": 40,
+    "maximum_epochs": 160,
+    "patience_epochs": 20,
+    "relative_improvement": 0.001
+  },
+  "parameter_count": 403047,
+  "head_dropout": 0.1,
+  "frozen_development_evidence": {
+    "original": "V17 dropout0.1; TS40/OS43 epochs; 12/12 original training checks and DEV plateau",
+    "selected_epochs": {
+      "TS": 10,
+      "OS": 14
+    },
+    "later_dropout_variants_adopted": false,
+    "legacy_terminal_generalization_pass_required": false,
+    "early_selected_checkpoint_stationarity_claimed": false,
+    "no_overfitting_claimed": false
+  }
+}

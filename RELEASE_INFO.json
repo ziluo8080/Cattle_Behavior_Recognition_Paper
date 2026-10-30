@@ -1,0 +1,19 @@
+{
+  "version": "v29-code-data",
+  "date": "2026-10-30",
+  "dataset_csv": 50,
+  "public_scope": "dataset and experiment code only",
+  "raw_dataset_tag": "data-code-20261030-v29",
+  "model": "TT-CSF",
+  "seeds": [
+    17,
+    23,
+    29
+  ],
+  "protocols": [
+    "TS",
+    "OS"
+  ],
+  "historical_Test_exposure": true,
+  "new_blind_evaluation": false
+}

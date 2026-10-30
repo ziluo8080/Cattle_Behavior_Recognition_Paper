@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/Navidfoumani/ConvTran",
+  "source": "GitHub connector file fetch, original text unmodified",
+  "files": [
+    {
+      "path": "Models/model.py",
+      "github_blob_sha": "74ec1113a59d6b338c1e7e70ee05d842ba73ea1f",
+      "url": "https://github.com/Navidfoumani/ConvTran/blob/main/Models/model.py"
+    },
+    {
+      "path": "Models/Attention.py",
+      "github_blob_sha": "e16cd813c8956b0c0c734f9d3d08ec50398a1642",
+      "url": "https://github.com/Navidfoumani/ConvTran/blob/main/Models/Attention.py"
+    },
+    {
+      "path": "Models/AbsolutePositionalEncoding.py",
+      "github_blob_sha": "edaf93bb2b5075157e595f05f913ba136795d455",
+      "url": "https://github.com/Navidfoumani/ConvTran/blob/main/Models/AbsolutePositionalEncoding.py"
+    },
+    {
+      "path": "LICENSE",
+      "github_blob_sha": "e6a0139269d9709a7c49163e91faf3c0db0c8bbf",
+      "url": "https://github.com/Navidfoumani/ConvTran/blob/main/LICENSE"
+    }
+  ],
+  "license": "MIT",
+  "scientific_replay_of_old_vendor_required_before_cloud_launch": true
+}
