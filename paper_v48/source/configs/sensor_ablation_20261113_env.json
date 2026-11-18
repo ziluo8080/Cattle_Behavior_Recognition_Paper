@@ -1,0 +1,16 @@
+{
+  "provider": "existing_bitahub_ssh",
+  "ssh_alias": "bitahub-root",
+  "ssh_port": 42079,
+  "cwd": "/q3/mmcows-sensor-behavior-20261007",
+  "python": "/q3/mmcows-rgbs-convnext/.venv/bin/python",
+  "versions": {"python": "3.11.16", "torch": "2.4.1+cu121", "numpy": "1.24.4", "xgboost": "2.1.4"},
+  "env": {"CUBLAS_WORKSPACE_CONFIG": ":4096:8", "OPENBLAS_NUM_THREADS": "4", "OMP_NUM_THREADS": "4", "PYTHONPATH": ".xgb_deps_20261014:.comparator_deps_20261021_v1:.classic_deps_20261012:.sensor_deps:."},
+  "gpu": "NVIDIA GeForce RTX 4090 24GB",
+  "max_gpu_workers": 2,
+  "max_cpu_tree_workers": 1,
+  "torch_memory_fraction_each": 0.45,
+  "new_installations": false,
+  "new_paid_resources": false,
+  "foreign_processes_may_be_stopped": false
+}

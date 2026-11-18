@@ -1,0 +1,123 @@
+{
+  "output": "reports/sensor_comparator_fivefold_retrain_20261029_v14",
+  "data_parent": "reports/sensor_zero_head_replication_20261024_v1",
+  "model_config": "experiments/sensor_comparator_pilot_20261022_v2/config.json",
+  "environment": "configs/sensor_shared_fusion_fivefold_env_20261024_v1.json",
+  "models": [
+    "GRU_Fusion",
+    "Transformer_Fusion",
+    "ModernTCN_Fusion"
+  ],
+  "protocols": [
+    "TS",
+    "OS"
+  ],
+  "inners": [
+    0,
+    1,
+    2
+  ],
+  "seeds": [
+    17,
+    23,
+    29
+  ],
+  "learning_rate": 0.0003,
+  "weight_decay": 0.03,
+  "batch_size": 256,
+  "BN_momentum": 0.01,
+  "EMA_decay": 0.998,
+  "EMA_warmup_steps": 200,
+  "evaluation_window": 3,
+  "scheduler": {
+    "mode": "min",
+    "factor": 0.2,
+    "patience": 2,
+    "threshold": 0.0001,
+    "threshold_mode": "rel",
+    "cooldown": 0,
+    "min_lr": 3E-06,
+    "eps": 0
+  },
+  "convergence": {
+    "minimum_stage_epochs": 40,
+    "consecutive_window_epochs": 20,
+    "max_abs_DEV_CE_relative_block_drift": 0.02,
+    "max_abs_fit_EMA_CE_relative_block_drift": 0.02,
+    "max_abs_train_CE_relative_block_drift": 0.05,
+    "max_abs_DEV_F1_block_drift_pp": 0.5,
+    "max_DEV_F1_window_range_pp": 1,
+    "max_relative_parameter_update": 0.002,
+    "DEV_CE_within_run_minimum_factor": 1.05,
+    "minimum_positive_learning_rate": 3E-06,
+    "max_DEV_CE_window_relative_range": 0.05,
+    "max_abs_cross_window_DEV_F1_drift_pp": 0.5,
+    "max_cross_window_DEV_F1_range_pp": 1,
+    "terminal_DEV_CE_within_run_minimum_factor": 1.05
+  },
+  "checkpoint_policy": "Restore actual minimum hard-label DEV CE saved EMA checkpoint; ties earlier. Do not call early checkpoint terminal optimizer convergence.",
+  "budget": {
+    "worker_seconds": 10800,
+    "queue_seconds": 172800,
+    "gpu_parallel": 3,
+    "max_attempts": 1,
+    "rocket_worker_seconds": 7200,
+    "prediction_worker_seconds": 3600,
+    "minimum_free_disk_GiB": 20
+  },
+  "Test_allowed": true,
+  "outer_VAL_allowed": true,
+  "formal_refit_allowed": true,
+  "new_paid_resources": false,
+  "scope": "Fresh official fivefold calibration/refit for three neural models with prior18/18trainingstability; fullfeature MultiRocket frozen alpha TS20000 OS100000. TSLANet excluded and repaired separately.",
+  "user_authorization": "2026-10-29: 先将其他已经充分收敛的对比模型进行完整五折验证重跑并行使用云端GPU，未充分收敛的模型继续寻找方法",
+  "ledger": ".aris/compute/bitahub-root-comparator-fivefold-retrain-20261029-v14.md",
+  "reference_output": "reports/sensor_comparator_convergence_20261027_v2",
+  "stopping": {
+    "minimum_epochs": 40,
+    "maximum_epochs": 120,
+    "patience_epochs": 20,
+    "relative_improvement": 0.001
+  },
+  "paired_guard": {
+    "max_relative_CE_increase": 0.01,
+    "max_F1_drop_pp": 0.5,
+    "max_F1_gap_growth_pp": 1
+  },
+  "automatic_fivefold_expansion": false,
+  "selection_parent": "reports/sensor_converged_fivefold_20261027_v1",
+  "formal_parent": "reports/sensor_shared_fusion_fivefold_20261024_v1",
+  "folds": [
+    "fold_1",
+    "fold_2",
+    "fold_3",
+    "fold_4",
+    "fold_5"
+  ],
+  "rocket_model": "MultiRocket_Fusion",
+  "alpha_by_protocol": {
+    "OS": 100000,
+    "TS": 20000
+  },
+  "ridge": {
+    "feature_block": 512,
+    "max_relative_residual": 1E-06
+  },
+  "calibration_stopping": {
+    "relative_improvement": 0.001,
+    "maximum_epochs": 160,
+    "minimum_epochs": 40,
+    "patience_epochs": 20
+  },
+  "runtime_output": "reports/sensor_comparator_fivefold_retrain_20261029_v14/runtime",
+  "runtime": {
+    "rocket_minimum_free_MiB": 17408,
+    "neural_minimum_free_MiB": 6144,
+    "neural_fraction": 0.15,
+    "GPU_processes": 3,
+    "rocket_fraction": 0.65
+  },
+  "refit_epoch_transfer": "same_epochs",
+  "historical_Test_exposure": true,
+  "manuscript_replacement_allowed": false
+}

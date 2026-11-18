@@ -1,0 +1,101 @@
+{
+  "selected_epoch": 7,
+  "base_learning_rates": [
+    0.0003,
+    0.0003,
+    0.0003,
+    0.0003,
+    0.0003,
+    0.0003,
+    0.0003
+  ],
+  "selected_VAL": {
+    "macro_f1_percent": 84.91355173128576,
+    "class_f1_percent": [
+      51.59235668789809,
+      94.90364025695932,
+      79.55465587044534,
+      92.44365885992046,
+      94.11764705882354,
+      82.1256038647343,
+      99.65729952021933
+    ],
+    "confusion_matrix": [
+      [
+        81,
+        23,
+        3,
+        2,
+        1,
+        4,
+        3
+      ],
+      [
+        99,
+        2216,
+        23,
+        10,
+        1,
+        14,
+        22
+      ],
+      [
+        7,
+        19,
+        393,
+        63,
+        1,
+        0,
+        0
+      ],
+      [
+        5,
+        2,
+        86,
+        1046,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        56,
+        0,
+        0
+      ],
+      [
+        4,
+        15,
+        0,
+        0,
+        0,
+        85,
+        0
+      ],
+      [
+        1,
+        9,
+        0,
+        0,
+        0,
+        0,
+        5089
+      ]
+    ],
+    "weighted_CE": 0.2206271254277269,
+    "NLL": 0.1344464973233707,
+    "zero_true_probabilities": 0
+  },
+  "EMA_decay": 0.998,
+  "EMA_warmup_steps": 200,
+  "evaluation_window": 3,
+  "evaluation_warm_epochs": 10,
+  "rule": "minimum hard weighted VAL CE; exact ties retain earlier epoch",
+  "initialization": "fresh random initialization using the same seed; no calibration weights",
+  "transfer": "same_epochs heuristic, not equivalent optimization trajectories",
+  "refit_scheduler": "replay actual calibration learning_rate prefix; no FIT scheduler feedback",
+  "refit_terminal_stationarity_claimed": false
+}

@@ -1,0 +1,396 @@
+{
+  "status": "JOINT_GENERALIZATION_AND_CONVERGENCE_VALIDATED",
+  "method_config": "configs/sensor_convergence_pipeline_20261027_v15.json",
+  "method_config_sha256": "2c2f8fdf27d8461c2d16ee0e1e34dcfb56320699f5c081ab34b40d3ece3939d3",
+  "acceptance_config": "configs/sensor_convergence_acceptance_user_20261027.json",
+  "acceptance_config_sha256": "ecf49cc6c2450c0f6687201e119b59edf4aaa786abd78e9acbea9d03fa4ad544",
+  "validation_report": "reports/sensor_joint_generalization_convergence_20261027_v2/COMPLETE.json",
+  "validation_report_sha256": "7eb37c0d2d61f8736c755767e13a32cbac1dfa6eeeaf5e5c5dfeeb68665df66d",
+  "B_parameters": 213119,
+  "BN_momentum": 0.01,
+  "learning_rate": 0.0003,
+  "minimum_learning_rate": 3e-06,
+  "EMA_decay": 0.998,
+  "EMA_warmup_steps": 200,
+  "evaluation": "Independent causal3EMA parameter+floating-buffer mean after10local epochs; one saved network",
+  "convergence": "Both consecutive10epoch windows pass unchanged source-aware strong_assess; recovery adds40real epochs and retains entire sourceCE minimum",
+  "recovery": "Only failed cases: minimum neuralDEVCE savedEMA into learner/liveEMA; freshAdam and EMAclock; normalBN0.01; positiveLR3e-6 for40epochs; all parameters trainable",
+  "fusion_family": "margin_average",
+  "XGB_temperature": 1,
+  "B_temperature": 1,
+  "XGB_weight": 0.7,
+  "checkpoint_selection": "Converged actual terminal model",
+  "models": [
+    {
+      "protocol": "TS",
+      "inner": 0,
+      "seed": 17,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/TS/inner0/seed17/terminal_ema.pt",
+      "terminal_model_sha256": "0d7bba4706012a7e9a14ddd7bb74a61a3ac96ce753c327a6c23e07f1a4fa99af",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "TS",
+      "inner": 0,
+      "seed": 23,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/TS/inner0/seed23/terminal_ema.pt",
+      "terminal_model_sha256": "0e822717f399dcb77b20f3ceb2ab9644a2fc5b9d9c6536dad6f94ba0cd070ddb",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "TS",
+      "inner": 0,
+      "seed": 29,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/TS/inner0/seed29/terminal_ema.pt",
+      "terminal_model_sha256": "fceea0884be4ce7dede139f33fe5d0f5b10b843d4e2b7edd31d1bf5b82bd2725",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "TS",
+      "inner": 1,
+      "seed": 17,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/TS/inner1/seed17/terminal_ema.pt",
+      "terminal_model_sha256": "3cd76962dbecdd687c39d5a0ba46a5c897e1b8579454bce240df55d995a94b6b",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "TS",
+      "inner": 1,
+      "seed": 23,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/TS/inner1/seed23/terminal_ema.pt",
+      "terminal_model_sha256": "af0c9e8b4e9a5b6a85bcb08d74ee1d2244d7dc079ea16f672c75a24ef114f232",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "TS",
+      "inner": 1,
+      "seed": 29,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/TS/inner1/seed29/terminal_ema.pt",
+      "terminal_model_sha256": "2ab3c2ba76794d9f675d4769bccfa9e75201ab4f953464c70176a78b13d5cca4",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "TS",
+      "inner": 2,
+      "seed": 17,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/TS/inner2/seed17/terminal_ema.pt",
+      "terminal_model_sha256": "670c5ad964719a787f6cdffefac1b2a88dba6686d7917dcc0c56764239542787",
+      "recovered": true,
+      "total_training_epochs": 160
+    },
+    {
+      "protocol": "TS",
+      "inner": 2,
+      "seed": 23,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/TS/inner2/seed23/terminal_ema.pt",
+      "terminal_model_sha256": "ef865ea451f1bf727ba1eb699b66371d3ca21547bf3416eda302d95d435ffa42",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "TS",
+      "inner": 2,
+      "seed": 29,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/TS/inner2/seed29/terminal_ema.pt",
+      "terminal_model_sha256": "a25b0493ca221236486c01a9f14ca88b87fa13c7e62077f70628193a02a7d789",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "OS",
+      "inner": 0,
+      "seed": 17,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/OS/inner0/seed17/terminal_ema.pt",
+      "terminal_model_sha256": "f0201fe217de4fe995687daff84377cace32efd6a1fc0287f17e399cfb840fdd",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "OS",
+      "inner": 0,
+      "seed": 23,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/OS/inner0/seed23/terminal_ema.pt",
+      "terminal_model_sha256": "c52ff8b04bd8679238fba95ebf6239d5af0c8c1ff5df6f0320c06c26b3ce469d",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "OS",
+      "inner": 0,
+      "seed": 29,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/OS/inner0/seed29/terminal_ema.pt",
+      "terminal_model_sha256": "bc4745d0dd6fd151a868647f67e07d993a44cf103bba7486cf1288f2a71cfd3a",
+      "recovered": true,
+      "total_training_epochs": 160
+    },
+    {
+      "protocol": "OS",
+      "inner": 1,
+      "seed": 17,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/OS/inner1/seed17/terminal_ema.pt",
+      "terminal_model_sha256": "d06b70799901e8c9e3c0630bda0d4814e4e835d084da9759bdd38a35aad5b983",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "OS",
+      "inner": 1,
+      "seed": 23,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/OS/inner1/seed23/terminal_ema.pt",
+      "terminal_model_sha256": "fa0c5ebb48a71aef9fac43281ba0f9126ffef10ec9c61bce0feebddf90d5988f",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "OS",
+      "inner": 1,
+      "seed": 29,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/OS/inner1/seed29/terminal_ema.pt",
+      "terminal_model_sha256": "74e2b298c58064338e971ee745dbd27c864a0df4b21e93108cf950a5a8d0778e",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "OS",
+      "inner": 2,
+      "seed": 17,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/OS/inner2/seed17/terminal_ema.pt",
+      "terminal_model_sha256": "e995e9e8d63b6b06bcb48b554557f2580097ada4b00a45a751fe1daab85bbca5",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "OS",
+      "inner": 2,
+      "seed": 23,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/OS/inner2/seed23/terminal_ema.pt",
+      "terminal_model_sha256": "84e4dc223337c2b5a94f8ced30ed31f6ac5eec9891964ecd5fec01f6515afb93",
+      "recovered": false,
+      "total_training_epochs": 40
+    },
+    {
+      "protocol": "OS",
+      "inner": 2,
+      "seed": 29,
+      "terminal_model": "reports/sensor_convergence_pipeline_20261027_v15/terminal_models/OS/inner2/seed29/terminal_ema.pt",
+      "terminal_model_sha256": "88df482621b271c1ece630bcf433caec609e313bc78a46e54baafd70d57b4463",
+      "recovered": false,
+      "total_training_epochs": 40
+    }
+  ],
+  "scope": "Previously observed outerfold1 TRAIN-internal3splits x3seeds; reduced development FIT-DEV gap and empirical convergence. Residual gaps remain; no proof of no overfitting or new blind population performance.",
+  "formal_fivefold_replaced": false,
+  "manuscript_updated": false,
+  "architecture_config": "configs/sensor_convtran_endpoint_pilot_20261022_v1.json",
+  "architecture_config_sha256": "9e3b14632dcd91de3ae947d45701097be70c58cbf27bda3124b04de76de8b3c8",
+  "architecture_code_sha256": {
+    "scripts/sensor_convtran_endpoint_interaction_20261022.py": "417410400c55134a73ddd69e3f20b83f14f695f412cb3d74d5d52482f7dca860",
+    "scripts/sensor_convtran_context_model_20261022.py": "af3cdaa6c6b14b9d4d06370cec3de89a08b644f0bed3031f6fbe0b0f5a452861"
+  },
+  "public_inference_module": "scripts/sufficient_model_inference_20261027.py",
+  "public_inference_module_sha256": "26efd6293a31317a931fcd0445aa6cc3bd42aaba97aceac59406573b9a015acf",
+  "scientific_recipe_before_public_metadata": "configs/sensor_sufficient_convergence_validated_20261027.before_public_metadata.json",
+  "scientific_recipe_before_public_metadata_sha256": "0a881e6f0cf797623c61ac78e001b8bc6c1fbdd56fafb1c000f966a0cf061d5c",
+  "baseline_recipe": "configs/sensor_sufficient_convergence_validated_20261027.json",
+  "baseline_recipe_sha256": "ae1008cbe29325aa1300e1e8e5edd460c29072142a100f360a5c58a804cfc779",
+  "candidate_config": "configs/sensor_joint_generalization_convergence_20261027_v2.json",
+  "candidate_config_sha256": "7c85a9ec80de2619a9fce97c4c33cd00f429fcfabac277fc988fee923415267a",
+  "acceptance_contract": "configs/sensor_joint_generalization_convergence_20261027_v1.json",
+  "acceptance_contract_sha256": "56bc0ed84af0f80ecb53026e9a0405984485e7b0400b11b46bcf4e91c71bae86",
+  "XGB_models": [
+    {
+      "protocol": "TS",
+      "inner": 0,
+      "terminal_model": "reports/sensor_tree_convergence_regularized_20261027_v2/TS/inner0/seed17/latest.json",
+      "terminal_model_sha256": "aebfa96e1b1766f4861d46be0be38b15dbfa4ac11172b788168333e240c67fe0",
+      "class_prior": [
+        0.011159201126349272,
+        0.21348490379099963,
+        0.09500964697293633,
+        0.13172028993064608,
+        0.0029723105803827502,
+        0.010220576732544194,
+        0.5354330708661418
+      ],
+      "fit_class_counts": [
+        214,
+        4094,
+        1822,
+        2526,
+        57,
+        196,
+        10268
+      ],
+      "rounds": 500,
+      "features": 866,
+      "regularization": {
+        "gamma": 1,
+        "min_child_weight": 10,
+        "reg_lambda": 10
+      }
+    },
+    {
+      "protocol": "TS",
+      "inner": 1,
+      "terminal_model": "reports/sensor_tree_convergence_regularized_20261027_v2/TS/inner1/seed17/latest.json",
+      "terminal_model_sha256": "ec48d9d82191ffa7d874ef78997b5fc21c0d14270fd53b1029000a94e74785f8",
+      "class_prior": [
+        0.01561355053266445,
+        0.32072600191646466,
+        0.03646919564849783,
+        0.07846231892227044,
+        0.009864156473704977,
+        0.015049884448452736,
+        0.5238148920579448
+      ],
+      "fit_class_counts": [
+        277,
+        5690,
+        647,
+        1392,
+        175,
+        267,
+        9293
+      ],
+      "rounds": 500,
+      "features": 866,
+      "regularization": {
+        "gamma": 1,
+        "min_child_weight": 10,
+        "reg_lambda": 10
+      }
+    },
+    {
+      "protocol": "TS",
+      "inner": 2,
+      "terminal_model": "reports/sensor_tree_convergence_regularized_20261027_v2/TS/inner2/seed17/latest.json",
+      "terminal_model_sha256": "b281cbfac5cf10096c8ce9abf4045955975090b6f63dc1ca6a67fd9ce9e43804",
+      "class_prior": [
+        0.017536934701702943,
+        0.2589376339235367,
+        0.09952633359648133,
+        0.13803992331115372,
+        0.012179993233337093,
+        0.010995827224540431,
+        0.46278335400924775
+      ],
+      "fit_class_counts": [
+        311,
+        4592,
+        1765,
+        2448,
+        216,
+        195,
+        8207
+      ],
+      "rounds": 500,
+      "features": 866,
+      "regularization": {
+        "gamma": 1,
+        "min_child_weight": 10,
+        "reg_lambda": 10
+      }
+    },
+    {
+      "protocol": "OS",
+      "inner": 0,
+      "terminal_model": "reports/sensor_tree_convergence_regularized_20261027_v2/OS/inner0/seed17/latest.json",
+      "terminal_model_sha256": "ef872a6c186a5acbf27386c9e04e54fe9aa5c218101d967daf1c5a584f322410",
+      "class_prior": [
+        0.014624252775405636,
+        0.3193317677198975,
+        0.10028821520068318,
+        0.10770708795900939,
+        0.008166097352690008,
+        0.014891118701964133,
+        0.43499146029035013
+      ],
+      "fit_class_counts": [
+        274,
+        5983,
+        1879,
+        2018,
+        153,
+        279,
+        8150
+      ],
+      "rounds": 500,
+      "features": 866,
+      "regularization": {
+        "gamma": 1,
+        "min_child_weight": 10,
+        "reg_lambda": 10
+      }
+    },
+    {
+      "protocol": "OS",
+      "inner": 1,
+      "terminal_model": "reports/sensor_tree_convergence_regularized_20261027_v2/OS/inner1/seed17/latest.json",
+      "terminal_model_sha256": "fd604fb270a7520295f2382c7327c2b62f2e5d4b0fb139646b73463f04e31356",
+      "class_prior": [
+        0.01547657167253709,
+        0.3221261607428754,
+        0.06975130750346889,
+        0.1255737005016544,
+        0.006243996157540826,
+        0.012914932223289571,
+        0.4479133311986338
+      ],
+      "fit_class_counts": [
+        290,
+        6036,
+        1307,
+        2353,
+        117,
+        242,
+        8393
+      ],
+      "rounds": 500,
+      "features": 866,
+      "regularization": {
+        "gamma": 1,
+        "min_child_weight": 10,
+        "reg_lambda": 10
+      }
+    },
+    {
+      "protocol": "OS",
+      "inner": 2,
+      "terminal_model": "reports/sensor_tree_convergence_regularized_20261027_v2/OS/inner2/seed17/latest.json",
+      "terminal_model_sha256": "26537e2e2528ef023f8233e611eda6aa55edbd5ce5d95f03c4df533373280dda",
+      "class_prior": [
+        0.011613040698913274,
+        0.25127849989345835,
+        0.08193053483912209,
+        0.10382484551459621,
+        0.007990624334114639,
+        0.013051353079053911,
+        0.5303111016407416
+      ],
+      "fit_class_counts": [
+        218,
+        4717,
+        1538,
+        1949,
+        150,
+        245,
+        9955
+      ],
+      "rounds": 500,
+      "features": 866,
+      "regularization": {
+        "gamma": 1,
+        "min_child_weight": 10,
+        "reg_lambda": 10
+      }
+    }
+  ],
+  "public_joint_module": "scripts/joint_converged_model_inference_20261027.py",
+  "public_joint_module_sha256": "1c0c549896f49215506884cab98ab2831571b3c5695cac39cf915ede01aabc0e"
+}

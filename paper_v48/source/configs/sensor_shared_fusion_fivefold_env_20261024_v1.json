@@ -1,0 +1,9 @@
+{
+  "python": "3.11.16", "torch": "2.4.1+cu121", "numpy": "1.24.4", "scipy": "1.10.1", "sklearn": "1.3.2", "xgboost": "2.1.4", "numba": "0.60.0",
+  "cwd": "/q3/mmcows-sensor-behavior-20261007",
+  "python_executable": "/q3/mmcows-rgbs-convnext/.venv/bin/python",
+  "PYTHONPATH": ".xgb_deps_20261014:.comparator_deps_20261021_v1:.classic_deps_20261012:.sensor_deps:.",
+  "installation": "None; warm reuse of existing isolated dependencies",
+  "workload": "original EndpointResidual_B20 and original 866-feature XGBoost500; official fivefold Fit/Test refit",
+  "runtime_witness": "synthetic B CUDA update/resume and 866-column seven-class CPU XGBoost serialized replay; no scientific Test scores"
+}
